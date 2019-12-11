@@ -88,6 +88,20 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (max-height: 820px) {
+
+    .dive-in {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+
+    .sec1content {
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 840px) {
     .volv-window-desktop {
         height: 400px;
