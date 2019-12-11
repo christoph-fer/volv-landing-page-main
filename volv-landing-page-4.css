@@ -67,11 +67,17 @@ body {
     height: 90vh;
 }
 
-.volv-window {
+.volv-window-desktop {
     display: grid;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+.volv-window-mobile {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dive-in {
@@ -80,4 +86,33 @@ body {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 840px) {
+    .volv-window-desktop {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .volv-window-desktop {
+        height: 300px;
+    }
+
+    .dive-in {
+        margin-top: 70px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .volv-window-desktop {
+        display: none;
+    }
+
+    .volv-window-mobile {
+        display: grid;
+        height: 300px;
+    }
 }
