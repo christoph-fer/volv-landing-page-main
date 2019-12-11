@@ -2,9 +2,13 @@ body {
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --volv-orange: #F47E47;
-    --volv-acrylic: rgba(255, 255, 255, 0.5);
+    --volv-acrylic: rgba(255, 255, 255, 0.7);
 }
 
 .section1 {
@@ -17,10 +21,12 @@ body {
 }
 
 .header {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     background-color: var(--volv-acrylic);
     height: 70px;
+    position: fixed;
+    width: 100%;
 }
 
 .header>div {
@@ -64,7 +70,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .volv-window-desktop {
@@ -86,6 +92,48 @@ body {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+}
+
+#dive-in {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2 {
+
+    grid-template-columns: 1fr 1fr;
+    background-image:
+        linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+        url('assets/newspaper\ texture.jpg');
+    background-size: cover;
+}
+
+.sec2container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.phones {
+    align-self: center;
+}
+
+.phones>img {
+    height: 800px;
+}
+
+.sec2content {
+    align-self: center;
+}
+
+.sec2content>p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
 }
 
 @media only screen and (max-height: 820px) {
