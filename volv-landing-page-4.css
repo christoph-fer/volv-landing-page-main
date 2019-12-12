@@ -112,6 +112,7 @@ html {
     forwards;
   opacity: 0;
   transform: translateY(100px);
+  margin-top: 120px;
 }
 
 .dive-in {
@@ -207,9 +208,10 @@ html {
 }
 
 .sec3content > span {
-  font-family: "DM Serif Display", serif;
+  font-family: "Source Sans Pro", serif;
   font-size: 30px;
   line-height: 2em;
+  font-weight: 600;
 }
 
 .sec3content > img {
@@ -431,9 +433,6 @@ a:hover {
   .volv-window-desktop {
     height: 400px;
   }
-  /* .sec1content {
-    height: auto;
-  } */
 
   .sec2container {
     height: auto;
@@ -472,16 +471,12 @@ a:hover {
   .volv-window-desktop {
     height: 400px;
   }
-
-  .dive-in {
-    margin-top: 100px;
-    height: 50px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
   .phones > img {
     height: 480px;
+    margin-top: 0px;
   }
 }
 
@@ -541,11 +536,11 @@ a:hover {
     height: 300px;
   }
   .phones > img {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .dive-in {
-    margin-top: 100px;
+    margin-top: 40px;
     height: 50px;
   }
 
