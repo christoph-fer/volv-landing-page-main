@@ -180,7 +180,7 @@ html {
 
 .section3 {
   background-size: contain;
-  background: url("assets/newspaper-background.png");
+  /* background: url("assets/newspaper-background.png"); */
   background-position: center;
 }
 
@@ -330,54 +330,54 @@ html {
 
   51% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    content: url("assets/business.svg");
   }
   57.25% {
     opacity: 1;
-    content: url("assets/finance.svg");
+    content: url("assets/business.svg");
   }
   62.5% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    content: url("assets/business.svg");
   }
 
   63% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    content: url("assets/science.svg");
   }
   68.7% {
     opacity: 1;
-    content: url("assets/technology.svg");
+    content: url("assets/science.svg");
   }
   75% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    content: url("assets/science.svg");
   }
 
   75.5% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    content: url("assets/fashion.svg");
   }
   81.2% {
     opacity: 1;
-    content: url("assets/finance.svg");
+    content: url("assets/fashion.svg");
   }
   87.5% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    content: url("assets/fashion.svg");
   }
 
   88% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    content: url("assets/politics.svg");
   }
   93.7% {
     opacity: 1;
-    content: url("assets/technology.svg");
+    content: url("assets/politics.svg");
   }
   100% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    content: url("assets/politics.svg");
   }
 }
 
