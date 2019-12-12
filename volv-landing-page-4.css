@@ -61,8 +61,8 @@ html {
   background-color: var(--volv-orange);
   border: none;
   outline: none;
-  padding: 10px 16px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-size: 14px;
@@ -101,6 +101,7 @@ html {
     forwards;
   opacity: 0;
   transform: translateY(100px);
+  margin-top: 120px;
 }
 
 .volv-window-mobile {
@@ -175,12 +176,12 @@ html {
 .sec2content > p {
   font-family: "DM Serif Display", serif;
   font-size: 42px;
-  line-height: 2em;
+  line-height: 2.7em;
 }
 
 .section3 {
   background-size: contain;
-  /* background: url("assets/newspaper-background.png"); */
+  background: url("assets/newspaper-background.png");
   background-position: center;
 }
 
@@ -193,13 +194,17 @@ html {
   margin-right: auto;
   align-self: center;
   align-content: center;
-  height: 500px;
+  height: 400px;
   padding: 0px 40px;
+}
+
+.sec3content {
+  margin-left: 50px;
 }
 
 .sec3content > span {
   font-family: "DM Serif Display", serif;
-  font-size: 2.3em;
+  font-size: 30px;
   line-height: 2em;
 }
 
@@ -209,8 +214,8 @@ html {
 
 .read-the-news {
   font-family: "DM Serif Display", serif;
-  font-size: 2em;
-  line-height: 1em;
+  font-size: 27px;
+  line-height: 1.5em;
 }
 
 .don-believe-it {
@@ -435,6 +440,10 @@ a:hover {
     font-size: 32px;
   }
 
+  .sec3content > span {
+    font-size: 32px;
+  }
+
   .phones > img {
     height: 640px;
   }
@@ -442,6 +451,10 @@ a:hover {
 
 @media only screen and (max-width: 890px) {
   .sec2content > p {
+    font-size: 26px;
+  }
+
+  .sec3content > span {
     font-size: 26px;
   }
 
@@ -477,12 +490,47 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-areas: "sec3content" "sec3download";
   }
+  .categories {
+    height: 50px;
+  }
   .phones {
     text-align: center;
+  }
+
+  .sec2content {
+    background-color: #ffffff;
+    width: 100%;
+  }
+  .sec2container {
+    padding: 0px;
+    height: 1000px;
+  }
+  .sec3container {
+    padding: 0px;
   }
   .sec2content > p {
     text-align: center;
   }
+  .sec3download {
+    text-align: center;
+  }
+  .sec3content {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    margin-left: 0px;
+  }
+  .sec3download {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 300px;
+    padding: 50px 0px;
+  }
+  .sec3content > span {
+    text-align: center;
+  }
+
   .volv-window-desktop {
     height: 300px;
   }
@@ -493,6 +541,10 @@ a:hover {
   .dive-in {
     margin-top: 100px;
     height: 50px;
+  }
+
+  .downloadnow {
+    justify-content: center;
   }
 }
 
