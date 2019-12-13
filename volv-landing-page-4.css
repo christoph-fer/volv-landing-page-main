@@ -241,8 +241,19 @@ html {
 .categories {
   animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) 0s infinite
     forwards;
+
+  /* -webkit-animation-name: categories-animation;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: forward;
+
+  animation-name: categories-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: forward; */
   height: 60px;
   margin-top: -5px;
+  /* opacity: 0; */
 }
 
 .downloadnow {
@@ -295,128 +306,122 @@ html {
 @keyframes categories-animation {
   0% {
     opacity: 0;
-    background: url("assets/sports.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    content: url("assets/sports.svg");
   }
 
   6% {
     opacity: 1;
-    background: url("assets/sports.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    content: url("assets/sports.svg");
   }
 
   12% {
     opacity: 0;
-    background: url("assets/sports.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    content: url("assets/sports.svg");
   }
 
   12.5% {
     opacity: 0;
-    background: url("assets/finance.svg");
+    content: url("assets/finance.svg");
   }
 
   18.5% {
     opacity: 1;
-    background: url("assets/finance.svg");
+    content: url("assets/finance.svg");
   }
 
   25% {
     opacity: 0;
-    background: url("assets/finance.svg");
+    content: url("assets/finance.svg");
   }
 
   26% {
     opacity: 0;
-    background: url("assets/technology.svg");
+    content: url("assets/technology.svg");
   }
 
   32% {
     opacity: 1;
-    background: url("assets/technology.svg");
+    content: url("assets/technology.svg");
   }
 
   37.5% {
     opacity: 0;
-    background: url("assets/technology.svg");
+    content: url("assets/technology.svg");
   }
 
   38.5% {
     opacity: 0;
-    background: url("assets/entertainment.svg");
+    content: url("assets/entertainment.svg");
   }
 
   44.7% {
     opacity: 1;
-    background: url("assets/entertainment.svg");
+    content: url("assets/entertainment.svg");
   }
 
   50% {
     opacity: 0;
-    background: url("assets/entertainment.svg");
+    content: url("assets/entertainment.svg");
   }
 
   51% {
     opacity: 0;
-    background: url("assets/business.svg");
+    content: url("assets/business.svg");
   }
 
   57.25% {
     opacity: 1;
-    background: url("assets/business.svg");
+    content: url("assets/business.svg");
   }
 
   62.5% {
     opacity: 0;
-    background: url("assets/business.svg");
+    content: url("assets/business.svg");
   }
 
   63% {
     opacity: 0;
-    background: url("assets/science.svg");
+    content: url("assets/science.svg");
   }
 
   68.7% {
     opacity: 1;
-    background: url("assets/science.svg");
+    content: url("assets/science.svg");
   }
 
   75% {
     opacity: 0;
-    background: url("assets/science.svg");
+    content: url("assets/science.svg");
   }
 
   75.5% {
     opacity: 0;
-    background: url("assets/fashion.svg");
+    content: url("assets/fashion.svg");
   }
 
   81.2% {
     opacity: 1;
-    background: url("assets/fashion.svg");
+    content: url("assets/fashion.svg");
   }
 
   87.5% {
     opacity: 0;
-    background: url("assets/fashion.svg");
+    content: url("assets/fashion.svg");
   }
 
   88% {
     opacity: 0;
-    background: url("assets/politics.svg");
+    content: url("assets/politics.svg");
   }
 
   93.7% {
     opacity: 1;
-    background: url("assets/politics.svg");
+    content: url("assets/politics.svg");
   }
 
   100% {
     opacity: 0;
-    background: url("assets/politics.svg");
+    content: url("assets/politics.svg");
   }
 }
 
@@ -526,7 +531,6 @@ a:hover {
 
   .categories {
     height: 50px;
-    background-position: center;
   }
 
   .phones {
