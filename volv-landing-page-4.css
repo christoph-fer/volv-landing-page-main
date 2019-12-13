@@ -239,8 +239,8 @@ html {
 }
 
 .categories {
-  animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) 0s infinite
-    forwards;
+  /* animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) 0s infinite */
+    /* forwards; */
 
   /* -webkit-animation-name: categories-animation;
   -webkit-animation-duration: 8s;
