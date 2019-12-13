@@ -19,13 +19,17 @@ html {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0)
-        /* rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0) */
+        /* rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9) */
     ),
     url("assets/volv-slime-4k.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
+  opacity: 0;
 }
 
 .header {
@@ -97,7 +101,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+  animation: volv-window-desktop-animation 3s cubic-bezier(0.5, 0, 0, 0.99)
     forwards;
   opacity: 0;
   transform: translateY(100px);
@@ -108,7 +112,7 @@ html {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+  animation: volv-window-desktop-animation 3s cubic-bezier(0.5, 0, 0, 0.99)
     forwards;
   opacity: 0;
   transform: translateY(100px);
