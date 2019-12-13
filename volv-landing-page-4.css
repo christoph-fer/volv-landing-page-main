@@ -309,16 +309,16 @@ html {
     opacity: 0;
     content: url("assets/sports.svg");
   }
-  6% {
+  50% {
     opacity: 1;
     content: url("assets/sports.svg");
   }
-  12% {
+  100% {
     opacity: 0;
     content: url("assets/sports.svg");
   }
 
-  12.5% {
+  /* 12.5% {
     opacity: 0;
     content: url("assets/finance.svg");
   }
@@ -407,7 +407,7 @@ html {
   100% {
     opacity: 0;
     content: url("assets/politics.svg");
-  }
+  } */
 }
 
 .footer {
