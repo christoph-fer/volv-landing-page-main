@@ -145,7 +145,7 @@ html {
     ),
     url("assets/newspaper\ texture.jpg"); */
   background-size: contain;
-  background: url("assets/newspaper-background.png");
+  background: url("assets/newspaper-bg.svg");
   background-position: center;
 }
 
@@ -242,7 +242,13 @@ html {
 }
 
 .categories {
-  -webkit-animation-name: categories-animation;
+  animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) infinite
+    forwards;
+
+  -webkit-animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99)
+    infinite forwards;
+
+  /* -webkit-animation-name: categories-animation;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: forward;
@@ -250,7 +256,7 @@ html {
   animation-name: categories-animation;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  animation-direction: forward;
+  animation-direction: forward; */
   height: 60px;
   margin-top: -5px;
 }
