@@ -27,9 +27,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
-    forwards;
-  opacity: 0;
 }
 
 .header {
@@ -101,8 +98,10 @@ html {
   margin-left: auto;
   margin-right: auto;
   /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
-  animation: volv-window-desktop-animation 3s cubic-bezier(0.5, 0, 0, 0.99)
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
     forwards;
+  -webkit-animation: volv-window-desktop-animation 2s
+    cubic-bezier(0.5, 0, 0, 0.99) forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 120px;
@@ -112,8 +111,10 @@ html {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 3s cubic-bezier(0.5, 0, 0, 0.99)
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
     forwards;
+  -webkit-animation: volv-window-desktop-animation 2s
+    cubic-bezier(0.5, 0, 0, 0.99) forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 100px;
@@ -121,7 +122,7 @@ html {
 
 .dive-in {
   margin-top: 70px;
-  height: 70px;
+  height: 60px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -585,7 +586,7 @@ a:hover {
 
 @media only screen and (max-width: 840px) {
   .volv-window-desktop {
-    height: 400px;
+    width: 100%;
   }
 }
 
@@ -649,7 +650,8 @@ a:hover {
   }
 
   .volv-window-desktop {
-    height: 300px;
+    height: unset;
+    width: 100%;
   }
   .phones > img {
     margin-top: 0px;
