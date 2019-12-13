@@ -239,8 +239,8 @@ html {
 }
 
 .categories {
-  /* animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) 0s infinite
-    forwards; */
+  animation: categories-animation 8s cubic-bezier(0.5, 0, 0, 0.99) 0s infinite
+    forwards;
 
   /* -webkit-animation-name: categories-animation;
   -webkit-animation-duration: 8s;
@@ -306,122 +306,171 @@ html {
 @keyframes categories-animation {
   0% {
     opacity: 0;
-    content: url("assets/sports.svg");
+    background: url("assets/sports.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   6% {
     opacity: 1;
-    content: url("assets/sports.svg");
+    background: url("assets/sports.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   12% {
     opacity: 0;
-    content: url("assets/sports.svg");
+    background: url("assets/sports.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   12.5% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    background: url("assets/finance.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   18.5% {
     opacity: 1;
-    content: url("assets/finance.svg");
+    background: url("assets/finance.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   25% {
     opacity: 0;
-    content: url("assets/finance.svg");
+    background: url("assets/finance.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   26% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    background: url("assets/technology.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   32% {
     opacity: 1;
-    content: url("assets/technology.svg");
+    background: url("assets/technology.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   37.5% {
     opacity: 0;
-    content: url("assets/technology.svg");
+    background: url("assets/technology.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   38.5% {
     opacity: 0;
-    content: url("assets/entertainment.svg");
+    background: url("assets/entertainment.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   44.7% {
     opacity: 1;
-    content: url("assets/entertainment.svg");
+    background: url("assets/entertainment.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   50% {
     opacity: 0;
-    content: url("assets/entertainment.svg");
+    background: url("assets/entertainment.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   51% {
     opacity: 0;
-    content: url("assets/business.svg");
+    background: url("assets/business.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   57.25% {
     opacity: 1;
-    content: url("assets/business.svg");
+    background: url("assets/business.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   62.5% {
     opacity: 0;
-    content: url("assets/business.svg");
+    background: url("assets/business.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   63% {
     opacity: 0;
-    content: url("assets/science.svg");
+    background: url("assets/science.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   68.7% {
     opacity: 1;
-    content: url("assets/science.svg");
+    background: url("assets/science.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   75% {
     opacity: 0;
-    content: url("assets/science.svg");
+    background: url("assets/science.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   75.5% {
     opacity: 0;
-    content: url("assets/fashion.svg");
+    background: url("assets/fashion.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   81.2% {
     opacity: 1;
-    content: url("assets/fashion.svg");
+    background: url("assets/fashion.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   87.5% {
     opacity: 0;
-    content: url("assets/fashion.svg");
+    background: url("assets/fashion.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   88% {
     opacity: 0;
-    content: url("assets/politics.svg");
+    background: url("assets/politics.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   93.7% {
     opacity: 1;
-    content: url("assets/politics.svg");
+    background: url("assets/politics.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
+  background-size: contain;
 
   100% {
     opacity: 0;
-    content: url("assets/politics.svg");
+    background: url("assets/politics.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -531,6 +580,7 @@ a:hover {
 
   .categories {
     height: 50px;
+    background-position: center;
   }
 
   .phones {
