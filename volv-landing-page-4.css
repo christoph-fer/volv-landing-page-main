@@ -174,8 +174,8 @@ html {
 }
 
 .phones > img {
-  height: 750px;
-  margin-top: 130px;
+  height: 800px;
+  margin-top: 120px;
 }
 
 .sec2content {
@@ -634,6 +634,8 @@ a:hover {
   }
   .sec2content > p {
     text-align: center;
+    margin: 10px;
+    font-size: 24px;
   }
   .sec3download {
     text-align: center;
@@ -681,5 +683,10 @@ a:hover {
   .volv-window-mobile {
     display: grid;
     width: 100%;
+  }
+
+  .phones > img {
+    height: 420px;
+    margin-top: 0px;
   }
 }
