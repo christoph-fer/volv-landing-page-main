@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Volv - Read Less. Know More.</title>
     <link rel="stylesheet" type="text/css" href="volv-landing-page-4.css" />
     <meta name="viewport" content="width=device-width" />
@@ -136,5 +137,20 @@
         </div>
       </div>
     </div>
+    <script>
+      $(function() {
+        image_array = ['sports.svg','finance.svg','technology.svg','entertainment.svg','business.svg','science.svg','fashion.svg','politics.svg']
+        for(i=0;i<8;i++) {
+          setTimeout(function() {
+            i=0
+            image_name = image_array[i]
+            // path= 'assets/'+image_name
+            path   = 'assets/'+image_name
+            $(".categories").attr('src', path).fadeToggle(1000)
+            i=i+1
+          }, 2000);
+        }
+      })
+    </script>
   </body>
 </html>
