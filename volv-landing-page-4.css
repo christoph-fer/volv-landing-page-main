@@ -540,6 +540,12 @@ a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-height: 600px) {
+  .header {
+    position: absolute;
+  }
+}
+
 @media only screen and (max-height: 820px) {
   .dive-in {
     margin-top: 0px;
