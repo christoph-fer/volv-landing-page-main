@@ -61,7 +61,7 @@ html {
 }
 
 .volv-logo {
-  height: 30px;
+  height: 25px;
   opacity: 0.7;
 }
 
@@ -217,7 +217,9 @@ html {
   text-align: center;
   display: grid;
   font-family: "Helvetica";
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 40px;
+  font-weight: bold;
 }
 
 .section3 {
@@ -233,8 +235,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  height: 400px;
-  padding: 0px 40px;
+  padding: 40px 40px;
   align-items: center;
 }
 
@@ -473,7 +474,7 @@ html {
   display: grid;
   align-content: center;
   grid-area: footer;
-  height: 120px;
+  height: 60px;
   background-color: #f8f8f8;
   color: rgb(89, 89, 89);
   font-family: "Source Sans Pro", sans-serif;
@@ -597,7 +598,6 @@ a:hover {
   .sec3download {
     background-color: #f8f8f8;
     width: 100%;
-    height: 300px;
     padding: 50px 0px;
   }
 
@@ -618,9 +618,14 @@ a:hover {
     width: 100%;
 
     padding: 50px 0px 100px 0px;
-
-    font-size: 32px;
+    text-align: -webkit-center;
+    font-size: 34px;
     justify-content: center;
+  }
+
+  .categories {
+    height: 7px;
+    width: 100%;
   }
 }
 
@@ -675,5 +680,9 @@ a:hover {
   .volv-window-mobile {
     display: grid;
     width: 100%;
+  }
+
+  .sec2content > p {
+    font-size: 26px;
   }
 }
