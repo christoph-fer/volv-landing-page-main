@@ -170,12 +170,14 @@
           setTimeout(function() {
             i=0
             image_name = image_array[i]
+            console.log(image_name)
             // path= 'assets/'+image_name
             path   = 'assets/'+image_name
-            alert("Hello World!!")
+            // alert("Hello World!!")
             $(".categories").attr('src', path).fadeToggle(2000)
             i=i+1
           }, 2000);
+          console.log("yaha") 
         }
       })
     </script> -->
@@ -185,9 +187,9 @@
 
       setInterval(function() {
         $(".categories > div:first")
-          .fadeOut(300)
+          .fadeOut(1000)
           .next()
-          .fadeIn(300)
+          .fadeIn(1000)
           .end()
           .appendTo(".categories");
       }, 1000);
