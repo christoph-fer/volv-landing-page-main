@@ -500,6 +500,13 @@ a:hover {
   .phones > img {
     height: 640px;
   }
+  .categories > div > img {
+    height: 3rem;
+  }
+
+  .categories {
+    height: 40px;
+  }
 }
 
 @media only screen and (max-width: 890px) {
@@ -538,6 +545,10 @@ a:hover {
   .sec3container {
     grid-template-columns: 1fr;
     grid-template-areas: "sec3content" "sec3download";
+  }
+
+  .categories > div > img {
+    height: 3rem;
   }
 
   .categories {
