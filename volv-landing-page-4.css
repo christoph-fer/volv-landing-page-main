@@ -504,6 +504,15 @@ a:hover {
   .header {
     position: absolute;
   }
+  .volv-window-mobile {
+    margin-top: 50px;
+  }
+  .volv-window-desktop {
+    margin-top: 50px;
+  }
+  .sec1content {
+    height: 600px;
+  }
 }
 
 @media only screen and (max-height: 820px) {
