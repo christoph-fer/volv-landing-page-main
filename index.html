@@ -80,7 +80,33 @@
         <div class="sec3container">
           <div class="sec3content">
             <span>Stay updated on</span><br />
-            <img class="categories"></img>
+            <!-- <img class="categories"></img> -->
+            <div class="categories">
+              <div>
+                <img src="assets/sports.svg" />
+              </div>
+              <div>
+                <img src="assets/finance.svg" />
+              </div>
+              <div>
+                <img src="assets/technology.svg" />
+              </div>
+              <div>
+                <img src="assets/entertainment.svg" />
+              </div>
+              <div>
+                <img src="assets/business.svg" />
+              </div>
+              <div>
+                <img src="assets/science.svg" />
+              </div>
+              <div>
+                <img src="assets/fashion.svg" />
+              </div>
+              <div>
+                <img src="assets/politics.svg" />
+              </div>
+            </div>
             <br />
             <span>in the least amount of time.</span>
           </div>
@@ -137,7 +163,7 @@
         </div>
       </div>
     </div>
-    <script>
+    <!-- <script>
       $(function() {
         image_array = ['sports.svg','finance.svg','technology.svg','entertainment.svg','business.svg','science.svg','fashion.svg','politics.svg']
         for(i=0;i<8;i++) {
@@ -154,6 +180,19 @@
           console.log("yaha") 
         }
       })
+    </script> -->
+
+    <script>
+      $(".categories > div:gt(0)").hide();
+
+      setInterval(function() {
+        $(".categories > div:first")
+          .fadeOut(300)
+          .next()
+          .fadeIn(300)
+          .end()
+          .appendTo(".categories");
+      }, 1000);
     </script>
   </body>
 </html>
