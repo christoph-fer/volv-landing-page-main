@@ -12,7 +12,7 @@ html {
 
 @font-face {
   font-family: "Helvetica";
-  src: url("assets/HelveticaNeueLTProMd.otf");
+  src: url("assets/HelveticaNeueLTProLt.otf");
   font-weight: bold;
   font-style: normal;
 }
@@ -229,19 +229,20 @@ html {
 
 .sec3container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "sec3content sec3download";
+  grid-template-columns: 1fr;
+  grid-template-areas: "sec3content" "sec3download";
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  padding: 40px 40px;
+  padding: 120px 20px 200px 40px;
   align-items: center;
+  text-align: center;
 }
 
-.sec3content {
+/* .sec3content {
   margin-left: 50px;
-}
+} */
 
 .sec3content > img {
   margin-top: 0px;
@@ -253,8 +254,8 @@ html {
 
 .read-the-news {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 42px;
-  line-height: 1.2em;
+  font-size: 46px;
+  line-height: 1.5em;
 }
 
 .don-believe-it {
@@ -262,8 +263,9 @@ html {
 }
 
 .first-5000 {
-  font-size: 1.2em;
-  color: rgb(89, 89, 89);
+  font-family: "Helvetica";
+  font-size: 1.7em;
+  color: #808080;
   line-height: 2em;
 }
 
@@ -474,7 +476,7 @@ html {
   display: grid;
   align-content: center;
   grid-area: footer;
-  height: 60px;
+  height: 120px;
   background-color: #f8f8f8;
   color: rgb(89, 89, 89);
   font-family: "Source Sans Pro", sans-serif;
@@ -533,11 +535,7 @@ a:hover {
 
 @media only screen and (max-width: 1100px) {
   .sec2content > p {
-    font-size: 32px;
-  }
-
-  .sec3content > span {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .sec3content {
@@ -557,6 +555,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 840px) {
+  .sec2content > p {
+    font-size: 4vw;
+  }
+
   .volv-window-desktop {
     width: 100%;
   }
@@ -589,7 +591,7 @@ a:hover {
   .sec3container {
     grid-template-columns: 1fr;
     grid-template-areas: "sec3content" "sec3download";
-    padding: 0px;
+    padding: 30px 0px 60px 0px;
   }
 
   .sec3download {
@@ -600,22 +602,18 @@ a:hover {
     background-color: #ffffff;
     width: 100%;
     text-align: center;
-    padding: 30px 0px;
+    /* padding: 50px 0px; */
     margin-left: 0px;
   }
 
   .sec3download {
-    background-color: #f8f8f8;
+    background-color: #fff;
     width: 100%;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
   }
 
   .sec3content > span {
     text-align: center;
-  }
-
-  .downloadnow {
-    justify-content: center;
   }
 }
 
@@ -628,7 +626,7 @@ a:hover {
 
     padding: 50px 0px 100px 0px;
     text-align: -webkit-center;
-    font-size: 34px;
+    /* font-size: 34px; */
     justify-content: center;
   }
 
@@ -669,7 +667,7 @@ a:hover {
   .sec2content > p {
     text-align: center;
     margin-top: 30px;
-    font-size: 32px;
+    font-size: 46px;
   }
 
   .volv-window-desktop {
@@ -679,9 +677,19 @@ a:hover {
   .phones > img {
     margin-top: 0px;
   }
+
+  .downloadnow {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 460px) {
+  .sec2content > p {
+    font-size: 36px;
+  }
+  .sec3content > span {
+    font-size: 36px;
+  }
   .volv-window-desktop {
     display: none;
   }
@@ -691,7 +699,13 @@ a:hover {
     width: 100%;
   }
 
+  .first-5000 {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
   .sec2content > p {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
