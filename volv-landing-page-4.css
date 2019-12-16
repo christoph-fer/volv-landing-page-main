@@ -1,9 +1,20 @@
 body {
   margin: 0px;
+  background: #fefefe;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/HelveticaNeueLTProMd.otf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 :root {
@@ -23,7 +34,7 @@ html {
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9) */
     ),
-    url("assets/volv-slime-4k.png");
+    url("assets/volv-slime-cropped.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -51,6 +62,7 @@ html {
 
 .volv-logo {
   height: 30px;
+  opacity: 0.7;
 }
 
 .download {
@@ -141,7 +153,7 @@ html {
     ),
     url("assets/newspaper\ texture.jpg"); */
   background-size: contain;
-  background: url("assets/newspaper-bg.svg");
+  /* background: url("assets/newspaper-bg.svg"); */
   background-position: center;
 }
 
@@ -161,7 +173,8 @@ html {
   margin-right: auto;
   align-self: center;
   align-content: center;
-  height: 900px;
+  height: 105vh;
+
   padding: 0px 40px;
 }
 
@@ -171,8 +184,8 @@ html {
 }
 
 .phones > img {
-  height: 800px;
-  margin-top: 120px;
+  width: 90%;
+  margin-top: 100px;
 }
 
 .sec2content {
@@ -181,14 +194,34 @@ html {
 }
 
 .sec2content > p {
-  font-family: "DM Serif Display", serif;
-  font-size: 42px;
-  line-height: 2.7em;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 46px;
+  line-height: 1.5em;
+}
+
+.middle {
+  background: #f2f6fc;
+
+  filter: drop-shadow(0px 15px 30px rgba(242, 246, 252, 0.5));
+}
+
+.middle > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  align-items: flex-end;
+  padding: 100px;
+  text-align: center;
+  display: grid;
+  font-family: "Helvetica";
+  font-size: 40px;
 }
 
 .section3 {
   background-size: contain;
-  background: url("assets/newspaper-background.png");
   background-position: center;
 }
 
@@ -200,42 +233,37 @@ html {
   margin-left: auto;
   margin-right: auto;
   align-self: center;
-  align-content: center;
   height: 400px;
   padding: 0px 40px;
+  align-items: center;
 }
 
 .sec3content {
   margin-left: 50px;
 }
 
-.sec3content > span {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-  line-height: 2em;
-  font-weight: 300;
-  letter-spacing: -0.02em;
-}
-
 .sec3content > img {
   margin-top: 0px;
 }
 
+.sec3download {
+  font-family: "Helvetica";
+}
+
 .read-the-news {
-  font-family: "DM Serif Display", serif;
-  font-size: 27px;
-  line-height: 1.5em;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 42px;
+  line-height: 1.2em;
 }
 
 .don-believe-it {
-  font-family: "Source Sans Pro", serif;
   font-size: 1.5em;
 }
 
 .first-5000 {
-  font-family: "Source Sans Pro", serif;
   font-size: 1.2em;
   color: rgb(89, 89, 89);
+  line-height: 2em;
 }
 
 .categories {
@@ -253,7 +281,7 @@ html {
   animation-direction: forward; */
   height: 60px;
   margin-top: -5px;
-  margin-left: -10px;
+  margin-left: -5px;
   /* opacity: 0; */
 
   position: relative;
@@ -265,6 +293,11 @@ html {
   left: 10px;
   right: 10px;
   bottom: 10px;
+}
+
+.categories > div > img {
+  display: grid;
+  height: 3.5rem;
 }
 
 .downloadnow {
@@ -497,87 +530,56 @@ a:hover {
     font-size: 32px;
   }
 
-  .phones > img {
-    height: 640px;
+  .sec3content {
+    margin-left: 20px;
   }
-  .categories > div > img {
+
+  .phones > img {
+    width: 100%;
+  }
+  /* .categories > div > img {
     height: 3rem;
-  }
+  } */
 
-  .categories {
+  /* .categories {
     height: 40px;
-  }
-}
-
-@media only screen and (max-width: 890px) {
-  .sec2content > p {
-    font-size: 26px;
-  }
-
-  .sec3content > span {
-    font-size: 26px;
-  }
-
-  .phones > img {
-    height: 580px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 840px) {
   .volv-window-desktop {
     width: 100%;
   }
-}
 
-@media only screen and (max-width: 700px) {
-  .phones > img {
-    height: 480px;
-    margin-top: 0px;
+  .middle > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    align-items: flex-end;
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    font-family: "Helvetica";
+    font-size: 40px;
   }
-}
 
-@media only screen and (max-width: 600px) {
   .sec2container {
-    grid-template-columns: 1fr;
-    grid-template-areas: "sec2content" "phone";
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+  }
+
+  .phones > img {
+    height: unset;
+    width: 100%;
   }
 
   .sec3container {
     grid-template-columns: 1fr;
     grid-template-areas: "sec3content" "sec3download";
-  }
-
-  .categories > div > img {
-    height: 3rem;
-  }
-
-  .categories {
-    height: 10px;
-  }
-
-  .phones {
-    text-align: center;
-  }
-
-  .sec2content {
-    background-color: #ffffff;
-    width: 100%;
-  }
-
-  .sec2container {
     padding: 0px;
-    padding-bottom: 100px;
-    height: 750px;
-  }
-
-  .sec3container {
-    padding: 0px;
-  }
-
-  .sec2content > p {
-    text-align: center;
-    margin: 10px;
-    font-size: 24px;
   }
 
   .sec3download {
@@ -603,22 +605,65 @@ a:hover {
     text-align: center;
   }
 
+  .downloadnow {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .middle > div {
+    display: grid;
+    grid-template-columns: auto;
+
+    width: 100%;
+
+    padding: 50px 0px 100px 0px;
+
+    font-size: 32px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sec2container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "sec2content" "phone";
+  }
+
+  .categories > div > img {
+    height: 3rem;
+  }
+
+  .categories {
+    height: 10px;
+  }
+
+  .phones {
+    text-align: center;
+  }
+
+  .sec2content {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .sec2container {
+    padding: 0px;
+    height: fit-content;
+  }
+
+  .sec2content > p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+  }
+
   .volv-window-desktop {
     height: unset;
     width: 100%;
   }
-
   .phones > img {
     margin-top: 0px;
-  }
-
-  .dive-in {
-    margin-top: 20px;
-    height: 50px;
-  }
-
-  .downloadnow {
-    justify-content: center;
   }
 }
 
@@ -630,10 +675,5 @@ a:hover {
   .volv-window-mobile {
     display: grid;
     width: 100%;
-  }
-
-  .phones > img {
-    height: 420px;
-    margin-top: 0px;
   }
 }

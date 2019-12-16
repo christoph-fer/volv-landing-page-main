@@ -4,6 +4,7 @@
     <title>Volv - Read Less. Know More.</title>
     <link rel="stylesheet" type="text/css" href="volv-landing-page-4.css" />
     <meta name="viewport" content="width=device-width" />
+
     <link
       rel="icon"
       href="assets/volv-fevicon.png"
@@ -24,6 +25,11 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -32,7 +38,7 @@
         <div class="header">
           <div>
             <div style="align-self: center;">
-              <img class="volv-logo" src="assets/volv-logo.svg" />
+              <img class="volv-logo" src="assets/volv-logo-black.svg" />
             </div>
             <div class="download">
               <input
@@ -55,7 +61,7 @@
           />
 
           <a id="dive-in" href="#section2"
-            ><img class="dive-in" src="assets/lets-dive-in.svg"
+            ><img class="dive-in" src="assets/dive-in.svg"
           /></a>
         </div>
       </div>
@@ -63,7 +69,7 @@
       <div class="section2" id="section2">
         <div class="sec2container">
           <div class="phones">
-            <img src="assets/phone-3.svg" />
+            <img src="assets/phones-4.svg" />
           </div>
           <div class="sec2content">
             <p>
@@ -71,48 +77,76 @@
               In 70-words.<br />
               In real-time.
             </p>
+
+            <!-- style="justify-content: flex-start" -->
+
+            <div class="downloadnow">
+              <div class="android">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                >
+                  <img
+                    alt="Get it on Google Play"
+                    style=" margin-left: -10;"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                /></a>
+              </div>
+              <div class="ios">
+                <a
+                  href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+                >
+                  <img
+                    alt="Download on the App Store"
+                    src="assets/app-store.svg"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- <div class="wide-rectangle"></div> -->
 
+      <div class="middle">
+        <div>
+          <span>Stay updated on&nbsp;</span>
+          <!-- <img class="categories"></img> -->
+          <div class="categories">
+            <div>
+              <img src="assets/sports.svg" />
+            </div>
+            <div>
+              <img src="assets/finance.svg" />
+            </div>
+            <div>
+              <img src="assets/technology.svg" />
+            </div>
+            <div>
+              <img src="assets/entertainment.svg" />
+            </div>
+            <div>
+              <img src="assets/business.svg" />
+            </div>
+            <div>
+              <img src="assets/science.svg" />
+            </div>
+            <div>
+              <img src="assets/fashion.svg" />
+            </div>
+            <div>
+              <img src="assets/politics.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="section3" id="section3">
         <div class="sec3container">
           <div class="sec3content">
-            <span>Stay updated on</span><br />
-            <!-- <img class="categories"></img> -->
-            <div class="categories">
-              <div>
-                <img src="assets/sports.svg" />
-              </div>
-              <div>
-                <img src="assets/finance.svg" />
-              </div>
-              <div>
-                <img src="assets/technology.svg" />
-              </div>
-              <div>
-                <img src="assets/entertainment.svg" />
-              </div>
-              <div>
-                <img src="assets/business.svg" />
-              </div>
-              <div>
-                <img src="assets/science.svg" />
-              </div>
-              <div>
-                <img src="assets/fashion.svg" />
-              </div>
-              <div>
-                <img src="assets/politics.svg" />
-              </div>
-            </div>
-            <br />
-            <span>in the least amount of time.</span>
+            <span class="read-the-news">
+              Read the news <br />like never before.
+            </span>
           </div>
           <div class="sec3download">
-            <span class="read-the-news"> Read the news like never before. </span
-            ><br /><br />
             <span class="don-believe-it">Don't believe it? Check it out</span
             ><br />
             <span class="first-5000">(It’s free for the first 5,000 users)</span
@@ -156,9 +190,7 @@
               >Terms & Conditions</a
             >
           </span>
-        </div>
-        <br />
-        <div>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
           <span>© Copyright Volv 2019</span>
         </div>
       </div>
@@ -187,7 +219,7 @@
 
       setInterval(function() {
         $(".categories > div:first")
-          .fadeOut(1000)
+          .fadeOut(200)
           .next()
           .fadeIn(1000)
           .end()
