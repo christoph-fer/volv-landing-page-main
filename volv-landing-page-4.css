@@ -48,6 +48,7 @@ html {
   position: fixed;
   width: 100%;
   z-index: 100;
+  border-bottom: rgba(0, 0, 0, 0.03) solid 1px;
 }
 
 .header > div {
