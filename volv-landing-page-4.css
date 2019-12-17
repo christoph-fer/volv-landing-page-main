@@ -652,6 +652,10 @@ a:hover {
     height: 7px;
     width: 100%;
   }
+
+  .sec3container {
+    padding: 100px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -687,7 +691,7 @@ a:hover {
   }
 
   .sec3container {
-    padding: 0px 0px 60px 0px;
+    padding: 0px 60px 60px 60px;
   }
 
   .sec2content > p {
@@ -732,6 +736,9 @@ a:hover {
   .read-the-news {
     font-family: "Frank Ruhl Libre", serif;
     line-height: 1.2em;
+  }
+  .sec3container {
+    padding: 0px 30px 60px 30px;
   }
 }
 
