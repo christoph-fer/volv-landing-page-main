@@ -130,7 +130,7 @@ html {
 
 .dive-in {
   margin-top: 70px;
-  height: 60px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -654,6 +654,10 @@ a:hover {
     text-align: center;
   }
 
+  .dive-in {
+    height: 40px;
+  }
+
   .sec2content {
     background-color: #ffffff;
     width: 100%;
@@ -670,7 +674,7 @@ a:hover {
 
   .sec2content > p {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 46px;
   }
 
@@ -689,7 +693,7 @@ a:hover {
 
 @media only screen and (max-width: 460px) {
   .sec2content > p {
-    font-size: 36px;
+    font-size: 30px;
   }
   .sec3content > span {
     font-size: 36px;
@@ -706,10 +710,24 @@ a:hover {
   .first-5000 {
     font-size: 1.4em;
   }
+
+  .read-the-news {
+    font-family: "Frank Ruhl Libre", serif;
+    line-height: 1.2em;
+  }
 }
 
 @media only screen and (max-width: 360px) {
   .sec2content > p {
-    font-size: 30px;
+    font-size: 27px;
+  }
+  .sec3content > span {
+    font-size: 32px;
+  }
+  .dive-in {
+    height: 35px;
+  }
+  .first-5000 {
+    font-size: 1.2em;
   }
 }
