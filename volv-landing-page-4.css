@@ -503,18 +503,30 @@ a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 500px) {
   .header {
     position: absolute;
   }
   .volv-window-mobile {
-    margin-top: 50px;
+    margin-top: 35px;
   }
   .volv-window-desktop {
-    margin-top: 50px;
+    margin-top: 35px;
   }
   .sec1content {
-    height: 600px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .header {
+    position: absolute;
+  }
+  .volv-window-mobile {
+    margin-top: 35px;
+  }
+  .volv-window-desktop {
+    margin-top: 35px;
   }
 }
 
