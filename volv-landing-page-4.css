@@ -12,7 +12,7 @@ html {
 
 @font-face {
   font-family: "Helvetica";
-  src: url("assets/HelveticaNeueLTProLt.otf");
+  src: url("assets/HelveticaNeueLTProTh.otf");
   font-weight: bold;
   font-style: normal;
 }
@@ -475,12 +475,13 @@ html {
 .footer {
   display: grid;
   align-content: center;
+  grid-gap: 1em;
   grid-area: footer;
-  height: 120px;
+  height: 80px;
   background-color: #f8f8f8;
   color: rgb(89, 89, 89);
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   width: 100%;
 }
@@ -557,6 +558,7 @@ a:hover {
 @media only screen and (max-width: 840px) {
   .sec2content > p {
     font-size: 4vw;
+    margin-bottom: 0px;
   }
 
   .volv-window-desktop {
@@ -586,6 +588,10 @@ a:hover {
   .phones > img {
     height: unset;
     width: 100%;
+  }
+
+  .sec2content > .downloadnow {
+    display: none;
   }
 
   .sec3container {
@@ -696,7 +702,7 @@ a:hover {
     font-size: 30px;
   }
   .sec3content > span {
-    font-size: 36px;
+    font-size: 30px;
   }
   .volv-window-desktop {
     display: none;
@@ -708,7 +714,7 @@ a:hover {
   }
 
   .first-5000 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .read-the-news {
@@ -722,12 +728,12 @@ a:hover {
     font-size: 27px;
   }
   .sec3content > span {
-    font-size: 32px;
+    font-size: 27px;
   }
   .dive-in {
     height: 35px;
   }
   .first-5000 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
