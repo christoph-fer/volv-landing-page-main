@@ -251,6 +251,7 @@ html {
 }
 
 .sec3download {
+  margin-top: 10px;
   font-family: -apple-system, "Helvetica Neue", sans-serif;
 }
 
@@ -268,7 +269,7 @@ html {
   font-family: "Helvetica";
   font-size: 1.7em;
   color: #808080;
-  line-height: 2em;
+  line-height: 1.4em;
 }
 
 .categories {
