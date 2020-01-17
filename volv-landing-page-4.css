@@ -193,7 +193,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #9f9f9f;
+  color: #505050;
   line-height: 147.6%;
 }
 
@@ -681,6 +681,21 @@ a:hover {
   .features p {
     margin-left: auto;
     margin-right: auto;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 27px;
+    /* background-color: #ffede3; */
+    line-height: 10px;
+    width: fit-content;
+    font-weight: 600;
+
+    border-bottom: 8px solid #ffede3;
+  }
+
+  .features span {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 147.6%;
   }
 
   .middle > div {
@@ -709,13 +724,14 @@ a:hover {
   .sec1content > p {
     font-family: "Frank Ruhl Libre", serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .sec1content {
     text-align: -webkit-center;
     padding: 0;
   }
+
   .section1 {
     background-image: linear-gradient(
         to right,
@@ -733,7 +749,7 @@ a:hover {
   }
   .sec2container {
     grid-template-columns: 1fr;
-    grid-template-areas: "sec2content" "phone";
+    grid-template-areas: "phone" "sec2content";
   }
 
   .categories > div > img {
@@ -756,7 +772,7 @@ a:hover {
     /* background-color: #ffffff; */
     width: 100%;
     text-align: center;
-    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .sec2container {
