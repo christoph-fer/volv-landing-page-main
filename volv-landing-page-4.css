@@ -41,16 +41,7 @@ html {
 }
 
 .section1about {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-        /* rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9) */
-    ),
-    url("assets/about-us-slime.jpg");
+  background-image: url("assets/about-us-slime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,7 +52,7 @@ html {
   backdrop-filter: blur(10px); */
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0)
   );
   height: 100px;
