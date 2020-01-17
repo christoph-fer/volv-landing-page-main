@@ -164,6 +164,7 @@ html {
     cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   opacity: 0;
   transform: translateY(400px);
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .features {
