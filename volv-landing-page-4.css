@@ -724,12 +724,12 @@ a:hover {
   .sec1content > p {
     font-family: "Frank Ruhl Libre", serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .sec1content {
     text-align: -webkit-center;
-    padding: 120px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
   .section1 {
