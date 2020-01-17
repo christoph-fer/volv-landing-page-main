@@ -40,6 +40,22 @@ html {
   background-position: center;
 }
 
+.section1about {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+        /* rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9) */
+    ),
+    url("assets/about-us-slime.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .header {
   /* -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
@@ -58,7 +74,7 @@ html {
   max-width: 1280px;
   padding: 0px 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   margin-left: auto;
   margin-right: auto;
   height: 60px;
@@ -136,6 +152,7 @@ html {
   grid-template-columns: 1fr;
   align-content: center;
   height: 100vh;
+  padding: 0px 0px 0px 70px;
 }
 
 .sec1content > p {
@@ -160,7 +177,7 @@ html {
   padding: 60px;
 }
 
-.features h1 {
+.features p {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 27px;
   /* background-color: #ffede3; */
@@ -171,7 +188,7 @@ html {
   border-bottom: 8px solid #ffede3;
 }
 
-.features p {
+.features span {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -248,7 +265,7 @@ html {
   margin-right: auto;
   align-self: center;
   align-content: center;
-  height: 105vh;
+  /* height: 105vh; */
 
   padding: 0px 40px;
 }
@@ -429,128 +446,6 @@ html {
   }
 }
 
-@keyframes categories-animation {
-  0% {
-    opacity: 0;
-    content: url(assets/sports.svg);
-  }
-
-  6% {
-    opacity: 1;
-    content: url(assets/sports.svg);
-  }
-
-  12% {
-    opacity: 0;
-    content: url(assets/sports.svg);
-  }
-
-  12.5% {
-    opacity: 0;
-    content: url(assets/finance.svg);
-  }
-
-  18.5% {
-    opacity: 1;
-    content: url(assets/finance.svg);
-  }
-
-  25% {
-    opacity: 0;
-    content: url(assets/finance.svg);
-  }
-
-  26% {
-    opacity: 0;
-    content: url(assets/technology.svg);
-  }
-
-  32% {
-    opacity: 1;
-    content: url(assets/technology.svg);
-  }
-
-  37.5% {
-    opacity: 0;
-    content: url(assets/technology.svg);
-  }
-
-  38.5% {
-    opacity: 0;
-    content: url(assets/entertainment.svg);
-  }
-
-  44.7% {
-    opacity: 1;
-    content: url(assets/entertainment.svg);
-  }
-
-  50% {
-    opacity: 0;
-    content: url(assets/entertainment.svg);
-  }
-
-  51% {
-    opacity: 0;
-    content: url(assets/business.svg);
-  }
-
-  57.25% {
-    opacity: 1;
-    content: url(assets/business.svg);
-  }
-
-  62.5% {
-    opacity: 0;
-    content: url(assets/business.svg);
-  }
-
-  63% {
-    opacity: 0;
-    content: url(assets/science.svg);
-  }
-
-  68.7% {
-    opacity: 1;
-    content: url(assets/science.svg);
-  }
-
-  75% {
-    opacity: 0;
-    content: url(assets/science.svg);
-  }
-
-  75.5% {
-    opacity: 0;
-    content: url(assets/fashion.svg);
-  }
-
-  81.2% {
-    opacity: 1;
-    content: url(assets/fashion.svg);
-  }
-
-  87.5% {
-    opacity: 0;
-    content: url(assets/fashion.svg);
-  }
-
-  88% {
-    opacity: 0;
-    content: url(assets/politics.svg);
-  }
-
-  93.7% {
-    opacity: 1;
-    content: url(assets/politics.svg);
-  }
-
-  100% {
-    opacity: 0;
-    content: url(assets/politics.svg);
-  }
-}
-
 .footer {
   display: grid;
   align-content: center;
@@ -631,6 +526,39 @@ a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
+  .sec1content > p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 48px;
+  }
+  .section1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+          /* rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9) */
+      ),
+      url("assets/no-bs-flipped-landscape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .features p {
+    font-size: 24px;
+    /* background-color: #ffede3; */
+    line-height: 10px;
+
+    border-bottom: 8px solid #ffede3;
+  }
+
+  .features span {
+    font-size: 14px;
+  }
+
   .sec2content > p {
     font-size: 36px;
   }
@@ -653,6 +581,32 @@ a:hover {
 }
 
 @media only screen and (max-width: 840px) {
+  .sec1content > p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 42px;
+  }
+
+  .features p {
+    font-size: 20px;
+    /* background-color: #ffede3; */
+    line-height: 10px;
+
+    border-bottom: 6px solid #ffede3;
+  }
+
+  .features span {
+    font-size: 13px;
+  }
+
+  .read-the-news {
+    font-size: 36px;
+  }
+
+  .first-5000 {
+    font-size: 20px;
+  }
+
   .sec2content > p {
     font-size: 4vw;
     margin-bottom: 0px;
@@ -687,10 +641,6 @@ a:hover {
     width: 100%;
   }
 
-  .sec2content > .downloadnow {
-    display: none;
-  }
-
   .sec3container {
     grid-template-columns: 1fr;
     grid-template-areas: "sec3content" "sec3download";
@@ -721,6 +671,17 @@ a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+  .features {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .features p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .middle > div {
     display: grid;
     grid-template-columns: auto;
@@ -744,6 +705,31 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .sec1content > p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    font-size: 36px;
+  }
+
+  .sec1content {
+    text-align: -webkit-center;
+    padding: 0;
+  }
+  .section1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+          /* rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9) */
+      ),
+      url("assets/no-bs-flipped-landscape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   .sec2container {
     grid-template-columns: 1fr;
     grid-template-areas: "sec2content" "phone";
@@ -766,8 +752,10 @@ a:hover {
   }
 
   .sec2content {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 100%;
+    text-align: center;
+    padding-top: 50px;
   }
 
   .sec2container {
