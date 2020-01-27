@@ -25,12 +25,13 @@ html {
 }
 
 .section1 {
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0)
-      /* rgba(255, 255, 255, 0.9),
+        /* rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9) */
     ),
@@ -51,11 +52,11 @@ html {
   border-bottom: rgba(0, 0, 0, 0.05) solid 1px;
 }
 
-.header>div {
+.header > div {
   max-width: 1280px;
   padding: 0px 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   margin-left: auto;
   margin-right: auto;
   height: 60px;
@@ -71,20 +72,21 @@ html {
   align-self: center;
 }
 
-.download>span {
+.download > span {
   font-family: "Frank Ruhl Libre";
   opacity: 0.7;
 }
 
-.download>a>img {
+.download a img {
   height: 17px;
+  max-width: 15px;
   vertical-align: middle;
-  padding-left: 7px;
-  padding-right: 17px;
+  padding-left: 0px;
+  padding-right: 20px;
 }
 
 .volv-button {
-  background-color: var(--volv-orange);
+  background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
   border: none;
   outline: none;
   padding: 10px 20px;
@@ -105,7 +107,7 @@ html {
 }
 
 .volv-button:hover {
-  background-color: var(--volv-orange-hover);
+  box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
 }
 
 .sec1content {
@@ -123,7 +125,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 120px;
@@ -133,7 +136,8 @@ html {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 100px;
@@ -145,7 +149,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  animation: dive-in-animation 2s cubic-bezier(0.5, 0, 0, 0.99) 2s infinite forwards;
+  animation: dive-in-animation 2s cubic-bezier(0.5, 0, 0, 0.99) 2s infinite
+    forwards;
   transform: translateY(-5px);
   opacity: 0;
 }
@@ -176,14 +181,14 @@ html {
 
 .sec2container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 5fr;
   grid-template-areas: "phone sec2content";
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
   align-content: center;
-  height: 105vh;
+  height: 100vh;
 
   padding: 0px 40px;
 }
@@ -193,7 +198,7 @@ html {
   align-self: center;
 }
 
-.phones>img {
+.phones > img {
   width: 90%;
   margin-top: 100px;
 }
@@ -203,7 +208,7 @@ html {
   align-self: center;
 }
 
-.sec2content>p {
+.sec2content > p {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 46px;
   line-height: 1.5em;
@@ -215,7 +220,7 @@ html {
   filter: drop-shadow(0px 15px 30px rgba(242, 246, 252, 0.5));
 }
 
-.middle>div {
+.middle > div {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: flex-start;
@@ -240,7 +245,7 @@ html {
 .sec3container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "sec3content""sec3download";
+  grid-template-areas: "sec3content" "sec3download";
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -254,7 +259,7 @@ html {
   margin-left: 50px;
 } */
 
-.sec3content>img {
+.sec3content > img {
   margin-top: 0px;
 }
 
@@ -304,7 +309,7 @@ html {
   position: relative;
 }
 
-.categories>div {
+.categories > div {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -312,7 +317,7 @@ html {
   bottom: 10px;
 }
 
-.categories>div>img {
+.categories > div > img {
   display: grid;
   height: 3.5rem;
 }
@@ -323,11 +328,11 @@ html {
   justify-content: flex-start;
 }
 
-.downloadnow>div {
+.downloadnow > div {
   align-self: center;
 }
 
-.android>a>img {
+.android > a > img {
   height: 60;
 }
 
@@ -500,7 +505,7 @@ html {
   width: 100%;
 }
 
-.footer>div {
+.footer > div {
   margin-left: auto;
   margin-right: auto;
   /* width: 250px; */
@@ -566,7 +571,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-  .sec2content>p {
+  .sec2content > p {
     font-size: 36px;
   }
 
@@ -574,9 +579,9 @@ a:hover {
     margin-left: 20px;
   }
 
-  .phones>img {
+  /* .phones > img {
     width: 100%;
-  }
+  } */
 
   /* .categories > div > img {
     height: 3rem;
@@ -588,16 +593,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 840px) {
-  .sec2content>p {
-    font-size: 4vw;
-    margin-bottom: 0px;
+  .sec2content > p {
+    font-size: 46px;
   }
 
   .volv-window-desktop {
     width: 100%;
   }
 
-  .middle>div {
+  .middle > div {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: flex-start;
@@ -613,22 +617,25 @@ a:hover {
   }
 
   .sec2container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sec2content" "phone";
     padding: 0px;
+    text-align: center;
   }
 
-  .phones>img {
+  .phones > img {
     height: unset;
-    width: 100%;
+    margin-top: 0px;
+    width: 400px;
   }
 
-  .sec2content>.downloadnow {
+  .sec2content > .downloadnow {
     display: none;
   }
 
   .sec3container {
     grid-template-columns: 1fr;
-    grid-template-areas: "sec3content""sec3download";
+    grid-template-areas: "sec3content" "sec3download";
     padding: 30px 0px 60px 0px;
   }
 
@@ -650,13 +657,13 @@ a:hover {
     /* padding: 50px 0px; */
   }
 
-  .sec3content>span {
+  .sec3content > span {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .middle>div {
+  .middle > div {
     display: grid;
     grid-template-columns: auto;
 
@@ -681,10 +688,10 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .sec2container {
     grid-template-columns: 1fr;
-    grid-template-areas: "sec2content""phone";
+    grid-template-areas: "sec2content" "phone";
   }
 
-  .categories>div>img {
+  .categories > div > img {
     height: 3rem;
   }
 
@@ -714,10 +721,10 @@ a:hover {
     padding: 0px 60px 60px 60px;
   }
 
-  .sec2content>p {
+  .sec2content > p {
     text-align: center;
     margin-top: 50px;
-    font-size: 46px;
+    font-size: 36px;
   }
 
   .volv-window-desktop {
@@ -725,8 +732,9 @@ a:hover {
     width: 100%;
   }
 
-  .phones>img {
+  .phones > img {
     margin-top: 0px;
+    width: 80%;
   }
 
   .downloadnow {
@@ -735,11 +743,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 460px) {
-  .sec2content>p {
+  .sec2content > p {
     font-size: 30px;
   }
 
-  .sec3content>span {
+  .sec3content > span {
     font-size: 30px;
   }
 
@@ -767,11 +775,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 360px) {
-  .sec2content>p {
+  .sec2content > p {
     font-size: 27px;
   }
 
-  .sec3content>span {
+  .sec3content > span {
     font-size: 27px;
   }
 
