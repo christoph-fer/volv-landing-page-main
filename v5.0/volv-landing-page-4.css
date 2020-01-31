@@ -303,6 +303,31 @@ html {
   background-position: center;
 }
 
+.section5 {
+
+  height: 60vh;
+  text-align: center;
+}
+
+.sec5container {
+  display: grid;
+  margin-top: 30vh;
+}
+
+.section5 .title-text {
+  font-family: Frank Ruhl Libre Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 0;
+  /* or 73px */
+
+  letter-spacing: -0.3px;
+  margin-top: 15px;
+  color: #000000;
+
+}
+
 .volv-window-desktop {
   display: grid;
   margin-left: auto;
@@ -340,7 +365,7 @@ html {
 .downloadnow {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .downloadnow>div {
