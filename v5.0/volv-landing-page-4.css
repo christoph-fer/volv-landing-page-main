@@ -190,7 +190,7 @@ html {
 }
 
 .title-text {
-  font-family: Frank Ruhl Libre Medium;
+  font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 54px;
@@ -203,7 +203,7 @@ html {
 }
 
 .subtitle-text {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 36px;
@@ -216,7 +216,7 @@ html {
 }
 
 .caption-text {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -237,7 +237,7 @@ html {
 }
 
 .section3 > .title-text {
-  font-family: Frank Ruhl Libre Medium;
+  font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 54px;
@@ -305,7 +305,7 @@ html {
 }
 
 .sec4container .title-text {
-  font-family: Frank Ruhl Libre Medium;
+  font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 54px;
@@ -335,7 +335,7 @@ html {
 }
 
 .section5 .title-text {
-  font-family: Frank Ruhl Libre Medium;
+  font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 54px;
