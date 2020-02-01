@@ -13,6 +13,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap" rel="stylesheet" />
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -52,7 +53,11 @@
     </div>
 
     <div class="section2">
-      <div class="sec2container">
+      <div class="sec2container" 
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
         <div>
 
           <h2 class="title-text">
@@ -69,7 +74,10 @@
 
         </div>
 
-        <div class="sec1-3dphone">
+        <div class="sec1-3dphone" data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
 
 
 
@@ -77,13 +85,19 @@
       </div>
     </div>
 
-    <div class="section3">
+    <div class="section3" data-aos="fade-up" 
+    data-aos-duration="1000"
+    data-aos-delay="500"
+  data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
       <span class="caption-text">What is Volv?</span>
       <h2 class="title-text">
         We're reimagining the news.
       </h2>
       <div class="features">
-        <div>
+        <div data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-delay="1000"
+      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
           <p>Unbiased News</p>
           <span>
             It’s essential that we consume news that is fair and accurate. With
@@ -91,7 +105,10 @@
           </span>
         </div>
 
-        <div>
+        <div data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-delay="1100"
+      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
           <p>9 second articles</p>
           <span>
             Understand quickly and retain more thanks to short 9-second articles
@@ -99,7 +116,10 @@
           </span>
         </div>
 
-        <div>
+        <div data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-delay="1200"
+      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
           <p>Expert Curation</p>
           <span>
             Our AI helps our writers filter important facts from over 50+
@@ -112,7 +132,10 @@
 
 
     <div class="section4">
-      <div class="sec4container">
+      <div class="sec4container" data-aos="fade-up" 
+      data-aos-duration="1000"
+      data-aos-delay="500"
+    data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
         <div style="align-self: center;">
 
           <span class="caption-text">Why Volv?</span>
@@ -130,7 +153,10 @@
 
         </div>
 
-        <div class="sec4-gif">
+        <div class="sec4-gif" data-aos="fade-up" 
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
 
 
 
@@ -227,6 +253,11 @@
     // alert(getOS());
     // getOS()
   </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
