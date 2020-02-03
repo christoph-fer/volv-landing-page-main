@@ -1,39 +1,56 @@
 <html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Volv - Reimagining the news</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="volv-landing-page.css" />
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <title>Volv - Reimagining the news</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="volv-landing-page.css" />
+    <meta name="viewport" content="width=device-width" />
 
-  <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="assets/volv-fevicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" href="assets/volv-fevicon.png" type="image/png" sizes="16x16" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  <body>
+    <div class="wrapper">
+      <div class="section1">
+        <div class="header">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img class="volv-logo" src="assets/white volv svg.svg"
+              /></a>
+            </div>
+            <div class="download">
+              <a href="about.html"><span>ABOUT US</span></a>
+              <a href="https://twitter.com/volv_media"
+                ><img src="assets/twitter-white.png"
+              /></a>
+              <!-- <span>Follow us:</span> -->
 
-<body>
-  <div class="wrapper">
-    <div class="section1">
-      <div class="header">
-        <div>
-          <div style="align-self: center;">
-            <a href="index.html"><img class="volv-logo" src="assets/white volv svg.svg" /></a> </div>
-          <div class="download">
-            <a href="about.html"><span>ABOUT US</span></a>
-            <a href="https://twitter.com/volv_media"><img src="assets/twitter-white.png" /></a>
-            <!-- <span>Follow us:</span> -->
-
-            <a href="https://www.instagram.com/volvmedia/"><img src="assets/instagram-white.png" /></a>
+              <a href="https://www.instagram.com/volvmedia/"
+                ><img src="assets/instagram-white.png"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="sec1content">
-        <!-- <img
+        <div class="sec1content">
+          <!-- <img
             class="volv-window-desktop"
             src="assets/volv-welcome-window-desktop.svg"
           />
@@ -46,221 +63,249 @@
             ><img class="dive-in" src="assets/dive-in.svg"
           /></a> -->
 
-        <p>Read unbiased news<br />stories in 9 seconds.</p>
+          <p>Here's a small dose<br />of big updates.</p>
 
-        <input class="volv-button" type="button" onclick="getOS()" value="DOWNLOAD NOW - IT'S FREE" />
+          <input
+            class="volv-button"
+            type="button"
+            onclick="getOS()"
+            value="DOWNLOAD NOW - IT'S FREE"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="section2">
-      <div class="sec2container" 
-            data-aos="fade-up" 
+      <div class="section2">
+        <div
+          class="sec2container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+        >
+          <div>
+            <h2 class="title-text">
+              Small dose of<br />
+              big updates.
+            </h2>
+
+            <p class="subtitle-text">
+              With the help of Volv, you can<br />now read 6 news articles in<br />under
+              a minute.
+            </p>
+
+            <input
+              class="volv-button"
+              type="button"
+              onclick="getOS()"
+              value="DOWNLOAD NOW - IT'S FREE"
+            />
+          </div>
+
+          <div
+            class="sec1-3dphone"
+            data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500"
-          data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-        <div>
-
-          <h2 class="title-text">
-            Small dose of<br>
-            big updates.
-          </h2>
-
-          <p class="subtitle-text">
-            With the help of Volv, you can<br>now read 6 news articles in<br>under a minute.
-          </p>
-
-          <input class="volv-button" type="button" onclick="getOS()" value="DOWNLOAD NOW - IT'S FREE" />
-
-
+            data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+          ></div>
         </div>
+      </div>
 
-        <div class="sec1-3dphone" data-aos="fade-up" 
+      <div
+        class="section3"
+        data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="500"
-      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="section3" data-aos="fade-up" 
-    data-aos-duration="1000"
-    data-aos-delay="500"
-  data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-      <span class="caption-text">What is Volv?</span>
-      <h2 class="title-text">
-        We're reimagining the news.
-      </h2>
-      <div class="features">
-        <div data-aos="fade-up" 
-        data-aos-duration="1000"
-        data-aos-delay="1000"
-      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-          <p>Unbiased News</p>
-          <span>
-            It’s essential that we consume news that is fair and accurate. With
-            the help of AI, we present you with just facts, no opinions.
-          </span>
-        </div>
-
-        <div data-aos="fade-up" 
-        data-aos-duration="1000"
-        data-aos-delay="1100"
-      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-          <p>9 second articles</p>
-          <span>
-            Understand quickly and retain more thanks to short 9-second articles
-            that explain complex matters in simple language.
-          </span>
-        </div>
-
-        <div data-aos="fade-up" 
-        data-aos-duration="1000"
-        data-aos-delay="1200"
-      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-          <p>Expert Curation</p>
-          <span>
-            Our AI helps our writers filter important facts from over 50+
-            publications so you can sharpen your conversation skills.
-          </span>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="section4">
-      <div class="sec4container" data-aos="fade-up" 
-      data-aos-duration="1000"
-      data-aos-delay="500"
-    data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-        <div style="align-self: center;">
-
-          <span class="caption-text">Why Volv?</span>
-
-          <h2 class="title-text">
-            Read the news<br>
-            like never before.
-          </h2>
-
-          <p class="subtitle-text">
-            It’s easier than ever,<br>
-            just like swiping on Tinder.
-          </p>
-
-
-        </div>
-
-        <div class="sec4-gif" data-aos="fade-up" 
-        data-aos-duration="1000"
-        data-aos-delay="500"
-      data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
-
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="section5">
-      <div class="sec5container" data-aos="fade-up" 
-      data-aos-duration="1000"
-      data-aos-delay="500"
-    data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)">
+        data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+      >
+        <span class="caption-text">What is Volv?</span>
         <h2 class="title-text">
-          And, it's free!
+          We're reimagining the news.
         </h2>
-
-        <p class="subtitle-text">
-          Check it out,<br>
-          without the checkout.
-        </p>
-
-        <div class="downloadnow">
-          <div class="android">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-              <img alt="Get it on Google Play" style=" margin-left: -10;"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" /></a>
+        <div class="features">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+          >
+            <p>Unbiased News</p>
+            <span>
+              It’s essential that we consume news that is fair and accurate.
+              With the help of AI, we present you with just facts, no opinions.
+            </span>
           </div>
-          <div class="ios">
-            <a href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1">
-              <img alt="Download on the App Store" src="assets/app-store.svg" /></a>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+            data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+          >
+            <p>9 second articles</p>
+            <span>
+              Understand quickly and retain more thanks to short 9-second
+              articles that explain complex matters in simple language.
+            </span>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+            data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+          >
+            <p>Expert Curation</p>
+            <span>
+              Our AI helps our writers filter important facts from over 50+
+              publications so you can sharpen your conversation skills.
+            </span>
           </div>
         </div>
       </div>
 
-    </div>
+      <div class="section4">
+        <div
+          class="sec4container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+        >
+          <div style="align-self: center;">
+            <span class="caption-text">Why Volv?</span>
 
-    <div class="footer">
-      <div>
-        <span><a href="https://volvmedia.com/PrivacyPolicy">Privacy Policy
-          </a></span>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <span><a href="https://volvmedia.com/TermsAndConditions">Terms & Conditions</a>
-        </span>
-        <!-- &nbsp;&nbsp;|&nbsp;&nbsp;
+            <h2 class="title-text">
+              Read the news<br />
+              like never before.
+            </h2>
+
+            <p class="subtitle-text">
+              It’s easier than ever,<br />
+              just like swiping on Tinder.
+            </p>
+          </div>
+
+          <div
+            class="sec4-gif"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="section5">
+        <div
+          class="sec5container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-easing="cubic-bezier(0.19, 1, 0.22, 1)"
+        >
+          <h2 class="title-text">
+            And, it's free!
+          </h2>
+
+          <p class="subtitle-text">
+            Check it out,<br />
+            without the checkout.
+          </p>
+
+          <div class="downloadnow">
+            <div class="android">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              >
+                <img
+                  alt="Get it on Google Play"
+                  style=" margin-left: -10;"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              /></a>
+            </div>
+            <div class="ios">
+              <a
+                href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+              >
+                <img alt="Download on the App Store" src="assets/app-store.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <span
+            ><a href="https://volvmedia.com/PrivacyPolicy"
+              >Privacy Policy
+            </a></span
+          >
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span
+            ><a href="https://volvmedia.com/TermsAndConditions"
+              >Terms & Conditions</a
+            >
+          </span>
+          <!-- &nbsp;&nbsp;|&nbsp;&nbsp;
           <span>© Copyright Volv 2019</span> -->
-      </div>
-      <div>
-        <span>© Copyright Volv 2020</span>
+        </div>
+        <div>
+          <span>© Copyright Volv 2020</span>
+        </div>
       </div>
     </div>
-  </div>
 
+    <script>
+      $(".categories > div:gt(0)").hide();
 
-  <script>
-    $(".categories > div:gt(0)").hide();
+      setInterval(function() {
+        $(".categories > div:first")
+          .fadeOut(200)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo(".categories");
+      }, 1000);
 
-    setInterval(function () {
-      $(".categories > div:first")
-        .fadeOut(200)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo(".categories");
-    }, 1000);
-
-    function getOS() {
-      var userAgent = window.navigator.userAgent,
-        platform = window.navigator.platform,
-        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = null;
-      if (macosPlatforms.indexOf(platform) !== -1) {
-        os = "Mac OS";
-        window.location.href = "#section3";
-        // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
-      } else if (iosPlatforms.indexOf(platform) !== -1) {
-        os = "iOS";
-        window.location.href =
-          "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
-      } else if (windowsPlatforms.indexOf(platform) !== -1) {
-        os = "Windows";
-        // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
-        window.location.href = "#section2";
-      } else if (/Android/.test(userAgent)) {
-        os = "Android";
-        window.location.href =
-          "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
-      } else if (!os && /Linux/.test(platform)) {
-        os = "Linux";
-        window.location.href = "#section2";
-        // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+      function getOS() {
+        var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+          windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+          iosPlatforms = ["iPhone", "iPad", "iPod"],
+          os = null;
+        if (macosPlatforms.indexOf(platform) !== -1) {
+          os = "Mac OS";
+          window.location.href = "#section3";
+          // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
+        } else if (iosPlatforms.indexOf(platform) !== -1) {
+          os = "iOS";
+          window.location.href =
+            "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
+        } else if (windowsPlatforms.indexOf(platform) !== -1) {
+          os = "Windows";
+          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+          window.location.href = "#section2";
+        } else if (/Android/.test(userAgent)) {
+          os = "Android";
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+        } else if (!os && /Linux/.test(platform)) {
+          os = "Linux";
+          window.location.href = "#section2";
+          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+        }
+        return os;
       }
-      return os;
-    }
-    // alert(getOS());
-    // getOS()
-  </script>
+      // alert(getOS());
+      // getOS()
+    </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-</body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
