@@ -46,6 +46,13 @@
               <a href="https://www.instagram.com/volvmedia/"
                 ><img src="assets/instagram-white.png"
               /></a>
+
+              <!-- <input
+                class="volv-button-small"
+                type="button"
+                onclick="getOS()"
+                value="DOWNLOAD NOW - IT'S FREE"
+              /> -->
             </div>
           </div>
         </div>
@@ -84,21 +91,22 @@
         >
           <div>
             <h2 class="title-text">
-              Small dose of<br />
-              big updates.
+              Read unbiased news stories<br />
+              in 9 seconds. <br /><br />
+              No bias. No BS.
             </h2>
 
-            <p class="subtitle-text">
+            <!-- <p class="subtitle-text">
               With the help of Volv, you can<br />now read 6 news articles in<br />under
               a minute.
-            </p>
+            </p> -->
 
-            <input
+            <!-- <input
               class="volv-button"
               type="button"
               onclick="getOS()"
               value="DOWNLOAD NOW - IT'S FREE"
-            />
+            /> -->
           </div>
 
           <div
@@ -196,7 +204,7 @@
         </div>
       </div>
 
-      <div class="section5">
+      <div class="section5" id="download-now-desktop">
         <div
           class="sec5container"
           data-aos="fade-up"
@@ -278,7 +286,7 @@
           os = null;
         if (macosPlatforms.indexOf(platform) !== -1) {
           os = "Mac OS";
-          window.location.href = "#section3";
+          window.location.href = "#download-now-desktop";
           // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
         } else if (iosPlatforms.indexOf(platform) !== -1) {
           os = "iOS";
@@ -287,14 +295,14 @@
         } else if (windowsPlatforms.indexOf(platform) !== -1) {
           os = "Windows";
           // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
-          window.location.href = "#section2";
+          window.location.href = "#download-now-desktop";
         } else if (/Android/.test(userAgent)) {
           os = "Android";
           window.location.href =
             "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
         } else if (!os && /Linux/.test(platform)) {
           os = "Linux";
-          window.location.href = "#section2";
+          window.location.href = "#download-now-desktop";
           // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
         }
         return os;
