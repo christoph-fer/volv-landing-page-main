@@ -817,7 +817,7 @@ a:hover {
 
   .sec2container {
     padding: 20px;
-    grid-template-rows: auto 300px;
+    grid-template-rows: auto 350px;
   }
 
   .features {
