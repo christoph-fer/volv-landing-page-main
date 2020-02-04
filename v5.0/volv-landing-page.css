@@ -214,22 +214,28 @@ html {
 .sec2container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1280px;
-  height: 650px;
-  /* background: #f9f9f9; */
+  max-width: 1100px;
+  height: 700px;
+  background: #f9f9f9;
   margin-top: 80px;
   margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 80px; */
-  /* transform: translateY(50px);
-  opacity: 0;
-  transition: transform opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) linear; */
+  padding: 80px;
+  grid-gap: 20px;
 }
 
 .sec2container .title-text {
-  font-size: 54px;
-  line-height: 5.4rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 136.1%;
+  /* or 73px */
+
+  letter-spacing: -0.3px;
+  margin-top: 15px;
+  color: #000000;
 }
 
 .title-text {
@@ -269,7 +275,7 @@ html {
 }
 
 .sec1-3dphone {
-  background-image: url(assets/3d-phone-2.jpg);
+  background-image: url(assets/3d-phone.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -585,7 +591,7 @@ a:hover {
 
   .subtitle-text {
     font-size: 26px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .sec4container {
@@ -706,6 +712,14 @@ a:hover {
   .sec1content .volv-button {
     top: 380px;
   }
+
+  .sec2container {
+    grid-gap: unset;
+  }
+
+  .sec4container {
+    grid-gap: unset;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -738,7 +752,7 @@ a:hover {
 
   .subtitle-text {
     font-size: 26px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .features {
@@ -782,7 +796,7 @@ a:hover {
 
   .sec2container {
     margin: unset;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
   }
 
   .sec4container {
@@ -791,6 +805,11 @@ a:hover {
 
   .section3 > .title-text {
     line-height: unset;
+  }
+
+  .caption-text {
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .volv-window-desktop {
