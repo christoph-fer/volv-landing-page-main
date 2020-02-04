@@ -317,7 +317,7 @@ html {
     rgba(130, 148, 203, 0.1) 130.7%
   );
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
-  padding: 40px;
+  padding: 60px 40px 60px 40px;
 }
 
 .features p {
@@ -331,12 +331,12 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .features span {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 300;
   color: #505050;
   line-height: 147.6%;
@@ -682,13 +682,13 @@ a:hover {
   }
 
   .features p {
-    font-size: 26px;
+    font-size: 32px;
     /* background-color: #ffede3; */
     line-height: 10px;
   }
 
   .features span {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .sec4container {
@@ -779,7 +779,7 @@ a:hover {
 
   .features span {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 147.6%;
   }
@@ -847,7 +847,7 @@ a:hover {
   }
 
   .features {
-    padding: 0px;
+    padding: 20px 0px 20px 0px;
   }
 
   .sec4container {
