@@ -214,14 +214,14 @@ html {
 .sec2container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1100px;
+  max-width: 1280px;
   height: 700px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   margin-top: 80px;
   margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px;
+  /* padding: 80px; */
   grid-gap: 20px;
 }
 
@@ -275,7 +275,7 @@ html {
 }
 
 .sec1-3dphone {
-  background-image: url(assets/3d-phone.jpg);
+  background-image: url(assets/3d-phone-2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -301,12 +301,12 @@ html {
 .features {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  grid-gap: 60px;
-  padding: 60px;
+  grid-gap: 40px;
+  padding: 80px;
   text-align: center;
 }
 
@@ -324,7 +324,7 @@ html {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 27px;
   /* background-color: #ffede3; */
-  line-height: 10px;
+  line-height: 32px;
   width: fit-content;
   font-weight: 500;
   text-align: center;
@@ -603,7 +603,12 @@ a:hover {
 
   .sec2container .title-text {
     font-size: 46px;
-    line-height: 4.6rem;
+    line-height: 136.1%;
+  }
+
+  .features {
+    grid-template-columns: 1fr 1fr;
+    /* padding: unset; */
   }
 }
 
@@ -628,13 +633,13 @@ a:hover {
 
   .sec2container .title-text {
     font-size: 42px;
-    line-height: 4.2rem;
+    line-height: 136.1%;
   }
 
   .features p {
     font-size: 24px;
     /* background-color: #ffede3; */
-    line-height: 10px;
+    line-height: 27px;
   }
 
   .features span {
@@ -663,12 +668,6 @@ a:hover {
     margin: 80px;
   }
 
-  .features {
-    grid-template-columns: 1fr;
-    max-width: 450px;
-    text-align: center;
-  }
-
   .sec1-3dphone {
     background-position: center;
   }
@@ -684,7 +683,7 @@ a:hover {
   .features p {
     font-size: 32px;
     /* background-color: #ffede3; */
-    line-height: 10px;
+    line-height: 36px;
   }
 
   .features span {
@@ -721,6 +720,13 @@ a:hover {
 
   .sec4container {
     grid-gap: unset;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    text-align: center;
+    padding: 30px;
   }
 }
 
@@ -769,7 +775,7 @@ a:hover {
     font-family: "Frank Ruhl Libre", serif;
     font-size: 27px;
     /* background-color: #ffede3; */
-    line-height: 10px;
+    line-height: 32px;
     width: fit-content;
   }
 
@@ -839,7 +845,7 @@ a:hover {
 
   .sec2container .title-text {
     font-size: 32px;
-    line-height: 3.2rem;
+    line-height: 136.1%;
   }
 
   .sec2container {
