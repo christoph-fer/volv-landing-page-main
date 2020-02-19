@@ -898,15 +898,9 @@ a:hover {
   .download > a > span {
     padding-right: 5px;
   }
-}
-
-@media only screen and (max-width: 360px) {
   .sec1content p {
     font-size: 32px;
     margin-top: 18vh;
-  }
-  .features div {
-    padding: 20px;
   }
   .sec1content .volv-button {
     font-size: 14px;
@@ -916,8 +910,19 @@ a:hover {
     font-size: 27px;
   }
   .title-text {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .features div {
+    padding: 20px;
+  }
+
+  .title-text {
     font-size: 30px;
   }
+
   .features p {
     font-size: 22px;
   }
