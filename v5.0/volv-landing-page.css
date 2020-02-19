@@ -195,13 +195,13 @@ html {
   opacity: 0;
   transform: translateY(400px);
   position: absolute;
-  top: 440px;
+  top: 400px;
 }
 
 .sec1content > p {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 400;
-  font-size: 77px;
+  font-size: 66px;
   color: white;
   animation: volv-window-desktop-animation 1s
     cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -562,8 +562,12 @@ a:hover {
   }
 
   .sec1content > p {
-    font-size: 64px;
+    font-size: 54px;
     top: 150px;
+  }
+
+  .sec1content .volv-button {
+    top: 380px;
   }
 
   .sec2container {
