@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background: #fefefe;
+  background: #ffffff;
   letter-spacing: -0.3px;
 }
 
@@ -317,7 +317,7 @@ html {
     rgba(130, 148, 203, 0.1) 130.7%
   );
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
-  padding: 60px 40px 60px 40px;
+  padding: 40px 30px 60px 30px;
 }
 
 .features p {
@@ -557,6 +557,18 @@ a:hover {
 }
 
 @media only screen and (max-width: 1400px) {
+  .title-text {
+    font-size: 48px;
+  }
+
+  .features {
+    grid-gap: 30px;
+  }
+
+  .sec2container .title-text {
+    margin-top: 20px;
+  }
+
   .sec1content {
     padding: 0px 60px 0px 60px;
   }
@@ -677,7 +689,7 @@ a:hover {
   }
 
   .title-text {
-    font-size: 54px;
+    font-size: 48px;
   }
 
   .subtitle-text {
@@ -875,8 +887,44 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  .sec1content p {
+    margin-top: 20vh;
+  }
+  .download > a > img {
+    padding-right: 10px;
+  }
+
+  .download > a > span {
+    padding-right: 5px;
+  }
+}
+
 @media only screen and (max-width: 360px) {
+  .sec1content p {
+    font-size: 32px;
+    margin-top: 18vh;
+  }
   .features div {
     padding: 20px;
+  }
+  .sec1content .volv-button {
+    font-size: 14px;
+    padding: 13px 27px;
+  }
+  .sec2container .title-text {
+    font-size: 27px;
+  }
+  .title-text {
+    font-size: 30px;
+  }
+  .features p {
+    font-size: 22px;
+  }
+  .features span {
+    font-size: 16px;
+  }
+  .features div {
+    padding: 30px;
   }
 }
