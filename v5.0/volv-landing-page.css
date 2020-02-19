@@ -26,7 +26,7 @@ html {
 }
 
 .section1 {
-  background-image: url(assets/9-second-billboard-3.jpg);
+  background-image: url(assets/9-second-billboard-3-small.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -748,7 +748,7 @@ a:hover {
 
 @media only screen and (max-width: 740px) {
   .section1 {
-    background-image: url(assets/9-second-billboard-3-mobile.jpg);
+    background-image: url(assets/9-second-billboard-3-mobile-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
