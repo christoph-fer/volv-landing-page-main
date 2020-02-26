@@ -63,13 +63,15 @@ html {
 }
 
 .header > div {
-  max-width: 1280px;
+  max-width: 1600px;
   padding: 0px 15px;
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin-left: auto;
   margin-right: auto;
   height: 60px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 
 .volv-logo {
@@ -162,13 +164,15 @@ html {
 }
 
 .sec1content {
-  max-width: 1280px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
   height: 100vh;
+  /* padding-left: 100px;
+  padding-right: 100px; */
 }
 
 .sec1content .volv-button {
@@ -195,20 +199,20 @@ html {
   opacity: 0;
   transform: translateY(400px);
   position: absolute;
-  top: 400px;
+  top: 500px;
 }
 
 .sec1content > p {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 400;
-  font-size: 66px;
+  font-size: 62px;
   color: white;
   animation: volv-window-desktop-animation 1s
     cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   opacity: 0;
   transform: translateY(400px);
   position: absolute;
-  top: 120px;
+  top: 150px;
 }
 
 .sec2container {

@@ -1,0 +1,23 @@
+{
+  "name": "volv-landing-page-main",
+  "version": "1.0.0",
+  "description": "<h3>Contains all in-house versions of Volv landing page till date.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christoph-fer/volv-landing-page-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christoph-fer/volv-landing-page-4/issues"
+  },
+  "homepage": "https://github.com/christoph-fer/volv-landing-page-4#readme",
+  "dependencies": {
+    "sal.js": "^0.7.3"
+  }
+}
