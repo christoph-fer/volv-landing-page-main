@@ -833,6 +833,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 680px) {
+  .header>div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .sec1content p {
     font-size: 36px;
     margin-top: 25vh;
@@ -872,6 +877,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 470px) {
+
+  .sec1content p {
+    margin-top: 15vh;
+  }
+
   .section1 {
     height: 93vh;
   }
