@@ -33,13 +33,15 @@ html {
 }
 
 .section1about {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)),
+      rgba(0, 0, 0, 0)
+    ),
     url("assets/about-us-slime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +62,7 @@ html {
   z-index: 100;
 }
 
-.header>div {
+.header > div {
   max-width: 1600px;
   padding: 0px 15px;
   display: grid;
@@ -81,23 +83,23 @@ html {
   align-self: center;
 }
 
-.download>a>span {
+.download > a > span {
   font-family: "Roboto", sans-serif;
   /* font-family: "Frank Ruhl Libre", serif; */
   opacity: 0.7;
   color: #fff;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   margin-right: 15px;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
   font-weight: 500;
 }
 
-.download>a:hover {
+.download > a:hover {
   text-decoration-color: #fff;
 }
 
-.download>a>img {
+.download > a > img {
   max-height: 17px;
   vertical-align: middle;
   padding-left: 7px;
@@ -137,12 +139,12 @@ html {
 }
 
 .volv-button-small {
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
   border: none;
   outline: none;
   padding: 10px 20px;
   border-radius: 20px;
-  font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-size: 14px;
   letter-spacing: 1px;
@@ -192,21 +194,21 @@ html {
   -webkit-appearance: none;
   appearance: none;
   width: fit-content;
-  animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
+  animation: volv-window-desktop-animation 1s
+    cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
   opacity: 0;
   transform: translateY(400px);
   /* position: absolute;
   top: 500px; */
 }
 
-
-
-.sec1content>p {
+.sec1content > p {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 400;
   font-size: 62px;
   color: white;
-  animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation: volv-window-desktop-animation 1s
+    cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   opacity: 0;
   transform: translateY(400px);
   margin-block-start: 3em;
@@ -288,7 +290,7 @@ html {
   text-align: center;
 }
 
-.section3>.title-text {
+.section3 > .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
   font-weight: 500;
@@ -314,9 +316,11 @@ html {
 }
 
 .features div {
-  background: linear-gradient(234.85deg,
-      rgba(130, 148, 203, 0.1) 16.15%,
-      rgba(130, 148, 203, 0.1) 130.7%);
+  background: linear-gradient(
+    234.85deg,
+    rgba(130, 148, 203, 0.1) 16.15%,
+    rgba(130, 148, 203, 0.1) 130.7%
+  );
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
   padding: 40px 30px 60px 30px;
 }
@@ -404,7 +408,8 @@ html {
   margin-left: auto;
   margin-right: auto;
   /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 120px;
@@ -414,13 +419,53 @@ html {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 100px;
 }
 
-.categories>div {
+.bias-window-desktop {
+  display: grid;
+  margin-left: 5vh;
+  margin-right: auto;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  margin-top: 120px;
+  z-index: 10;
+}
+
+.volv-v-back {
+  mix-blend-mode: soft-light;
+  opacity: 0.5;
+  max-width: 1600px;
+  display: grid;
+  margin-left: 50vh;
+  margin-right: auto;
+  margin-top: -643px;
+}
+
+.bssec1text {
+  display: grid;
+  margin-left: 49vh;
+  margin-right: auto;
+  margin-top: -455px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 69px;
+  line-height: 136.1%;
+  /* or 94px */
+
+  letter-spacing: -0.03em;
+  z-index: 10;
+}
+
+.categories > div {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -428,7 +473,7 @@ html {
   bottom: 10px;
 }
 
-.categories>div>img {
+.categories > div > img {
   display: grid;
   height: 3.5rem;
 }
@@ -439,12 +484,58 @@ html {
   justify-content: center;
 }
 
-.downloadnow>div {
+.downloadnow > div {
   align-self: center;
 }
 
-.android>a>img {
+.android > a > img {
   height: 60;
+}
+
+/* bias page from here */
+
+.bssec1 {
+  background: linear-gradient(227deg, #dbf0ff, #fff2e8);
+  background-size: 400% 400%;
+
+  -webkit-animation: animated-gradient 7s ease infinite;
+  -moz-animation: animated-gradient 7s ease infinite;
+  animation: animated-gradient 7s ease infinite;
+  height: 782px;
+}
+
+@-webkit-keyframes animated-gradient {
+  0% {
+    background-position: 96% 0%;
+  }
+  50% {
+    background-position: 5% 100%;
+  }
+  100% {
+    background-position: 96% 0%;
+  }
+}
+@-moz-keyframes animated-gradient {
+  0% {
+    background-position: 96% 0%;
+  }
+  50% {
+    background-position: 5% 100%;
+  }
+  100% {
+    background-position: 96% 0%;
+  }
+}
+@keyframes animated-gradient {
+  0% {
+    background-position: 96% 0%;
+  }
+  50% {
+    background-position: 5% 100%;
+  }
+  100% {
+    background-position: 96% 0%;
+  }
 }
 
 @keyframes dive-in-animation {
@@ -494,7 +585,7 @@ html {
   width: 100%;
 }
 
-.footer>div {
+.footer > div {
   margin-left: auto;
   margin-right: auto;
   /* width: 250px; */
@@ -555,7 +646,6 @@ a:hover {
   }
 }
 
-
 @media only screen and (max-width: 1700px) {
   .sec1content {
     padding-left: 50px;
@@ -563,7 +653,7 @@ a:hover {
     max-width: unset;
   }
 
-  .header>div {
+  .header > div {
     padding-left: 50px;
     padding-right: 50px;
     max-width: unset;
@@ -587,7 +677,7 @@ a:hover {
     padding: 0px 60px 0px 60px;
   }
 
-  .sec1content>p {
+  .sec1content > p {
     font-size: 54px;
     top: 150px;
   }
@@ -612,11 +702,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 1280px) {
-
-  .sec1content>p {
+  .sec1content > p {
     font-size: 54px;
   }
-
 
   .sec2container {
     grid-template-columns: auto 1fr;
@@ -649,10 +737,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-
-
-
-
   .sec2container {
     margin: 50px;
   }
@@ -745,7 +829,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .sec1content>p {
+  .sec1content > p {
     font-size: 54px;
     margin-block-start: 2em;
     margin-block-end: 0.7em;
@@ -783,7 +867,7 @@ a:hover {
     text-align: -webkit-center;
   }
 
-  .sec1content>p {
+  .sec1content > p {
     font-size: 46px;
     position: unset;
   }
@@ -833,7 +917,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 680px) {
-  .header>div {
+  .header > div {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -857,7 +941,7 @@ a:hover {
     margin: unset;
   }
 
-  .section3>.title-text {
+  .section3 > .title-text {
     line-height: unset;
   }
 
@@ -877,7 +961,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 470px) {
-
   .sec1content p {
     margin-top: 15vh;
   }
@@ -927,11 +1010,11 @@ a:hover {
     margin-top: 20vh;
   }
 
-  .download>a>img {
+  .download > a > img {
     padding-right: 10px;
   }
 
-  .download>a>span {
+  .download > a > span {
     padding-right: 5px;
   }
 
