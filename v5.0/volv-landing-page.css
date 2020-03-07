@@ -816,6 +816,10 @@ a:hover {
   .subtitle-text {
     font-size: 32px;
   }
+
+  .volv-v-back {
+    margin-left: 45vh;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -854,6 +858,12 @@ a:hover {
 
   .volv-v-back {
     margin-left: 35vh;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .volv-v-back {
+    margin-left: 30vh;
   }
 }
 
