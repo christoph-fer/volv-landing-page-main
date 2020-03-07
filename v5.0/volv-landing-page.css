@@ -481,6 +481,10 @@ html {
   display: none;
 }
 
+.bias-window-mobile {
+  display: none;
+}
+
 .volv-v-back {
   mix-blend-mode: soft-light;
   opacity: 0.6;
@@ -977,6 +981,14 @@ a:hover {
   .bssec1text {
     font-size: 54px;
   }
+
+  .bias-ex {
+    background: url(assets/bias-ex-mobile.svg);
+    background-size: contain;
+    background-position: center;
+    height: 1000px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1006,7 +1018,13 @@ a:hover {
   }
 
   .bias-window-desktop {
+    display: none;
+  }
+
+  .bias-window-mobile {
+    display: unset;
     width: 100%;
+    margin-top: 150px;
   }
 
   .bias-window-2-desktop {
@@ -1020,6 +1038,11 @@ a:hover {
 
   .volv-v-back {
     display: none;
+  }
+
+  .bssec1text {
+    margin-top: 50px;
+    font-size: 54px;
   }
 }
 
@@ -1126,6 +1149,24 @@ a:hover {
   .downloadnow {
     justify-content: center;
   }
+
+  .bssec1text {
+    font-size: 42px;
+  }
+
+  .bias-ex {
+    margin-top: unset;
+    background: url(assets/bias-ex-mobile-2.svg);
+    background-size: contain;
+    background-position: center;
+    height: 1000px;
+    background-repeat: no-repeat;
+  }
+
+  .bssec5 .title-text {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -1170,6 +1211,15 @@ a:hover {
   .volv-window-mobile {
     display: grid;
     width: 100%;
+  }
+
+  .bssec1text {
+    font-size: 32px;
+  }
+
+  .bssec5 .title-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
