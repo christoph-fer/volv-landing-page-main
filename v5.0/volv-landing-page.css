@@ -477,6 +477,10 @@ html {
   z-index: 10;
 }
 
+.bias-window-2-mobile {
+  display: none;
+}
+
 .volv-v-back {
   mix-blend-mode: soft-light;
   opacity: 0.6;
@@ -962,8 +966,16 @@ a:hover {
     width: 100%;
   }
 
+  .bias-window-desktop {
+    margin-left: auto;
+  }
+
   .volv-v-back {
-    margin-left: 15vh;
+    margin-left: auto;
+  }
+
+  .bssec1text {
+    font-size: 54px;
   }
 }
 
@@ -991,6 +1003,23 @@ a:hover {
     max-width: 450px;
     text-align: center;
     padding: 30px;
+  }
+
+  .bias-window-desktop {
+    width: 100%;
+  }
+
+  .bias-window-2-desktop {
+    display: none;
+  }
+
+  .bias-window-2-mobile {
+    display: unset;
+    width: 100%;
+  }
+
+  .volv-v-back {
+    display: none;
   }
 }
 
