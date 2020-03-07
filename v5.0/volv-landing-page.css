@@ -175,6 +175,17 @@ html {
   padding-right: 100px; */
 }
 
+.bssec1content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: baseline;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+}
+
 .sec1content .volv-button {
   font-family: "Roboto", sans-serif;
   background: linear-gradient(106.79deg, #ff984e -67.91%, #e15b2b 100%);
@@ -233,7 +244,6 @@ html {
 .sec2container .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
-  font-weight: 500;
 
   line-height: 136.1%;
   /* or 73px */
@@ -246,7 +256,7 @@ html {
 .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 54px;
   line-height: 136.1%;
   /* or 73px */
@@ -293,7 +303,6 @@ html {
 .section3 > .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
-  font-weight: 500;
 
   line-height: 0;
   /* or 73px */
@@ -363,7 +372,6 @@ html {
 .sec4container .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
-  font-weight: 500;
 
   line-height: 136.1%;
   /* or 73px */
@@ -385,6 +393,13 @@ html {
   text-align: center;
 }
 
+.bssec5 {
+  display: grid;
+  height: 40vh;
+  text-align: center;
+  align-content: center;
+}
+
 .sec5container {
   display: grid;
   margin-top: 9vh;
@@ -393,13 +408,23 @@ html {
 .section5 .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
-  font-weight: 500;
 
   line-height: 0;
   /* or 73px */
 
   letter-spacing: -0.3px;
   margin-top: 15px;
+  color: #000000;
+}
+
+.bssec5 .title-text {
+  font-family: "Frank Ruhl Libre", serif;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 73px */
+
+  letter-spacing: -0.3px;
   color: #000000;
 }
 
@@ -439,6 +464,18 @@ html {
   z-index: 10;
 }
 
+.bias-window-2-desktop {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  z-index: 10;
+}
+
 .volv-v-back {
   mix-blend-mode: soft-light;
   opacity: 0.5;
@@ -463,6 +500,58 @@ html {
 
   letter-spacing: -0.03em;
   z-index: 10;
+}
+
+.bias-ex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: url(assets/bias-ex.svg);
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+
+.bssec3 {
+  display: grid;
+
+  /* background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 247, 247, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+
+  margin: 0px 0px 100px 0px;
+}
+
+.bssec3 div {
+  display: grid;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f9f9f9;
+  width: 100%;
+}
+
+.bssec3 img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bssec4 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.bssec4 img {
+  width: 100%;
 }
 
 .categories > div {
@@ -495,46 +584,46 @@ html {
 /* bias page from here */
 
 .bssec1 {
-  background: linear-gradient(227deg, #dbf0ff, #fff2e8);
+  background: linear-gradient(270deg, #fff2e8, #dbf0ff);
   background-size: 400% 400%;
 
-  -webkit-animation: animated-gradient 7s ease infinite;
-  -moz-animation: animated-gradient 7s ease infinite;
-  animation: animated-gradient 7s ease infinite;
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
   height: 782px;
 }
 
-@-webkit-keyframes animated-gradient {
+@-webkit-keyframes AnimationName {
   0% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 5% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
 }
-@-moz-keyframes animated-gradient {
+@-moz-keyframes AnimationName {
   0% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 5% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
 }
-@keyframes animated-gradient {
+@keyframes AnimationName {
   0% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 5% 100%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 96% 0%;
+    background-position: 0% 50%;
   }
 }
 
