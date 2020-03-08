@@ -57,28 +57,20 @@ html {
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden !important;
+  overflow: hidden;
   transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   text-align: -webkit-center;
 }
 
-.navbar a {
-  font-family: "Roboto", sans-serif;
-  /* font-family: "Frank Ruhl Libre", serif; */
-  opacity: 0.7;
-  color: #fff;
-  /* letter-spacing: 0.2em; */
-  margin-right: 15px;
-  font-size: 32px;
-  text-decoration: none;
-  font-weight: 500;
-  z-index: 200;
+.navbar > a {
+  width: 200px;
 }
 
 .navbar div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: fit-content;
+  width: 250px;
 }
 
 .navbar > div > a > img {
@@ -87,6 +79,7 @@ html {
 
 .navbar input {
   margin: 20px;
+  width: 300px;
 }
 
 .navbar a {
@@ -1078,7 +1071,8 @@ a:hover {
     background: url(assets/bias-ex-mobile.svg);
     background-size: contain;
     background-position: center;
-    height: 1000px;
+    box-sizing: border-box;
+    display: block;
     background-repeat: no-repeat;
   }
 }
@@ -1259,7 +1253,8 @@ a:hover {
     background: url(assets/bias-ex-mobile-2.svg);
     background-size: contain;
     background-position: center;
-    height: 1000px;
+    display: block;
+    box-sizing: border-box;
     background-repeat: no-repeat;
   }
 
@@ -1281,6 +1276,9 @@ a:hover {
   }
   .chart {
     display: none;
+  }
+  .bssec3 {
+    margin: 0px 0px 40px 0px;
   }
 }
 
@@ -1389,5 +1387,11 @@ a:hover {
 
   .features div {
     padding: 30px;
+  }
+  .bssec1text {
+    font-size: 24px;
+  }
+  .bias-ex {
+    height: 700px;
   }
 }
