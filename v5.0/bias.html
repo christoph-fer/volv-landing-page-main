@@ -30,6 +30,56 @@
 
   <body>
     <wrapper>
+      <div class="navbar" id="navBar">
+        <br /><br /><br /><br />
+        <a href="bias.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+            >What is bias?</span
+          ></a
+        >
+        <a href="about.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+            >About Us</span
+          ></a
+        >
+        <div>
+          <a href="https://twitter.com/volv_media" target="_blank"
+            ><img
+              title="Volv on Twitter"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+              src="assets/twitter-white.png"
+          /></a>
+          <!-- <span>Follow us:</span> -->
+
+          <a href="https://www.instagram.com/volvmedia/" target="_blank"
+            ><img
+              title="Volv on Instagram"
+              src="assets/instagram-white.png"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+          /></a>
+
+          <a href="mailto:connect@volvmedia.com" target="_blank"
+            ><img
+              title="E-mail us"
+              src="assets/main-icon-white.svg"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+          /></a>
+        </div>
+
+        <input
+          class="volv-button-small"
+          type="button"
+          onclick="getOS()"
+          value="DOWNLOAD NOW - IT'S FREE"
+        />
+      </div>
       <div class="bssec1">
         <div class="header">
           <div>
@@ -42,6 +92,7 @@
                   src="assets/white volv svg.svg"
               /></a>
             </div>
+
             <div class="download">
               <a href="bias.html"
                 ><span
@@ -91,6 +142,29 @@
             </div>
           </div>
         </div>
+
+        <div class="header-mobile">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img
+                  class="volv-logo"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  src="assets/white volv svg.svg"
+              /></a>
+            </div>
+
+            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+              <img src="assets/ham_menu.svg" height="13px" />
+            </div>
+
+            <div class="close-menu" id="closeMenu" onclick="closeNav()">
+              <img src="assets/close-button.svg" height="13px" />
+            </div>
+          </div>
+        </div>
+
         <div class="bssec1content">
           <img
             class="bias-window-desktop"
@@ -143,8 +217,11 @@
       </div>
 
       <div class="bssec3">
-        <div>
-          <img class="64-chart" src="assets/64-chart.svg" />
+        <div class="chart">
+          <img src="assets/64-chart.svg" />
+        </div>
+        <div class="chart-mobile">
+          <img src="assets/64-chart- mobile.svg" />
         </div>
       </div>
 
@@ -209,5 +286,23 @@
         </div>
       </div>
     </wrapper>
+
+    <script>
+      function openNav() {
+        document.getElementById("navBar").style.width = "100%";
+        document.getElementById("hamMenu").style.display = "none";
+        document.getElementById("closeMenu").style.display = "grid";
+      }
+
+      function closeNav() {
+        document.getElementById("navBar").style.width = "0";
+        document.getElementById("hamMenu").style.display = "grid";
+        document.getElementById("closeMenu").style.display = "none";
+      }
+
+      // function closeNav() {
+      //     document.getElementById("mySidenav").style.width = "0";
+      // }
+    </script>
   </body>
 </html>

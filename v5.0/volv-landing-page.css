@@ -48,6 +48,62 @@ html {
   background-position: center;
 }
 
+.navbar {
+  float: right;
+  height: 100vh;
+  width: 0px;
+  background: #f9f9f9;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden !important;
+  transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-align: -webkit-center;
+}
+
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Frank Ruhl Libre", serif; */
+  opacity: 0.7;
+  color: #fff;
+  /* letter-spacing: 0.2em; */
+  margin-right: 15px;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  z-index: 200;
+}
+
+.navbar div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+}
+
+.navbar > div > a > img {
+  height: 20px;
+}
+
+.navbar input {
+  margin: 20px;
+}
+
+.navbar a {
+  font-family: "Roboto", sans-serif;
+  opacity: 0.7;
+  color: #fff;
+  padding: 20px;
+  margin: 0px 0px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+  transition: 0.3s;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .header {
   /* -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
@@ -72,6 +128,38 @@ html {
   height: 60px;
   /* padding-left: 20px;
   padding-right: 20px; */
+}
+
+.header-mobile {
+  display: none;
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-mobile > div {
+  max-width: 1600px;
+  padding: 0px 15px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.ham-menu {
+  display: grid;
+  align-self: center;
+  text-align: -webkit-right;
+}
+
+.close-menu {
+  display: none;
+  align-self: center;
+  text-align: -webkit-right;
 }
 
 .volv-logo {
@@ -564,13 +652,17 @@ html {
   margin: 0px 0px 100px 0px;
 }
 
-.bssec3 div {
+.chart {
   display: grid;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   background: #f9f9f9;
   width: 100%;
+}
+
+.chart-mobile {
+  display: none;
 }
 
 .bssec3 img {
@@ -1044,6 +1136,14 @@ a:hover {
     margin-top: 50px;
     font-size: 54px;
   }
+
+  .header {
+    display: none;
+  }
+
+  .header-mobile {
+    display: unset;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -1166,6 +1266,21 @@ a:hover {
   .bssec5 .title-text {
     font-size: 24px;
     line-height: 34px;
+  }
+
+  .bssec1 {
+    height: unset;
+  }
+  .chart-mobile {
+    display: grid;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f9f9f9;
+    width: 100%;
+  }
+  .chart {
+    display: none;
   }
 }
 
