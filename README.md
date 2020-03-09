@@ -6,4 +6,5 @@ v2.0 published<br>
 v3.0 published<br>
 v4.0 published - live<br>
 v4.1 never published<br>
-v5.0 under development<br>
+v5.0 published<br>
+v5.1 added bias page, homepage revamp
