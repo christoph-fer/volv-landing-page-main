@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Volv - What is bias?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="volv-landing-page.css" />
+
+    <link rel="stylesheet" type="text/css" href="./sal.css" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      rel="icon"
+      href="assets/volv-fevicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <wrapper>
+      <div class="navbar" id="navBar">
+        <br /><br /><br /><br />
+        <a href="index.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+            >Home</span
+          ></a
+        >
+        <a href="bias.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+            >What is bias?</span
+          ></a
+        >
+        <a href="about.html"
+          ><span
+            style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+            >About Us</span
+          ></a
+        >
+        <div>
+          <a href="https://twitter.com/volv_media" target="_blank"
+            ><img
+              title="Volv on Twitter"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+              src="assets/twitter-white.png"
+          /></a>
+          <!-- <span>Follow us:</span> -->
+
+          <a href="https://www.instagram.com/volvmedia/" target="_blank"
+            ><img
+              title="Volv on Instagram"
+              src="assets/instagram-white.png"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+          /></a>
+
+          <a href="mailto:connect@volvmedia.com" target="_blank"
+            ><img
+              title="E-mail us"
+              src="assets/main-icon-white.svg"
+              style="-webkit-filter: invert(100%);
+        filter: invert(100%);"
+          /></a>
+        </div>
+
+        <input
+          class="volv-button-small"
+          type="button"
+          onclick="getOS()"
+          value="DOWNLOAD NOW - IT'S FREE"
+        />
+      </div>
+      <div class="bssec1">
+        <div class="header">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img
+                  class="volv-logo"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  src="assets/white volv svg.svg"
+              /></a>
+            </div>
+
+            <div class="download">
+              <a href="bias.html"
+                ><span
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  >What is bias?</span
+                ></a
+              >
+              <a href="about.html"
+                ><span
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  >About Us</span
+                ></a
+              >
+              <a href="https://twitter.com/volv_media" target="_blank"
+                ><img
+                  title="Volv on Twitter"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  src="assets/twitter-white.png"
+              /></a>
+              <!-- <span>Follow us:</span> -->
+
+              <a href="https://www.instagram.com/volvmedia/" target="_blank"
+                ><img
+                  title="Volv on Instagram"
+                  src="assets/instagram-white.png"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+              /></a>
+
+              <a href="mailto:connect@volvmedia.com" target="_blank"
+                ><img
+                  title="E-mail us"
+                  src="assets/main-icon-white.svg"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+              /></a>
+
+              <input
+                class="volv-button-small"
+                type="button"
+                onclick="getOS()"
+                value="DOWNLOAD NOW - IT'S FREE"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="header-mobile">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img
+                  class="volv-logo"
+                  style="-webkit-filter: invert(100%);
+                filter: invert(100%);"
+                  src="assets/white volv svg.svg"
+              /></a>
+            </div>
+
+            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+              <img src="assets/ham_menu.svg" height="13px" />
+            </div>
+
+            <div class="close-menu" id="closeMenu" onclick="closeNav()">
+              <img src="assets/close-button.svg" height="13px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bssec1content">
+          <img
+            class="bias-window-desktop"
+            src="assets/bias_window_1_desktop.svg"
+          />
+
+          <img
+            class="bias-window-mobile"
+            src="assets/bias_window_1_mobile.svg"
+          />
+
+          <img class="volv-v-back" src="assets/volv-v-back.svg" />
+
+          <!-- <div class="bssec1text">
+            <span style="align-self: self-end;">'Bias' is a loaded term.</span>
+            <span style="opacity: 0.5;">Here’s what we mean by it:</span>
+          </div> -->
+
+          <!-- <a id="dive-in" href="#section2"><img class="dive-in" src="assets/dive-in.svg" /></a> -->
+
+          <div class="bssec1text">
+            <span style="align-self: self-end;">'Bias' is a loaded term.</span>
+            <span style="opacity: 0.5;">Here’s what we mean by it:</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec1-fade"></div>
+
+      <div class="bssec2">
+        <!-- <div class="bias-ex">
+          <div class="biased">
+            <img src="assets/biased.svg" />
+          </div>
+
+          <div class="opinion">
+            <img src="assets/opinion.svg" />
+          </div>
+
+          <div class="coverage">
+            <img src="assets/coverage.svg" />
+          </div>
+
+          <div class="slant">
+            <img src="assets/slant.svg" />
+          </div>
+        </div> -->
+
+        <div class="bias-ex"></div>
+      </div>
+
+      <div class="bssec3">
+        <div class="chart">
+          <img src="assets/64-chart.svg" />
+        </div>
+        <div class="chart-mobile">
+          <img src="assets/64-chart- mobile.svg" />
+        </div>
+      </div>
+
+      <div class="bssec4">
+        <img
+          class="bias-window-2-desktop"
+          src="assets/bias_window_2_desktop.svg"
+        />
+        <img
+          class="bias-window-2-mobile"
+          src="assets/bias_window_2_mobile.svg"
+        />
+      </div>
+
+      <div class="bssec5" id="download-now-desktop">
+        <h2 class="title-text">
+          The only thing we’re biased about is<br />the fact that we’re unbiased
+          😉
+        </h2>
+
+        <div class="downloadnow">
+          <div class="android">
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            >
+              <img
+                alt="Get it on Google Play"
+                style=" margin-left: -10;"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            /></a>
+          </div>
+          <div class="ios">
+            <a
+              target="_blank"
+              href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+            >
+              <img alt="Download on the App Store" src="assets/app-store.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <span
+            ><a target="_blank" href="https://volvmedia.com/PrivacyPolicy"
+              >Privacy Policy
+            </a></span
+          >
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span
+            ><a target="_blank" href="https://volvmedia.com/TermsAndConditions"
+              >Terms & Conditions</a
+            >
+          </span>
+          <!-- &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span>© Copyright Volv 2019</span> -->
+        </div>
+        <div>
+          <span>© Copyright Volv 2020</span>
+        </div>
+      </div>
+    </wrapper>
+
+    <script>
+      function openNav() {
+        document.getElementById("navBar").style.width = "100%";
+        document.getElementById("hamMenu").style.display = "none";
+        document.getElementById("closeMenu").style.display = "grid";
+      }
+
+      function closeNav() {
+        document.getElementById("navBar").style.width = "0";
+        document.getElementById("hamMenu").style.display = "grid";
+        document.getElementById("closeMenu").style.display = "none";
+      }
+
+      // function closeNav() {
+      //     document.getElementById("mySidenav").style.width = "0";
+      // }
+    </script>
+  </body>
+</html>
