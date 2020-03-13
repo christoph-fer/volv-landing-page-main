@@ -29,6 +29,14 @@
   </head>
 
   <body>
+    <!-- <div id="volvbuttonHeader" class="volv-button-header">
+      <input
+        class="volv-button-small"
+        type="button"
+        onclick="getOS()"
+        value="DOWNLOAD THE APP"
+      />
+    </div> -->
     <div class="modal w3-animate-opacity" id="thankYou">
       <div class="modalbox w3-container w3-center w3-animate-top">
         <!-- w3-container w3-center w3-animate-top -->
@@ -84,7 +92,7 @@
           ><span
             style="-webkit-filter: invert(100%);
       filter: invert(100%);"
-            >What is bias?</span
+            >Why trust us?</span
           ></a
         >
         <a href="about.html"
@@ -139,7 +147,7 @@
             </div>
 
             <div class="download">
-              <a href="bias.html"><span>What is bias?</span></a>
+              <a href="bias.html"><span>Why trust us?</span></a>
               <a href="about.html"><span>About Us</span></a>
               <a href="https://twitter.com/volv_media" target="_blank"
                 ><img title="Volv on Twitter" src="assets/twitter-white.png"
@@ -179,6 +187,7 @@
             </div>
           </div>
         </div>
+
         <div class="sec1content">
           <!-- <img
             class="volv-window-desktop"
@@ -193,10 +202,7 @@
             ><img class="dive-in" src="assets/dive-in.svg"
           /></a> -->
 
-          <p>
-            Read the world's latest<br />stories in 9 seconds.<br />
-            No BS. No bias.
-          </p>
+          <p>World's most important<br />stories in 9 second reads.</p>
 
           <div
             role="button"
@@ -447,6 +453,23 @@
       // function closeNav() {
       //     document.getElementById("mySidenav").style.width = "0";
       // }
+    </script>
+
+    <script>
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      var header = document.getElementById("volvbuttonHeader");
+      var sticky = header.offsetTop;
+
+      function scrollFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("volv-button-header-sticky");
+        } else {
+          header.classList.remove("volv-button-header-sticky");
+        }
+      }
     </script>
   </body>
 </html>
