@@ -333,6 +333,104 @@ html {
   max-width: 420px;
 }
 
+.promo-code {
+  font-family: "Frank Ruhl Libre", serif;
+  background-color: #ffeee8;
+  width: fit-content;
+  padding: 3px 6px 3px 6px;
+  color: #f17c3e;
+}
+
+.testimonials {
+  display: grid;
+  text-align: center;
+}
+
+/* .testimonials-scroll-wrapper {
+  display: grid;
+  grid-template-columns: 450px 450px 450px 450px;
+  grid-gap: 30px;
+  padding: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.testimonials-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-scroll-wrapper > div {
+  background: linear-gradient(
+    234.85deg,
+    rgba(130, 148, 203, 0.1) 16.15%,
+    rgba(130, 148, 203, 0.1) 130.7%
+  );
+  box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
+  padding: 40px 30px 60px 30px;
+  text-align: left;
+  display: inline-block;
+} */
+
+.testimonials-scroll-wrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* width: 100%; */
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: 400px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 20px;
+}
+
+.testimonials-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-scroll-wrapper > div {
+  background: linear-gradient(
+    234.85deg,
+    rgba(130, 148, 203, 0.1) 16.15%,
+    rgba(130, 148, 203, 0.1) 130.7%
+  );
+  box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
+  padding: 40px 30px 40px 30px;
+  text-align: left;
+  display: inline-block;
+
+  height: fit-content;
+}
+
+.testimonial-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 147.6%;
+  /* or 32px */
+  font-style: italic;
+
+  letter-spacing: -0.3px;
+
+  margin-bottom: 30px;
+}
+
+.testimonial-user {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.user-detail {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
 .sec1content {
   max-width: 1600px;
   margin-left: auto;
@@ -1417,6 +1515,20 @@ a:hover {
 }
 
 @media only screen and (max-width: 470px) {
+  .testimonials-scroll-wrapper {
+    grid-auto-columns: 300px;
+  }
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .testimonial-user {
+    font-size: 11px;
+  }
+
+  .user-detail {
+    font-size: 11px;
+  }
   .sec1content p {
     margin-top: 15vh;
   }
