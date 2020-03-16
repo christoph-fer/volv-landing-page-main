@@ -334,11 +334,13 @@ html {
 }
 
 .promo-code {
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "PT Mono", monospace;
+
   background-color: #ffeee8;
   width: fit-content;
-  padding: 3px 6px 3px 6px;
+  padding: 6px 32px 6px 32px;
   color: #f17c3e;
+  font-size: 25px;
 }
 
 .testimonials {
@@ -507,6 +509,7 @@ html {
   margin-right: auto;
   /* padding: 80px; */
   grid-gap: 20px;
+  text-align: center;
 }
 
 .sec2container .title-text {
