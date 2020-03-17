@@ -376,16 +376,15 @@ html {
 .testimonials-scroll-wrapper {
   margin-top: 20px;
   display: grid;
-  grid-gap: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
   /* width: 100%; */
-  grid-gap: 15px;
+  grid-gap: 20px;
   grid-auto-flow: column;
   grid-auto-columns: 400px;
   /* margin-left: auto;
   margin-right: auto; */
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .testimonials-scroll-wrapper::-webkit-scrollbar {
@@ -401,9 +400,19 @@ html {
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
   padding: 40px 30px 40px 30px;
   text-align: left;
-  display: inline-block;
+  /* display: inline-block; */
 
   height: fit-content;
+  border-radius: 5px;
+}
+
+.testimonials-scroll-wrapper > div:first-child {
+  margin-left: 80px;
+}
+
+.testimonials-scroll-wrapper > div:last-child {
+  width: 0px;
+  opacity: 0;
 }
 
 .testimonial-text {
@@ -431,6 +440,47 @@ html {
   font-size: 13px;
   opacity: 0.6;
   margin-top: 5px;
+}
+
+.left-paddle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    234.85deg,
+    rgba(130, 148, 203, 0.05) 16.15%,
+    rgba(130, 148, 203, 0.05) 130.7%
+  );
+  box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.6);
+  z-index: 20;
+  border: none;
+  outline: none;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  margin-top: 232px;
+  border-radius: 80px;
+  margin-left: 10px;
+}
+
+.right-paddle {
+  right: 0;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    234.85deg,
+    rgba(130, 148, 203, 0.05) 16.15%,
+    rgba(130, 148, 203, 0.05) 130.7%
+  );
+  box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.6);
+  z-index: 20;
+  border: none;
+  outline: none;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  margin-top: 232px;
+  border-radius: 80px;
+  margin-left: 10px;
 }
 
 .sec1content {
@@ -667,8 +717,10 @@ html {
 }
 
 .section5 {
-  height: 400px;
+  display: grid;
+  align-content: center;
   text-align: center;
+  height: 300px;
 }
 
 .bssec5 {
@@ -680,7 +732,6 @@ html {
 
 .sec5container {
   display: grid;
-  margin-top: 9vh;
 }
 
 .section5 .title-text {
@@ -1518,6 +1569,18 @@ a:hover {
 }
 
 @media only screen and (max-width: 470px) {
+  .left-paddle {
+    display: none;
+  }
+
+  .right-paddle {
+    display: none;
+  }
+
+  .testimonials-scroll-wrapper > div:first-child {
+    margin-left: 35px;
+  }
+
   .testimonials-scroll-wrapper {
     grid-auto-columns: 300px;
   }

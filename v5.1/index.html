@@ -1,6 +1,5 @@
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Volv - Reimagining the news</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="volv-landing-page.css" />
@@ -278,15 +277,24 @@
               Volv is a free app.
             </h2>
 
-            <p class="subtitle-text" style="line-height: 180%;">
-              Get a referral code from a current Volv user
-              <br /><span>OR</span><br />
-              If you’re lucky, you’ll see a code in the box below
+            <p class="subtitle-text">
+              Check it out,<br />
+              without the checkout.
             </p>
 
-            <br />
+            <div
+              style="margin-left: auto; margin-right: auto; width: 100%; max-width: 320px; margin-top: 30px;"
+              role="button"
+              class="volv-button"
+              onclick="getOS()"
+              value="DOWNLOAD NOW - IT'S FREE"
+            >
+              <span>DOWNLOAD THE APP</span>
+            </div>
 
-            <span class="promo-code">evolve</span>
+            <!-- <br />
+
+            <span class="promo-code">evolve</span> -->
 
             <!-- <br />
             <form>
@@ -329,17 +337,39 @@
         <h2 class="title-text" style="margin-block-start: 0px;">
           Our users had some nice things to say
         </h2>
+        <button class="left-paddle" type="button">
+          <img src="assets/left-paddle.svg" height="26px" />
+        </button>
         <div class="testimonials-scroll-wrapper testi-box">
           <div>
             <div class="testimonial-text">
               It’s time, journalists write without imposing their own bias and
-              influence on readers. Thanks for this. 😊”
+              influence on readers. Thanks for this.
+              <span style="font-style: normal;">😊</span>”
             </div>
             <div class="testimonial-user">
               - Rima McDonald
             </div>
             <div class="user-detail">
               Comment on our Women Founders Community post, Facebook
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              “Hey, I downloaded Volv (love it! Btw) but the most interesting
+              thing happened - my 13 year old daughter LOVED it. She thinks its
+              awesome how easy it is to not only get through the articles, but
+              easy to understand also. I’m not sure if you’ve considered
+              teenagers as your target market but though you would like to know
+              as she’s telling all her friends about it.
+              <span style="font-style: normal;">❤❤</span>”
+            </div>
+            <div class="testimonial-user">
+              - Megan Hayward
+            </div>
+            <div class="user-detail">
+              Facebook message
             </div>
           </div>
 
@@ -373,18 +403,18 @@
 
           <div>
             <div class="testimonial-text">
-              “Hey, I downloaded Volv (love it! Btw) but the most interesting
-              thing happened - my 13 year old daughter LOVED it. She thinks its
-              awesome how easy it is to not only get through the articles, but
-              easy to understand also. I’m not sure if you’ve considered
-              teenagers as your target market but though you would like to know
-              as she’s telling all her friends about it. ❤❤”
+              “Finally a real news app! I was looking for a news app like this.
+              Just downloaded it and looks really nice. Clean fluid and well put
+              together interface. I got rid of all my news apps because of the
+              clutter in the app and the one sided news or lack of real news.
+              Thanks for making a great simple way of getting real news real
+              simple. Well done.”
             </div>
             <div class="testimonial-user">
-              - Megan Hayward
+              - Flyers57
             </div>
             <div class="user-detail">
-              Facebook message
+              Appstore comment
             </div>
           </div>
 
@@ -401,23 +431,11 @@
             </div>
           </div>
 
-          <div>
-            <div class="testimonial-text">
-              “Finally a real news app! I was looking for a news app like this.
-              Just downloaded it and looks really nice. Clean fluid and well put
-              together interface. I got rid of all my news apps because of the
-              clutter in the app and the one sided news or lack of real news.
-              Thanks for making a great simple way of getting real news real
-              simple. Well done.”
-            </div>
-            <div class="testimonial-user">
-              - Flyers57
-            </div>
-            <div class="user-detail">
-              Appstore comment
-            </div>
-          </div>
+          <div></div>
         </div>
+        <button type="button" class="right-paddle">
+          <img src="assets/right-paddle.svg" height="26px" />
+        </button>
       </div>
 
       <div class="section5" id="download-now-desktop">
@@ -432,10 +450,12 @@
             Evolve with us.
           </h2>
 
-          <p class="subtitle-text">
+          <br />
+
+          <!-- <p class="subtitle-text">
             Check it out,<br />
             without the checkout.
-          </p>
+          </p> -->
 
           <div class="downloadnow">
             <div class="android">
@@ -560,7 +580,7 @@
       // }
     </script>
 
-    <script>
+    <!-- <script>
       window.onscroll = function() {
         scrollFunction();
       };
@@ -575,6 +595,39 @@
           header.classList.remove("volv-button-header-sticky");
         }
       }
+    </script> -->
+
+    <script type="text/javascript">
+      $(function() {
+        //   $(".right-paddle").on("click", function() {
+        //     // alert("ok");
+        //     $(".testimonials-scroll-wrapper").scrollLeft += 20;
+        //   });
+        // });
+
+        // Add your javascript here
+
+        $(".right-paddle").click(function() {
+          // alert("ok");
+          event.preventDefault();
+          $(".testimonials-scroll-wrapper").animate(
+            {
+              scrollLeft: "+=350px"
+            },
+            "slow"
+          );
+        });
+
+        $(".left-paddle").click(function() {
+          event.preventDefault();
+          $(".testimonials-scroll-wrapper").animate(
+            {
+              scrollLeft: "-=350px"
+            },
+            "slow"
+          );
+        });
+      });
     </script>
   </body>
 </html>
