@@ -1,0 +1,637 @@
+<html>
+  <head>
+    <title>Volv - Reimagining the news</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="volv-landing-page.css" />
+
+    <link rel="stylesheet" type="text/css" href="./sal.css" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      rel="icon"
+      href="assets/volv-fevicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- <div id="volvbuttonHeader" class="volv-button-header">
+      <input
+        class="volv-button-small"
+        type="button"
+        onclick="getOS()"
+        value="DOWNLOAD THE APP"
+      />
+    </div> -->
+    <div class="modal w3-animate-opacity" id="thankYou">
+      <div class="modalbox w3-container w3-center w3-animate-top">
+        <!-- w3-container w3-center w3-animate-top -->
+
+        <div class="modal-title">
+          <div id="closeThankyou" onclick="closethankyou()">
+            <img
+              class="close-button"
+              height="15px"
+              id="edit-modal-close"
+              src="Assets/close-button.svg"
+            />
+          </div>
+        </div>
+        <div class="modalcontent">
+          <div class="volv-v">
+            <img src="assets/Volv V Colorful Icon.png" />
+
+            <h2 class="title-text">
+              Thank You!<br />You're officially on the waitlist for Volv.
+            </h2>
+
+            <p class="subtitle-text">
+              <b style="font-weight: 400;"
+                >Interested in getting access immediately?</b
+              >
+              <br /><br />
+              👩🏼‍🤝‍🧑🏽 Ask a Volv user to share their unique referral code with
+              you
+              <br />OR<br />
+              👀 Follow us on Instagram
+              <a href="instagram.com/vovlmedia" style="color: #e15b2b;"
+                >@volvmedia.</a
+              >
+              <br />We put out referral codes that are available for a
+              <br />limited period at randomized times
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="navbar" id="navBar">
+        <br /><br /><br /><br />
+        <a href="index.html"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+            >Home</span
+          ></a
+        >
+        <a href="bias.html"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+            >Why trust us?</span
+          ></a
+        >
+        <a href="about.html"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+            >About Us</span
+          ></a
+        >
+        <div>
+          <a href="https://twitter.com/volv_media" target="_blank"
+            ><img
+              title="Volv on Twitter"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
+              src="assets/twitter-white.png"
+          /></a>
+          <!-- <span>Follow us:</span> -->
+
+          <a href="https://www.instagram.com/volvmedia/" target="_blank"
+            ><img
+              title="Volv on Instagram"
+              src="assets/instagram-white.png"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
+          /></a>
+
+          <a href="mailto:connect@volvmedia.com" target="_blank"
+            ><img
+              title="E-mail us"
+              src="assets/main-icon-white.svg"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
+          /></a>
+        </div>
+
+        <!-- <input
+          class="volv-button-small"
+          type="button"
+          onclick="getOS()"
+          value="DOWNLOAD NOW - IT'S FREE"
+        /> -->
+      </div>
+
+      <div class="section1">
+        <div class="header">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img class="volv-logo" src="assets/white volv svg.svg"
+              /></a>
+            </div>
+
+            <div class="download">
+              <a href="bias.html"><span>Why trust us?</span></a>
+              <a href="about.html"><span>About Us</span></a>
+              <a href="https://twitter.com/volv_media" target="_blank"
+                ><img title="Volv on Twitter" src="assets/twitter-white.png"
+              /></a>
+              <!-- <span>Follow us:</span> -->
+
+              <a href="https://www.instagram.com/volvmedia/" target="_blank"
+                ><img
+                  title="Volv on Instagram"
+                  src="assets/instagram-white.png"
+              /></a>
+
+              <a href="mailto:connect@volvmedia.com" target="_blank"
+                ><img title="E-mail us" src="assets/main-icon-white.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-mobile">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html"
+                ><img class="volv-logo" src="assets/white volv svg.svg"
+              /></a>
+            </div>
+
+            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+              <img
+                style="-webkit-filter: invert(100%); filter: invert(100%);"
+                src="assets/ham_menu.svg"
+                height="13px"
+              />
+            </div>
+
+            <div class="close-menu" id="closeMenu" onclick="closeNav()">
+              <img src="assets/close-button.svg" height="13px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="sec1content">
+          <!-- <img
+            class="volv-window-desktop"
+            src="assets/volv-welcome-window-desktop.svg"
+          />
+          <img
+            class="volv-window-mobile"
+            src="assets/volv-welcome-window-mobile.svg"
+          />
+
+          <a id="dive-in" href="#section2"
+            ><img class="dive-in" src="assets/dive-in.svg"
+          /></a> -->
+
+          <h3>THE MILLENNIAL NEWS APP</h3>
+
+          <p>
+            The most important stories - <br />
+            from the 2020 elections to Supreme’s<br />
+            latest collabs - in 9 sec reads
+          </p>
+
+          <div
+            role="button"
+            class="volv-button"
+            onclick="getOS()"
+            value="DOWNLOAD NOW - IT'S FREE"
+          >
+            <span>DOWNLOAD THE APP</span
+            ><span style="opacity: 0.7;"> — IT’S FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section4">
+        <div
+          class="sec4container"
+          data-sal="slide-up"
+          data-sal-delay="0"
+          data-sal-duration="1000"
+          data-sal-easing="easeInOutExpo"
+        >
+          <div style="align-self: center;">
+            <span class="caption-text">Why Volv?</span>
+
+            <h2 class="title-text">
+              Now, reading the news is <br />as easy as swiping on Tinder.
+            </h2>
+
+            <p class="subtitle-text">
+              Your attention span is now down to 9 seconds, same as that of a
+              goldfish 🐠<br /><br />
+              So, with the help of AI, our news writers bring you the most
+              important stories in concise, 9-second articles 🕘
+            </p>
+          </div>
+
+          <div
+            class="sec4-gif"
+            data-sal="slide-up"
+            data-sal-delay="0"
+            data-sal-duration="1000"
+            data-sal-easing="easeOutQuad"
+          ></div>
+        </div>
+      </div>
+
+      <div class="bssec4">
+        <a href="bias.html">
+          <img
+            class="bias-window-2-desktop"
+            src="assets/bias_window_3_desktop.svg"
+          />
+          <img
+            class="bias-window-2-mobile"
+            src="assets/bias_window_3_mobile.svg"
+          />
+        </a>
+      </div>
+
+      <div class="section2">
+        <div
+          class="sec2container"
+          data-sal="slide-up"
+          data-sal-delay="0"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutQuad"
+        >
+          <div style="align-self: center;">
+            <h2 class="title-text">
+              Volv is a free app.
+            </h2>
+
+            <p class="subtitle-text">
+              Check it out,<br />
+              without the checkout.
+            </p>
+
+            <div
+              style="
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 320px;
+                margin-top: 30px;
+              "
+              role="button"
+              class="volv-button"
+              onclick="getOS()"
+              value="DOWNLOAD NOW - IT'S FREE"
+            >
+              <span>DOWNLOAD THE APP</span>
+            </div>
+
+            <!-- <br />
+
+            <span class="promo-code">evolve</span> -->
+
+            <!-- <br />
+            <form>
+              <div class="bene_form">
+                <input
+                  class="inputemail"
+                  type="email"
+                  id="fname"
+                  name="fname"
+                  value=""
+                  placeholder="Email"
+                />
+                <input
+                  class="submitbutton"
+                  type="submit"
+                  value="JOIN THE WAITLIST"
+                />
+              </div>
+            </form> -->
+            <!-- <br />
+            <span class="volv-hint"
+              >If you’re lucky, you’ll see a code in this box</span
+            > -->
+
+            <br /><br /><br /><br />
+          </div>
+
+          <div
+            class="sec1-3dphone"
+            data-sal="slide-up"
+            data-sal-delay="0"
+            data-sal-duration="1000"
+            data-sal-easing="easeOutQuad"
+          ></div>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <span class="caption-text">Testimonials</span>
+        <h2 class="title-text" style="margin-block-start: 0px;">
+          Our users had some nice things to say
+        </h2>
+        <button class="left-paddle" type="button">
+          <img src="assets/left-paddle.svg" height="26px" />
+        </button>
+        <div class="testimonials-scroll-wrapper testi-box">
+          <div>
+            <div class="testimonial-text">
+              It’s time, journalists write without imposing their own bias and
+              influence on readers. Thanks for this.
+              <span style="font-style: normal;">😊</span>”
+            </div>
+            <div class="testimonial-user">
+              - Rima McDonald
+            </div>
+            <div class="user-detail">
+              Comment on our Women Founders Community post, Facebook
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              “Hey, I downloaded Volv (love it! Btw) but the most interesting
+              thing happened - my 13 year old daughter LOVED it. She thinks its
+              awesome how easy it is to not only get through the articles, but
+              easy to understand also. I’m not sure if you’ve considered
+              teenagers as your target market but though you would like to know
+              as she’s telling all her friends about it.
+              <span style="font-style: normal;">❤❤</span>”
+            </div>
+            <div class="testimonial-user">
+              - Megan Hayward
+            </div>
+            <div class="user-detail">
+              Facebook message
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              “All of my friends who tried the app have said nothing but
+              compliments about the app! They absolutely love the overall simple
+              design of the app which in terms ensured the ease of use.”
+            </div>
+            <div class="testimonial-user">
+              - Wallis Lien
+            </div>
+            <div class="user-detail">
+              USC Student
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              “I’m a huge fan of Volv! I passed by it when I volunteered at Demo
+              Day and my mobile app design professor brought it up in class.
+              Your app is beautifully designed and extremely relevant.”
+            </div>
+            <div class="testimonial-user">
+              - Joelle Ferguson
+            </div>
+            <div class="user-detail">
+              USC Student, LinkedIn Message
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              “Finally a real news app! I was looking for a news app like this.
+              Just downloaded it and looks really nice. Clean fluid and well put
+              together interface. I got rid of all my news apps because of the
+              clutter in the app and the one sided news or lack of real news.
+              Thanks for making a great simple way of getting real news real
+              simple. Well done.”
+            </div>
+            <div class="testimonial-user">
+              - Flyers57
+            </div>
+            <div class="user-detail">
+              Appstore comment
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial-text">
+              I rarely leave a rating but as a fellow App Developer this
+              deserves 5 stars.
+            </div>
+            <div class="testimonial-user">
+              - Brittanio
+            </div>
+            <div class="user-detail">
+              PLaystore comment
+            </div>
+          </div>
+
+          <div></div>
+        </div>
+        <button type="button" class="right-paddle">
+          <img src="assets/right-paddle.svg" height="26px" />
+        </button>
+      </div>
+
+      <div class="section5" id="download-now-desktop">
+        <div
+          class="sec5container"
+          data-sal="slide-up"
+          data-sal-delay="0"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutQuad"
+        >
+          <h2 class="title-text">
+            Evolve with us.
+          </h2>
+
+          <br />
+
+          <!-- <p class="subtitle-text">
+            Check it out,<br />
+            without the checkout.
+          </p> -->
+
+          <div class="downloadnow">
+            <div class="android">
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              >
+                <img
+                  alt="Get it on Google Play"
+                  style="margin-left: -10;"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              /></a>
+            </div>
+            <div class="ios">
+              <a
+                target="_blank"
+                href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+              >
+                <img alt="Download on the App Store" src="assets/app-store.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <span
+            ><a target="_blank" href="https://volvmedia.com/PrivacyPolicy"
+              >Privacy Policy
+            </a></span
+          >
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span
+            ><a target="_blank" href="https://volvmedia.com/TermsAndConditions"
+              >Terms & Conditions</a
+            >
+          </span>
+          <!-- &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span>© Copyright Volv 2019</span> -->
+        </div>
+        <div>
+          <span>© Copyright Volv 2020</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".categories > div:gt(0)").hide();
+
+      setInterval(function () {
+        $(".categories > div:first")
+          .fadeOut(200)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo(".categories");
+      }, 1000);
+
+      function getOS() {
+        var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+          windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+          iosPlatforms = ["iPhone", "iPad", "iPod"],
+          os = null;
+        if (macosPlatforms.indexOf(platform) !== -1) {
+          os = "Mac OS";
+          window.location.href = "#download-now-desktop";
+          // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
+        } else if (iosPlatforms.indexOf(platform) !== -1) {
+          os = "iOS";
+          window.location.href =
+            "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
+        } else if (windowsPlatforms.indexOf(platform) !== -1) {
+          os = "Windows";
+          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+          window.location.href = "#download-now-desktop";
+        } else if (/Android/.test(userAgent)) {
+          os = "Android";
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+        } else if (!os && /Linux/.test(platform)) {
+          os = "Linux";
+          window.location.href = "#download-now-desktop";
+          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+        }
+        return os;
+      }
+      // alert(getOS());
+      // getOS()
+    </script>
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> -->
+
+    <script src="./sal.js"></script>
+
+    <script>
+      sal({
+        threshold: 0,
+      });
+    </script>
+
+    <script>
+      function openNav() {
+        document.getElementById("navBar").style.width = "100%";
+        document.getElementById("hamMenu").style.display = "none";
+        document.getElementById("closeMenu").style.display = "grid";
+      }
+
+      function closeNav() {
+        document.getElementById("navBar").style.width = "0";
+        document.getElementById("hamMenu").style.display = "grid";
+        document.getElementById("closeMenu").style.display = "none";
+      }
+
+      // function closeNav() {
+      //     document.getElementById("mySidenav").style.width = "0";
+      // }
+    </script>
+
+    <!-- <script>
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      var header = document.getElementById("volvbuttonHeader");
+      var sticky = header.offsetTop;
+
+      function scrollFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("volv-button-header-sticky");
+        } else {
+          header.classList.remove("volv-button-header-sticky");
+        }
+      }
+    </script> -->
+
+    <script type="text/javascript">
+      $(function () {
+        //   $(".right-paddle").on("click", function() {
+        //     // alert("ok");
+        //     $(".testimonials-scroll-wrapper").scrollLeft += 20;
+        //   });
+        // });
+
+        // Add your javascript here
+
+        $(".right-paddle").click(function () {
+          // alert("ok");
+          event.preventDefault();
+          $(".testimonials-scroll-wrapper").animate(
+            {
+              scrollLeft: "+=350px",
+            },
+            "slow"
+          );
+        });
+
+        $(".left-paddle").click(function () {
+          event.preventDefault();
+          $(".testimonials-scroll-wrapper").animate(
+            {
+              scrollLeft: "-=350px",
+            },
+            "slow"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
