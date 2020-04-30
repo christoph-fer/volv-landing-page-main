@@ -297,15 +297,23 @@ html {
 .sec1content > p {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 400;
-  font-size: 62px;
+  font-size: 36px;
   color: white;
   animation: volv-window-desktop-animation 1s
     cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   opacity: 0;
   transform: translateY(400px);
-  margin-block-start: 3em;
+  margin-block-start: 0.1em;
   /* position: absolute;
   top: 150px; */
+}
+
+.sec1content > h3 {
+  margin-block-start: 8em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #ffeee8;
 }
 
 .sec2container {
@@ -888,7 +896,7 @@ a:hover {
   }
 
   .sec1content > p {
-    font-size: 54px;
+    font-size: 36px;
     top: 150px;
   }
 
@@ -917,7 +925,7 @@ a:hover {
 
 @media only screen and (max-width: 1280px) {
   .sec1content > p {
-    font-size: 54px;
+    font-size: 36px;
   }
 
   .sec2container {
@@ -1079,8 +1087,8 @@ a:hover {
 
 @media only screen and (max-width: 800px) {
   .sec1content > p {
-    font-size: 54px;
-    margin-block-start: 2em;
+    font-size: 36px;
+    margin-block-start: 0.2em;
     margin-block-end: 0.7em;
   }
 
@@ -1153,7 +1161,7 @@ a:hover {
   }
 
   .sec1content > p {
-    font-size: 46px;
+    font-size: 34px;
     position: unset;
   }
 
@@ -1208,8 +1216,8 @@ a:hover {
   }
 
   .sec1content p {
-    font-size: 36px;
-    margin-top: 25vh;
+    font-size: 32px;
+    margin-top: 0.1em;
   }
 
   .sec1content {
@@ -1282,13 +1290,23 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 580px) {
   .sec1content p {
-    margin-top: 15vh;
+    font-size: 26px;
+    margin-top: 0.1em;
+    margin-block-end: 1.5rem;
   }
+  .sec1content > h3 {
+    font-size: 13px;
+  }
+}
 
+@media only screen and (max-width: 470px) {
   .section1 {
     height: 93vh;
+  }
+  .sec1content p {
+    font-size: 22px;
   }
 
   .title-text {
@@ -1337,21 +1355,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 375px) {
-  .sec1content p {
-    margin-top: 20vh;
-  }
-
   .download > a > img {
     padding-right: 10px;
   }
 
   .download > a > span {
     padding-right: 5px;
-  }
-
-  .sec1content p {
-    font-size: 32px;
-    margin-top: 18vh;
   }
 
   .sec1content .volv-button {
