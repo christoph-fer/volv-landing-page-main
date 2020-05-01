@@ -1664,21 +1664,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 375px) {
-  .sec1content p {
-    margin-top: 20vh;
-  }
-
   .download > a > img {
     padding-right: 10px;
   }
 
   .download > a > span {
     padding-right: 5px;
-  }
-
-  .sec1content p {
-    font-size: 32px;
-    margin-top: 18vh;
   }
 
   .sec1content .volv-button {
