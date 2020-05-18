@@ -123,7 +123,7 @@ html {
   backdrop-filter: blur(20px);
   border-bottom: solid 1px rgba(0, 0, 0, 0.02);
 }
-.header.active img {
+.header.active div > div > img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
@@ -1210,7 +1210,7 @@ a:hover {
   display: grid;
   grid-column: 1 / 3;
   object-fit: contain;
-  /* width: 100%; */
+  width: 100%;
   height: fit-content;
   padding: 100px 50px 100px 50px;
   background-color: white;
@@ -1218,7 +1218,8 @@ a:hover {
 }
 
 .csm-article-pic-style-4 img {
-  width: 100%;
+  width: 80%;
+  margin: 0px auto 0px auto;
 }
 
 .csm-article-pic-style-3 {
