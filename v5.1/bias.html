@@ -52,6 +52,11 @@
             >Home</span
           ></a
         >
+        <a href="csm-sophie-katirai.html"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+            >Culture Shifter Magazine</span
+          ></a
+        >
         <a href="bias.html"
           ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
             >Why trust us?</span
@@ -335,6 +340,17 @@
         } else {
           //remove the background property so it comes transparent again (defined in your css)
           $(".header").removeClass("active");
+        }
+      });
+    </script>
+
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header-mobile > div").addClass("active");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header-mobile > div").removeClass("active");
         }
       });
     </script>

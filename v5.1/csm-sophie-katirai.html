@@ -42,6 +42,11 @@
             >Home</span
           ></a
         >
+        <a href="csm-sophie-katirai.html"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+            >Culture Shifter Magazine</span
+          ></a
+        >
         <a href="bias.html"
           ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
             >Why trust us?</span
@@ -197,6 +202,54 @@
               /></a>
             </div>
 
+            <!-- <div
+              class="volv-button-small"
+              type="button"
+              onclick="getOS()"
+              value="DOWNLOAD NOW - IT'S FREE"
+              style="
+                height: fit-content;
+                align-self: center;
+                margin-right: 20px;
+              "
+            >
+              <span>DOWNLOAD THE APP</span>
+              <span style="opacity: 0.7;"> — IT’S FREE</span>
+              <div class="downloadnow option">
+                <div
+                  style="
+                    grid-column: 1/3;
+                    color: black;
+                    text-align: center;
+                    margin-bottom: 10px;
+                  "
+                >
+                  Available on Android and iOS
+                </div>
+                <div class="android">
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                  >
+                    <img
+                      alt="Get it on Google Play"
+                      style="margin-left: -10;"
+                      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  /></a>
+                </div>
+                <div class="ios">
+                  <a
+                    target="_blank"
+                    href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+                  >
+                    <img
+                      alt="Download on the App Store"
+                      src="assets/app-store.svg"
+                  /></a>
+                </div>
+              </div>
+            </div> -->
+
             <div class="ham-menu" id="hamMenu" onclick="openNav()">
               <img src="assets/ham_menu.svg" height="13px" />
             </div>
@@ -215,7 +268,10 @@
       </div>
 
       <div class="qna">
-        <img data-sal="fade" class="qna-branding" src="assets/Q&A.svg" />
+        <div data-sal="fade" class="qna-branding">
+          <img src="assets/Q&A.svg" />
+        </div>
+
         <div class="qna-content">
           <div class="qna-set">
             <div data-sal="fade">
@@ -365,7 +421,7 @@
         </div>
 
         <div class="csm-article-pic-style-3">
-          <img src="assets/sophie-katirai-quote-1.svg" />
+          <img src="assets/sophie-katirai-quote-1-mobile.svg" />
         </div>
 
         <div></div>
@@ -565,6 +621,16 @@
         } else {
           //remove the background property so it comes transparent again (defined in your css)
           $(".header").removeClass("active");
+        }
+      });
+    </script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header-mobile > div").addClass("active");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header-mobile > div").removeClass("active");
         }
       });
     </script>
