@@ -15,6 +15,12 @@
       type="image/png"
       sizes="16x16"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
       rel="stylesheet"
@@ -26,6 +32,15 @@
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .header.active {
+        background: rgba(255, 255, 255, 1);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-bottom: solid 1px rgba(0, 0, 0, 0.02);
+      }
+    </style>
   </head>
 
   <body>
@@ -33,23 +48,17 @@
       <div class="navbar" id="navBar">
         <br /><br /><br /><br />
         <a href="index.html"
-          ><span
-            style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
             >Home</span
           ></a
         >
         <a href="bias.html"
-          ><span
-            style="-webkit-filter: invert(100%);
-        filter: invert(100%);"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
             >Why trust us?</span
           ></a
         >
         <a href="about.html"
-          ><span
-            style="-webkit-filter: invert(100%);
-        filter: invert(100%);"
+          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
             >About Us</span
           ></a
         >
@@ -57,8 +66,7 @@
           <a href="https://twitter.com/volv_media" target="_blank"
             ><img
               title="Volv on Twitter"
-              style="-webkit-filter: invert(100%);
-        filter: invert(100%);"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
               src="assets/twitter-white.png"
           /></a>
           <!-- <span>Follow us:</span> -->
@@ -67,16 +75,14 @@
             ><img
               title="Volv on Instagram"
               src="assets/instagram-white.png"
-              style="-webkit-filter: invert(100%);
-        filter: invert(100%);"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
           /></a>
 
           <a href="mailto:connect@volvmedia.com" target="_blank"
             ><img
               title="E-mail us"
               src="assets/main-icon-white.svg"
-              style="-webkit-filter: invert(100%);
-        filter: invert(100%);"
+              style="-webkit-filter: invert(100%); filter: invert(100%);"
           /></a>
         </div>
 
@@ -94,32 +100,38 @@
               <a href="index.html"
                 ><img
                   class="volv-logo"
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
                   src="assets/white volv svg.svg"
               /></a>
             </div>
 
             <div class="download">
+              <a href="csm-sophie-katirai.html"
+                ><span
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
+                  >Culture Shifter Magazine</span
+                ></a
+              >
               <a href="bias.html"
                 ><span
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="
+                    -webkit-filter: invert(100%);
+                    filter: invert(100%);
+                    border-bottom: 2px solid;
+                  "
                   >Why trust us?</span
                 ></a
               >
               <a href="about.html"
                 ><span
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
                   >About Us</span
                 ></a
               >
               <a href="https://twitter.com/volv_media" target="_blank"
                 ><img
                   title="Volv on Twitter"
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
                   src="assets/twitter-white.png"
               /></a>
               <!-- <span>Follow us:</span> -->
@@ -128,24 +140,47 @@
                 ><img
                   title="Volv on Instagram"
                   src="assets/instagram-white.png"
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
               /></a>
 
               <a href="mailto:connect@volvmedia.com" target="_blank"
                 ><img
                   title="E-mail us"
                   src="assets/main-icon-white.svg"
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
               /></a>
 
-              <input
+              <div
                 class="volv-button-small"
                 type="button"
                 onclick="getOS()"
                 value="DOWNLOAD NOW - IT'S FREE"
-              />
+              >
+                DOWNLOAD NOW - IT'S FREE
+                <div class="downloadnow option">
+                  <div class="android">
+                    <a
+                      target="_blank"
+                      href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                    >
+                      <img
+                        alt="Get it on Google Play"
+                        style="margin-left: -10;"
+                        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    /></a>
+                  </div>
+                  <div class="ios">
+                    <a
+                      target="_blank"
+                      href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
+                    >
+                      <img
+                        alt="Download on the App Store"
+                        src="assets/app-store.svg"
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,8 +191,7 @@
               <a href="index.html"
                 ><img
                   class="volv-logo"
-                  style="-webkit-filter: invert(100%);
-                filter: invert(100%);"
+                  style="-webkit-filter: invert(100%); filter: invert(100%);"
                   src="assets/white volv svg.svg"
               /></a>
             </div>
@@ -257,7 +291,7 @@
             >
               <img
                 alt="Get it on Google Play"
-                style=" margin-left: -10;"
+                style="margin-left: -10;"
                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
             /></a>
           </div>
@@ -293,6 +327,17 @@
         </div>
       </div>
     </wrapper>
+
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+          $(".header").addClass("active");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".header").removeClass("active");
+        }
+      });
+    </script>
 
     <script>
       function openNav() {

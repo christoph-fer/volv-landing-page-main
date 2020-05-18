@@ -4,6 +4,10 @@ body {
   letter-spacing: -0.3px;
 }
 
+::selection {
+  background: #fef5e1;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -83,7 +87,7 @@ html {
 }
 
 .navbar a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   opacity: 0.7;
   color: #fff;
   padding: 20px;
@@ -105,10 +109,33 @@ html {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0)
   ); */
-  height: 100px;
-  position: absolute;
+  /* height: 100px; */
+  position: fixed;
   width: 100%;
   z-index: 100;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background 300ms;
+}
+
+.header.active {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.02);
+}
+.header.active img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.header.active span {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.header a:hover {
+  text-decoration: none;
+  opacity: 0.6;
 }
 
 .header > div {
@@ -165,7 +192,7 @@ html {
 }
 
 .download > a > span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   /* font-family: "Frank Ruhl Libre", serif; */
   opacity: 0.7;
   color: #fff;
@@ -173,7 +200,7 @@ html {
   margin-right: 15px;
   font-size: 15px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .download > a:hover {
@@ -189,7 +216,7 @@ html {
 }
 
 .volv-button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(106.79deg, #ff984e -67.91%, #e15b2b 100%);
   box-shadow: 0px 13px 20px rgba(234, 89, 45, 0.15);
   border: none;
@@ -231,15 +258,16 @@ html {
 }
 
 .volv-button-small {
-  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 20px;
   color: white;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
@@ -249,14 +277,32 @@ html {
   box-sizing: border-box;
   -webkit-appearance: none;
   appearance: none;
+  width: fit-content;
+  display: inline-grid;
 }
 
 .volv-button-small:hover {
   box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
 }
 
+.downloadnow.option {
+  display: none;
+}
+
+.downloadnow.active {
+  position: absolute;
+  top: 60px;
+  right: 1;
+  background: rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
 .inputemail {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   width: 500px;
@@ -292,7 +338,7 @@ html {
 }
 
 .submitbutton {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
   font-size: 14px;
   letter-spacing: 1px;
@@ -416,12 +462,12 @@ html {
 }
 
 .testimonial-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 147.6%;
   /* or 32px */
-  font-style: italic;
+  /* font-style: italic; */
 
   letter-spacing: -0.3px;
 
@@ -429,13 +475,13 @@ html {
 }
 
 .testimonial-user {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 13px;
 }
 
 .user-detail {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 13px;
   opacity: 0.6;
@@ -507,7 +553,7 @@ html {
 }
 
 .sec1content .volv-button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(106.79deg, #ff984e -67.91%, #e15b2b 100%);
   border: none;
   outline: none;
@@ -549,7 +595,7 @@ html {
 
 .sec1content > h3 {
   margin-block-start: 8em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   color: #ffeee8;
@@ -595,7 +641,7 @@ html {
 }
 
 .subtitle-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -608,7 +654,7 @@ html {
 }
 
 .caption-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -619,7 +665,7 @@ html {
 }
 
 .volv-hint {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: #acacac;
   font-size: 15px;
@@ -685,7 +731,7 @@ html {
 }
 
 .features span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 19px;
   font-weight: 300;
   color: #505050;
@@ -1005,7 +1051,7 @@ html {
 }
 
 @keyframes dive-in-animation {
-  form {
+  from {
     opacity: 0;
     transform: translateY(-5px);
   }
@@ -1022,7 +1068,7 @@ html {
 }
 
 @keyframes volv-window-desktop-animation {
-  form {
+  from {
     opacity: 0;
     transform: translateY(100px);
   }
@@ -1095,9 +1141,9 @@ html {
   height: 80px;
   background-color: #f9f9f9;
   color: rgb(89, 89, 89);
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
 }
 
@@ -1116,6 +1162,166 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* culture shifter magazine page */
+
+.csmsec1 {
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("assets/culture-shifter-magazine-header.svg");
+}
+
+.csmsec2 {
+  height: fit-content;
+}
+
+.csm-article-pic-style-1 {
+  display: grid;
+  object-fit: cover;
+  height: fit-content;
+  margin: 100px auto 100px auto;
+}
+
+.csm-article-pic-style-1 img {
+  width: 60%;
+  margin: 0px auto 0px auto;
+}
+
+.csm-article-pic-style-2 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0px 100px 0px;
+  background-color: white;
+  z-index: 10;
+}
+
+.csm-article-pic-style-2 img {
+  width: 100%;
+}
+
+.csm-article-pic-style-4 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  /* width: 100%; */
+  height: fit-content;
+  padding: 100px 50px 100px 50px;
+  background-color: white;
+  z-index: 10;
+}
+
+.csm-article-pic-style-4 img {
+  width: 100%;
+}
+
+.csm-article-pic-style-3 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+
+  background-color: white;
+  z-index: 10;
+}
+
+.csm-article-pic-style-3 img {
+  width: 80%;
+  padding: 50px 5% 100px 15%;
+  /* margin-left: 20vw; */
+}
+
+.qna {
+  display: grid;
+  grid-template-columns: 30vw 3fr;
+  max-width: 1440px;
+  justify-items: center;
+  margin: 0px auto 0px auto;
+}
+
+.qna-branding {
+  object-fit: cover;
+  width: 30vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 15vh;
+}
+
+.qna-content {
+  padding: 0px 5vw 0px 100px;
+
+  grid-template-columns: 30vw 3fr;
+}
+
+.qna-content a {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+.qna-content a:hover {
+  text-decoration: underline;
+}
+
+.qna-set {
+  grid-template-columns: 30vw 3fr;
+  grid-column: 1/3;
+}
+
+.csm-qtn {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 136.1%;
+  /* or 33px */
+
+  color: #000000;
+}
+
+.csm-ans {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 136.1%;
+
+  color: #000000;
+  margin: 0px 0px 70px 0px;
+}
+
+.in-view {
+  animation: volv-window-desktop-animation 1s
+    cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
+}
+
+.test.in-view {
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
 }
 
 @media only screen and (max-height: 500px) {
@@ -1476,7 +1682,7 @@ a:hover {
   }
 
   .features span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 147.6%;
