@@ -158,11 +158,6 @@ html {
   z-index: 100;
 }
 
-.header-mobile > div div > img {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
 .header-mobile > div {
   max-width: 1600px;
   padding: 0px 15px;
@@ -1851,7 +1846,7 @@ a:hover {
     display: block;
   }
   .qna-branding {
-    position: unset;
+    /* position: unset; */
     width: 100%;
     background-color: white;
     padding: 50px 0px 20px 0px;
