@@ -123,10 +123,10 @@ html {
   backdrop-filter: blur(20px);
   border-bottom: solid 1px rgba(0, 0, 0, 0.02);
 }
-.header.active div > div > a > img {
+/* .header.active div > div > a > img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
-}
+} */
 
 .header.active span {
   -webkit-filter: invert(100%);
@@ -1188,12 +1188,20 @@ a:hover {
 /* culture shifter magazine page */
 
 .csmsec1 {
+  display: grid;
   height: 40vw;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("assets/csm-header.webp");
+  background-image: url("assets/culture-shifter-magazine-header-picture.jpg");
+}
+
+.csmsec1 > img {
+  width: 55%;
+  object-fit: contain;
+  margin: 0px auto 0px auto;
+  padding: 17vw 0px 0px 0px;
 }
 
 .csmsec2 {
@@ -1842,6 +1850,12 @@ a:hover {
     font-size: 13px;
   }
   /* Culture Shifter Magazine tab */
+  .csmsec1 > img {
+    width: 70%;
+    object-fit: contain;
+    margin: 0px auto 0px auto;
+    padding: 24vw 0px 0px 0px;
+  }
   .qna {
     display: block;
   }
