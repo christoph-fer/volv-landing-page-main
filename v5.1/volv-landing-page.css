@@ -1358,6 +1358,33 @@ a:hover {
   animation-name: fadeInUp;
 }
 
+.csm-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80px;
+  background-color: #ffe2af;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.csm-foot-volv img {
+  height: 23px;
+}
+
+.csm-foot-volv {
+  justify-self: right;
+  padding-right: 20px;
+}
+
+.csm-foot-logo {
+  border-left: 1px solid black;
+  padding-left: 20px;
+}
+
+.csm-foot-logo img {
+  height: 30px;
+}
+
 @media only screen and (max-height: 500px) {
   .header {
     position: absolute;
@@ -1876,8 +1903,40 @@ a:hover {
     width: 90%;
   }
   .csmsec1 {
-    height: 55vw;
+    height: 100vw;
     width: 100%;
+  }
+
+  .csmsec1 > img {
+    padding: 48vw 0px 0px 0px;
+    width: 90%;
+  }
+
+  .csm-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60px;
+    background-color: #ffe2af;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .csm-foot-volv img {
+    height: 18px;
+  }
+
+  .csm-foot-volv {
+    justify-self: right;
+    padding-right: 20px;
+  }
+
+  .csm-foot-logo {
+    border-left: 1px solid black;
+    padding-left: 20px;
+  }
+
+  .csm-foot-logo img {
+    height: 23px;
   }
 }
 
