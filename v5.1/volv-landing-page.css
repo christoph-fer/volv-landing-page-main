@@ -133,10 +133,20 @@ html {
   filter: invert(100%);
 }
 
+.header a {
+  transition: opacity 300ms;
+}
+
 .header a:hover {
   text-decoration: none;
+
   opacity: 0.6;
 }
+
+/* .header a:active {
+  text-decoration: none;
+  opacity: 0.4;
+} */
 
 .header > div {
   max-width: 1600px;
@@ -2021,11 +2031,13 @@ a:hover {
     width: 100%;
     background-color: white;
     /* padding: 50px 0px 20px 0px; */
-    padding: 30px 0px 7px 2vw;
+
+    padding: 30px 0px 7px 0px;
     top: 50px;
   }
   .qna-branding img {
     width: 17vh;
+    padding-left: 1vw;
     /* width: 20vh; */
   }
   .csm-article-pic-style-4 img {
