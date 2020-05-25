@@ -1196,6 +1196,21 @@ a:hover {
   text-decoration: underline;
 }
 
+.volv-video {
+  display: grid;
+  justify-content: center;
+  padding: 4rem calc((100% - 1280px) / 2);
+  background-color: #fff;
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 50px;
+}
+
+.volv-video iframe {
+  width: 80vw;
+  height: 45vw;
+}
+
 /* culture shifter magazine page */
 
 .csmsec1 {
@@ -2025,6 +2040,7 @@ a:hover {
     width: 100%;
     font-size: 16px;
   }
+
   /* Culture Shifter Magazine tab */
 
   .qna-branding {
