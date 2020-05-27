@@ -1279,7 +1279,7 @@ a:hover {
   left: 0;
   right: 0;
   text-align: center;
-  animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99)
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
     forwards;
   opacity: 0;
   transform: translateY(100px);
