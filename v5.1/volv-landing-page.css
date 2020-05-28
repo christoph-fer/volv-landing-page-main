@@ -1187,6 +1187,87 @@ html {
   text-align: center;
 }
 
+/* Footer 2.0 */
+
+.footer-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #909090;
+  /* width: 100%; */
+  height: fit-content;
+  padding: 40px;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 50px;
+}
+
+.footer-2 li {
+  float: left;
+}
+
+.footer-2 li {
+  list-style-type: none;
+}
+
+.footer-links {
+  display: grid;
+  justify-self: right;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+}
+
+.footer-links a {
+  display: grid;
+  background-color: #eaeaea;
+  height: 42px;
+  width: 42px;
+  margin: 0px 0px 0px 10px;
+  border-radius: 50%;
+}
+
+.footer-links img {
+  height: 17px;
+  padding: 12px;
+}
+
+.footer-first-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer-second-half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer-volv-logo img {
+  height: 27px;
+  justify-self: left;
+}
+
+.footer-second-left {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: max-content max-content;
+}
+
+.footer-second-right {
+  display: grid;
+  justify-items: right;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -2105,6 +2186,31 @@ a:hover {
     height: unset;
     width: 100%;
     font-size: 16px;
+  }
+
+  /* Footer 2.0 */
+
+  .footer-2 {
+    padding: 20px;
+  }
+
+  .footer-links a {
+    height: 36px;
+    width: 36px;
+  }
+
+  .footer-links img {
+    height: 12px;
+    padding: 12px;
+  }
+
+  .footer-second-left {
+    grid-template-columns: max-content;
+    row-gap: 10px;
+  }
+
+  .footer-second-right {
+    align-items: flex-end;
   }
 
   /* Culture Shifter Magazine tab */
