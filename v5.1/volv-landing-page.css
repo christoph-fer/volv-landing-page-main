@@ -1259,7 +1259,7 @@ html {
 
 .footer-second-left {
   display: grid;
-  column-gap: 50px;
+  column-gap: 20px;
   grid-template-columns: max-content max-content;
 }
 
