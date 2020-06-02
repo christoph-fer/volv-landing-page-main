@@ -36,45 +36,83 @@ html {
   background-position: center;
 }
 
-.section1about {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    ),
-    url("assets/about-us-slime.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.our-story-section1 {
+  background: linear-gradient(270deg, #ffe2af, #b1c4e5);
+  background-size: 200% 200%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+.our-story-sec1content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: baseline;
+}
+
+.our-story-container {
+  max-width: 600px;
+  background: white;
+  padding: 30px 50px 50px 50px;
+  display: grid;
+  justify-self: center;
+  margin: 150px 20px 70px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.our-story-content h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.our-story-container p {
+  font-family: "Inter", sans-serif;
+  line-height: 136.1%;
+  font-size: 16px;
 }
 
 .navbar {
-  float: right;
+  /* float: right; */
   height: 100vh;
   width: 0px;
-  background: #f9f9f9;
+  background: #ffffff;
   z-index: 50;
   position: fixed;
   top: 0;
   right: 0;
-  overflow: hidden;
+  overflow: hidden !important;
   transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  text-align: -webkit-center;
+  /* transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1); */
+  /* text-align: -webkit-center; */
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+
+  /* width: 250px; */
+  justify-items: center;
+  align-content: flex-start;
+  padding-top: 10vh;
 }
 
 .navbar > a {
-  width: 400px;
+  width: 100vw;
+  text-align: center;
 }
 
-.navbar div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: fit-content;
-  width: 250px;
+.navbar > div {
+  width: 90vw;
 }
 
 .navbar > div > a > img {
@@ -83,10 +121,10 @@ html {
 
 .navbar input {
   margin: 20px;
-  width: 300px;
+  width: 80vw;
 }
 
-.navbar a {
+.navbar > a {
   font-family: "Inter", sans-serif;
   opacity: 0.7;
   color: #fff;
@@ -99,6 +137,10 @@ html {
   transition: 0.3s;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.navbar .volv-button-small {
+  width: 80%;
 }
 
 .header {
@@ -1196,10 +1238,11 @@ html {
   /* width: 100%; */
   height: fit-content;
   padding: 40px;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   display: grid;
   grid-template-rows: auto auto;
   grid-gap: 50px;
+  transition: 0.7s linear 0.3s;
 }
 
 .footer-2 li {
@@ -1253,6 +1296,7 @@ html {
 }
 
 .footer-volv-logo img {
+  display: none;
   height: 27px;
   justify-self: left;
 }
@@ -2242,6 +2286,21 @@ a:hover {
     /* background-repeat: no-repeat;
     background-color: white;
     background: url(assets/sophie-katirai-quote-1-mobile.svg); */
+  }
+
+  /* Our Story */
+
+  .our-story-container {
+    padding: 30px 30px 50px 30px;
+  }
+
+  .our-story-content h1 {
+    font-size: 32px;
+    margin: 10px 0px 30px 0px;
+  }
+
+  .our-story-content p {
+    font-size: 14px;
   }
 }
 
