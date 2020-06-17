@@ -140,7 +140,7 @@ html {
 }
 
 .navbar .volv-button-small {
-  width: 80%;
+  width: fit-content;
 }
 
 .header {
@@ -1851,7 +1851,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 885px) {
   .sec1content > p {
     font-size: 36px;
     margin-block-start: 0.2em;
