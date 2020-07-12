@@ -32,28 +32,19 @@
     /> -->
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .volv-header.active div > div > a > img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
+
+      .footer-2 {
+        background-color: transparent;
+        color: #0000007c;
+      }
+    </style>
   </head>
-
-  <style>
-    .header-mobile > div.active div > a > img {
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
-    }
-
-    .header-mobile > div div > img {
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
-    }
-    .header.active div > div > a > img {
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
-    }
-
-    .footer-2 {
-      background-color: transparent;
-      color: #0000007c;
-    }
-  </style>
 
   <body>
     <!-- <div id="volvbuttonHeader" class="volv-button-header">
@@ -107,119 +98,90 @@
     </div>
     <div class="wrapper">
       <div class="navbar" id="navBar">
-        <a href="index.html"
-          ><span
-            style="
-              -webkit-filter: invert(100%);
-              filter: invert(100%);
-              border-bottom: 2px solid;
-            "
-            >Home</span
-          ></a
-        >
-        <a href="csm-sophie-katirai.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Culture Shifter Magazine</span
-          ></a
-        >
-        <a href="bias.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Why trust us?</span
-          ></a
-        >
-        <a href="about.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Our Story</span
-          ></a
-        >
+        <div>
+          <div class="page-links">
+            <a href="index.html">
+              <span
+                style="
+                  -webkit-filter: invert(100%);
+                  filter: invert(100%);
+                  border-bottom: 2px solid;
+                "
+                >Home</span
+              >
+            </a>
+            <a href="about.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);"
+                >Our Story</span
+              >
+            </a>
+            <a href="bias.html"
+              ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
+                >Why trust us?</span
+              ></a
+            >
 
-        <br />
-
-        <!-- <input
-          class="volv-button-small"
-          type="button"
-          onclick="getOS()"
-          value="DOWNLOAD THE APP - IT'S FREE"
-        /> -->
-
-        <div
-          class="footer-2"
-          style="position: fixed; bottom: 1; height: 118px;"
-        >
-          <div class="footer-first-half">
-            <div class="footer-volv-logo">
-              <img src="../assets/volv-logo-black.svg" alt="Volv" />
-            </div>
-            <div class="footer-links">
-              <a href="https://medium.com/@volvmedia" target="_blank"
-                ><img src="../assets/medium-icon-black.jpg" alt=""
-              /></a>
-              <a href="https://www.instagram.com/volvmedia/"
-                ><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/instagram-white.png"
-                  alt=""
-              /></a>
-              <a href="https://twitter.com/volv_media" target="_blank"
-                ><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/twitter-white.png"
-                  alt=""
-              /></a>
-              <a href="mailto:connect@volvmedia.com" target="_blank"
-                ><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/main-icon-white.svg"
-                  alt=""
-              /></a>
-            </div>
+            <a href="csm-launch.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);"
+                >Culture Shifter Magazine</span
+              >
+            </a>
+            <a href="join-us.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);"
+                >Join Us</span
+              >
+            </a>
           </div>
-          <div class="footer-second-half">
-            <div class="footer-second-left">
-              <a target="_blank" href="https://volvmedia.com/PrivacyPolicy"
-                >Privacy Policy</a
-              >
-              <a target="_blank" href="https://volvmedia.com/TermsAndConditions"
-                >Terms And Conditions</a
-              >
-            </div>
-            <div class="footer-second-right">
-              <a href="" style="text-decoration: none; cursor: unset;"
-                >© Copyright Volv 2020</a
-              >
-            </div>
+          <div class="navbar-links">
+            <a href="https://medium.com/@volvmedia" target="_blank"
+              ><img src="../assets/medium-icon-black.jpg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/volvmedia/"
+              ><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);"
+                src="../assets/instagram-white.png"
+                alt=""
+            /></a>
+            <a href="https://twitter.com/volv_media" target="_blank"
+              ><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);"
+                src="../assets/twitter-white.png"
+                alt=""
+            /></a>
+            <a href="mailto:connect@volvmedia.com" target="_blank"
+              ><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);"
+                src="../assets/main-icon-white.svg"
+                alt=""
+            /></a>
           </div>
+          <div
+            class="cta-button-navbar"
+            w3-include-html="../components/volv-button-small.html"
+          ></div>
         </div>
       </div>
-
       <div class="section1">
-        <div class="header">
+        <div class="volv-header">
           <div>
             <div style="align-self: center;">
-              <a href="index.html"
-                ><img class="volv-logo" src="../assets/white volv svg.svg"
-              /></a>
+              <a href="index.html">
+                <img class="volv-logo" src="../assets/white volv svg.svg" />
+              </a>
             </div>
 
-            <div class="download">
-              <a href="csm-launch.html"
-                ><span>Culture Shifter Magazine</span></a
-              >
-              <a href="bias.html"><span>Why trust us?</span></a>
-              <a href="about.html"><span>Our Story</span></a>
-            </div>
-          </div>
-        </div>
+            <div
+              class="cta-button"
+              style="justify-self: right; margin-right: 20px;"
+              w3-include-html="../components/volv-button-small.html"
+            ></div>
 
-        <div class="header-mobile">
-          <div>
-            <div style="align-self: center;">
-              <a href="index.html"
-                ><img class="volv-logo" src="../assets/white volv svg.svg"
-              /></a>
-            </div>
-
-            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+            <div
+              style="filter: invert(100%); -webkit-filter: invert(100%);"
+              class="ham-menu"
+              id="hamMenu"
+              onclick="openNav(x)"
+            >
               <img src="../assets/ham_menu.svg" height="13px" />
             </div>
 
@@ -228,7 +190,6 @@
             </div>
           </div>
         </div>
-
         <div class="sec1content">
           <h3>THE MILLENNIAL NEWS APP</h3>
 
@@ -239,7 +200,7 @@
           </p>
 
           <div role="button" class="volv-button" onclick="getOS()">
-            <span>DOWNLOAD THE APP</span
+            <span>DOWNLOAD VOLV</span
             ><span style="opacity: 0.7;"> — IT’S FREE</span>
           </div>
         </div>
@@ -648,17 +609,30 @@
     </script>
 
     <script>
-      function openNav() {
-        document.getElementById("navBar").style.width = "100%";
-        document.getElementById("hamMenu").style.display = "none";
-        document.getElementById("closeMenu").style.display = "grid";
+      function openNav(x) {
+        if (x.matches) {
+          document.getElementById("navBar").style.height = "520px";
+          document.getElementById("navBar").style.opacity = "1";
+          document.getElementById("hamMenu").style.display = "none";
+          document.getElementById("closeMenu").style.display = "grid";
+        } else {
+          document.getElementById("navBar").style.height = "320px";
+          document.getElementById("navBar").style.opacity = "1";
+          document.getElementById("hamMenu").style.display = "none";
+          document.getElementById("closeMenu").style.display = "grid";
+        }
       }
 
       function closeNav() {
-        document.getElementById("navBar").style.width = "0";
+        document.getElementById("navBar").style.height = "0px";
+        document.getElementById("navBar").style.opacity = "0";
         document.getElementById("hamMenu").style.display = "grid";
         document.getElementById("closeMenu").style.display = "none";
       }
+
+      var x = window.matchMedia("(max-width: 669px)");
+      // openNav(x) // Call listener function at run time
+      // x.addListener(openNav) // Attach listener function on state changes
 
       // function closeNav() {
       //     document.getElementById("mySidenav").style.width = "0";
