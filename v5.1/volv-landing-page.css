@@ -40,9 +40,9 @@ html {
   background: linear-gradient(270deg, #ffe2af, #b1c4e5);
   background-size: 200% 200%;
 
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
 }
 
 .our-story-sec1content {
@@ -944,7 +944,7 @@ html {
 
 .volv-v-back {
   mix-blend-mode: soft-light;
-  opacity: 0.6;
+  opacity: 0.4;
   max-width: 1600px;
   display: grid;
   margin-left: 50vh;
@@ -1084,13 +1084,13 @@ html {
   background: linear-gradient(270deg, #fff2e8, #dbf0ff);
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
   height: 782px;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes GradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -1101,7 +1101,7 @@ html {
     background-position: 0% 50%;
   }
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes GradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -1112,7 +1112,7 @@ html {
     background-position: 0% 50%;
   }
 }
-@keyframes AnimationName {
+@keyframes GradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -1542,6 +1542,127 @@ a:hover {
   animation: fadeInUp;
   animation-duration: 1s;
   animation-delay: 0s;
+}
+
+/* Join Us page */
+
+.joinus-sec1 {
+  z-index: -2;
+  background: linear-gradient(270deg, #d9e5dd, #f3efeb);
+  background-size: 200% 200%;
+
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
+  height: 782px;
+}
+
+.joinus-animated-bg-gradient {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: baseline;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  text-align: center;
+}
+
+.volv-v-back-2 {
+  mix-blend-mode: soft-light;
+  opacity: 0.4;
+  max-width: 1600px;
+  display: grid;
+  margin-left: 50vh;
+  margin-right: auto;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.join-us {
+  text-align: center;
+  margin-top: -700px;
+}
+
+.join-us-options {
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.join-us-option-card {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms ease-out;
+}
+
+.join-us-option-card:hover {
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+
+  box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+}
+
+.join-us-option-card:hover > .join-us-option-card-cta {
+  background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
+}
+
+.join-us-option-card-content {
+  padding: 30px;
+  height: 200px;
+}
+
+.join-us-option-card-cta {
+  background: linear-gradient(102.57deg, #ffffff 0%, #ffffff 98.03%);
+
+  transition: 300ms ease-out;
+  border-radius: 0px 0px 10px 10px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.heading-serif {
+  font-family: "DM Serif Display", serif;
+  font-weight: unset;
+  font-size: 69px;
+  margin-block-start: 150px;
+  margin-block-end: 0px;
+}
+
+.caps-sans-serif {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  color: #749c84;
+  margin-block-start: 40px;
+  margin-block-end: 0px;
+}
+
+.body-sans-serif-1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136.1%;
+}
+
+.body-sans-serif-2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 136.1%;
 }
 
 @keyframes fadeInUp {

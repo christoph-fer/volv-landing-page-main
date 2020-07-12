@@ -1,0 +1,253 @@
+.csmsec1 {
+  display: grid;
+  height: 40vw;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/culture-shifter-magazine-header-picture.jpg");
+  > img {
+    width: 55%;
+    object-fit: contain;
+    margin: 0px auto 0px auto;
+    padding: 17vw 0px 0px 0px;
+  }
+}
+.csmsec2 {
+  height: fit-content;
+}
+
+.csm-article-pic-style-1 {
+  display: grid;
+  object-fit: cover;
+  height: fit-content;
+  margin: 100px auto 100px auto;
+  img {
+    width: 60%;
+    margin: 0px auto 0px auto;
+  }
+}
+.csm-article-pic-style-2 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+  padding: 100px 0px 100px 0px;
+  background-color: white;
+  z-index: 10;
+  img {
+    width: 100%;
+  }
+}
+.csm-article-pic-style-3 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  z-index: 10;
+  img {
+    width: 40%;
+    padding: 50px 5% 100px 30%;
+  }
+}
+.csm-article-pic-style-4 {
+  display: grid;
+  grid-column: 1 / 3;
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  z-index: 10;
+  img {
+    width: 80%;
+    margin: 30px auto 70px auto;
+  }
+}
+.qna {
+  display: grid;
+  grid-template-columns: 30vw 3fr;
+  max-width: 1440px;
+  justify-items: center;
+  margin: 0px auto 0px auto;
+}
+.qna-branding {
+  object-fit: cover;
+  width: 30vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 15vh;
+  img {
+    width: 100%;
+  }
+}
+.qna-content {
+  padding: 0px 5vw 0px 100px;
+  grid-template-columns: 30vw 3fr;
+  a {
+    color: #ffc451;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.qna-set {
+  grid-template-columns: 30vw 3fr;
+  grid-column: 1/3;
+}
+.csm-qtn {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 136.1%;
+  color: #000000;
+}
+.csm-ans {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 136.1%;
+  color: #000000;
+  margin: 0px 0px 70px 0px;
+}
+.csm-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80px;
+  background-color: #ffe2af;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.csm-foot-volv {
+  img {
+    height: 23px;
+  }
+  justify-self: right;
+  padding-right: 20px;
+}
+.csm-foot-logo {
+  border-left: 1px solid black;
+  padding-left: 20px;
+  img {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .csm-qtn {
+    font-size: 20px;
+  }
+  .csm-ans {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .qna-content {
+    padding: 0px 5vw 0px 5vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .csm-qtn {
+    font-size: 18px;
+  }
+  .csm-ans {
+    font-size: 13px;
+  }
+  .csm-header-pic {
+    height: 52vh;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .csmsec1 {
+    > img {
+      width: 70%;
+      object-fit: contain;
+      margin: 0px auto 0px auto;
+      padding: 24vw 0px 0px 0px;
+      padding: 48vw 0px 0px 0px;
+      width: 90%;
+    }
+    height: 100vw;
+    width: 100%;
+  }
+  .qna {
+    display: block;
+  }
+  .qna-branding {
+    width: 100%;
+    background-color: white;
+    padding: 50px 0px 20px 0px;
+    top: 50px;
+    img {
+      width: 30vh;
+    }
+  }
+  .csm-article-pic-style-1 {
+    margin: 40px auto 0px auto;
+    img {
+      width: 75%;
+    }
+  }
+  .csm-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60px;
+    background-color: #ffe2af;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .csm-foot-volv {
+    img {
+      height: 18px;
+    }
+    justify-self: right;
+    padding-right: 20px;
+  }
+  .csm-foot-logo {
+    border-left: 1px solid black;
+    padding-left: 20px;
+    img {
+      height: 23px;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .qna-branding {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0px 7px 0px;
+    top: 50px;
+    img {
+      width: 17vh;
+      padding-left: 1vw;
+    }
+  }
+  .csm-article-pic-style-4 {
+    img {
+      width: 90%;
+      margin: 0px auto 30px auto;
+    }
+  }
+  .csm-article-pic-style-2 {
+    padding: 0px 0px 30px 0px;
+  }
+  .csm-article-pic-style-3 {
+    img {
+      padding: unset;
+      width: 80%;
+      margin: 0px auto 50px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .csm-header-pic {
+    height: 44vh;
+  }
+}

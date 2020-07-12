@@ -1,0 +1,43 @@
+.volv-button-small {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 300ms;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+  width: fit-content;
+  display: inline-grid;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
+  }
+}
+.downloadnow.option {
+  display: none;
+}
+.downloadnow.active {
+  position: absolute;
+  top: 60px;
+  right: 1;
+  background: rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.05);
+}
