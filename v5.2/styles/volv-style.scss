@@ -6,6 +6,7 @@
 @import "./home";
 @import "./our-story";
 @import "./bias";
+@import "./join-us";
 
 @import "./csm-launch";
 @import "./csm-sophie-katirai";
@@ -27,11 +28,13 @@ html {
 .volv-logo {
   height: 25px;
 }
+
 .download {
   text-align: right;
   align-self: center;
-  > a {
-    > span {
+
+  >a {
+    >span {
       font-family: "Inter", sans-serif;
       opacity: 0.7;
       color: #fff;
@@ -40,10 +43,12 @@ html {
       text-decoration: none;
       font-weight: 600;
     }
+
     &:hover {
       text-decoration-color: #fff;
     }
-    > img {
+
+    >img {
       max-height: 17px;
       vertical-align: middle;
       padding-left: 7px;
@@ -52,6 +57,7 @@ html {
     }
   }
 }
+
 .volv-button {
   font-family: "Inter", sans-serif;
   background: linear-gradient(106.79deg, #ff984e -67.91%, #e15b2b 100%);
@@ -72,16 +78,19 @@ html {
   -webkit-appearance: none;
   appearance: none;
   width: fit-content;
+
   &:hover {
     box-shadow: 0 12px 25px 0 rgba(255, 89, 12, 0.3);
   }
 }
+
 .volv-button-header-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   opacity: 1;
 }
+
 .volv-button-header {
   opacity: 1;
 }
@@ -102,19 +111,23 @@ html {
   transition: 300ms;
   -webkit-appearance: none;
   -moz-appearance: none;
+
   &:hover {
     filter: drop-shadow(0px 12px 20px rgba(215, 226, 243, 0.4));
   }
+
   &:focus {
     filter: drop-shadow(0px 12px 20px rgba(244, 126, 71, 0.1));
   }
 }
+
 .sign_up_2 {
   grid-column: 2;
   grid-row: 2;
   margin-left: 200px;
   margin-top: -400px;
 }
+
 // &::placeholder {
 //   color: rgb(200, 200, 200);
 //   font-weight: 300;
@@ -143,20 +156,24 @@ html {
   transition: 300ms;
   -webkit-appearance: none;
   -moz-appearance: none;
+
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
   }
+
   &:active {
     background-color: rgb(230, 120, 69);
     box-shadow: 0 1px 2px 0 rgba(244, 126, 71, 0.2);
   }
 }
+
 .bene_form {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 10px;
   max-width: 420px;
 }
+
 .promo-code {
   font-family: "PT Mono", monospace;
   background-color: #ffeee8;
@@ -165,10 +182,12 @@ html {
   color: #f17c3e;
   font-size: 25px;
 }
+
 .testimonials {
   display: grid;
   text-align: center;
 }
+
 .testimonials-scroll-wrapper {
   margin-top: 20px;
   display: grid;
@@ -177,29 +196,32 @@ html {
   grid-gap: 20px;
   grid-auto-flow: column;
   grid-auto-columns: 400px;
+
   &::-webkit-scrollbar {
     display: none;
   }
-  > div {
-    background: linear-gradient(
-      234.85deg,
-      rgba(130, 148, 203, 0.1) 16.15%,
-      rgba(130, 148, 203, 0.1) 130.7%
-    );
+
+  >div {
+    background: linear-gradient(234.85deg,
+        rgba(130, 148, 203, 0.1) 16.15%,
+        rgba(130, 148, 203, 0.1) 130.7%);
     box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
     padding: 40px 30px 40px 30px;
     text-align: left;
     height: fit-content;
     border-radius: 5px;
+
     &:first-child {
       margin-left: 80px;
     }
+
     &:last-child {
       width: 0px;
       opacity: 0;
     }
   }
 }
+
 .testimonial-text {
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -208,11 +230,13 @@ html {
   letter-spacing: -0.3px;
   margin-bottom: 30px;
 }
+
 .testimonial-user {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 13px;
 }
+
 .user-detail {
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -220,15 +244,14 @@ html {
   opacity: 0.6;
   margin-top: 5px;
 }
+
 .left-paddle {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(
-    234.85deg,
-    rgba(130, 148, 203, 0.05) 16.15%,
-    rgba(130, 148, 203, 0.05) 130.7%
-  );
+  background: linear-gradient(234.85deg,
+      rgba(130, 148, 203, 0.05) 16.15%,
+      rgba(130, 148, 203, 0.05) 130.7%);
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.6);
   z-index: 20;
   border: none;
@@ -239,16 +262,15 @@ html {
   border-radius: 80px;
   margin-left: 10px;
 }
+
 .right-paddle {
   right: 0;
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(
-    234.85deg,
-    rgba(130, 148, 203, 0.05) 16.15%,
-    rgba(130, 148, 203, 0.05) 130.7%
-  );
+  background: linear-gradient(234.85deg,
+      rgba(130, 148, 203, 0.05) 16.15%,
+      rgba(130, 148, 203, 0.05) 130.7%);
   box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.6);
   z-index: 20;
   border: none;
@@ -259,6 +281,7 @@ html {
   border-radius: 80px;
   margin-left: 10px;
 }
+
 .sec1content {
   max-width: 1600px;
   margin-left: auto;
@@ -267,6 +290,7 @@ html {
   grid-template-columns: 1fr;
   align-content: baseline;
   height: 100vh;
+
   .volv-button {
     font-family: "Inter", sans-serif;
     background: linear-gradient(106.79deg, #ff984e -67.91%, #e15b2b 100%);
@@ -286,23 +310,23 @@ html {
     -webkit-appearance: none;
     appearance: none;
     width: fit-content;
-    animation: volv-window-desktop-animation 1s
-      cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
+    animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
     opacity: 0;
     transform: translateY(400px);
   }
-  > p {
+
+  >p {
     font-family: "Frank Ruhl Libre", serif;
     font-weight: 400;
     font-size: 36px;
     color: white;
-    animation: volv-window-desktop-animation 1s
-      cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     opacity: 0;
     transform: translateY(400px);
     margin-block-start: 0.1em;
   }
-  > h3 {
+
+  >h3 {
     margin-block-start: 8em;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -321,6 +345,7 @@ html {
   margin-right: auto;
   grid-gap: 20px;
   text-align: center;
+
   .title-text {
     font-family: "Frank Ruhl Libre", serif;
     font-style: normal;
@@ -330,6 +355,7 @@ html {
     color: #000000;
   }
 }
+
 .title-text {
   font-family: "Frank Ruhl Libre", serif;
   font-style: normal;
@@ -339,6 +365,7 @@ html {
   letter-spacing: -0.3px;
   color: #000000;
 }
+
 .subtitle-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -348,6 +375,7 @@ html {
   letter-spacing: -0.03em;
   color: #505050;
 }
+
 .caption-text {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -357,21 +385,25 @@ html {
   text-align: center;
   color: #e15b2b;
 }
+
 .volv-hint {
   font-family: "Inter", sans-serif;
   font-style: normal;
   color: #acacac;
   font-size: 15px;
 }
+
 .sec1-3dphone {
   background-image: url(../assets/3d-phone-2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
 }
+
 .section3 {
   text-align: center;
-  > .title-text {
+
+  >.title-text {
     font-family: "Frank Ruhl Libre", serif;
     font-style: normal;
     line-height: 0;
@@ -379,6 +411,7 @@ html {
     color: #000000;
   }
 }
+
 .features {
   background-color: #fff;
   display: grid;
@@ -389,15 +422,15 @@ html {
   grid-gap: 40px;
   padding: 80px;
   text-align: center;
+
   div {
-    background: linear-gradient(
-      234.85deg,
-      rgba(130, 148, 203, 0.1) 16.15%,
-      rgba(130, 148, 203, 0.1) 130.7%
-    );
+    background: linear-gradient(234.85deg,
+        rgba(130, 148, 203, 0.1) 16.15%,
+        rgba(130, 148, 203, 0.1) 130.7%);
     box-shadow: 0px 15px 40px rgba(223, 228, 255, 0.1);
     padding: 40px 30px 60px 30px;
   }
+
   p {
     font-family: "Frank Ruhl Libre", serif;
     font-size: 27px;
@@ -410,6 +443,7 @@ html {
     margin-top: 10px;
     margin-bottom: 25px;
   }
+
   span {
     font-family: "Inter", sans-serif;
     font-size: 19px;
@@ -418,6 +452,7 @@ html {
     line-height: 147.6%;
   }
 }
+
 .sec4container {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -429,6 +464,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   padding: 80px;
+
   .title-text {
     font-family: "Frank Ruhl Libre", serif;
     font-style: normal;
@@ -438,17 +474,20 @@ html {
     color: #000000;
   }
 }
+
 .sec4-gif {
   background-image: url(../assets/volv-story-view-with-bias-link-hi-res.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .section5 {
   display: grid;
   align-content: center;
   text-align: center;
   height: 300px;
+
   .title-text {
     font-family: "Frank Ruhl Libre", serif;
     font-style: normal;
@@ -462,22 +501,22 @@ html {
 .sec5container {
   display: grid;
 }
+
 .volv-window-desktop {
   display: grid;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
-    forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 120px;
 }
+
 .volv-window-mobile {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
-    forwards;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
   opacity: 0;
   transform: translateY(100px);
   margin-top: 150px;
@@ -492,41 +531,44 @@ html {
   margin-right: auto;
   margin-top: -643px;
 }
+
 .sec1-fade {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1));
   z-index: 20;
   margin-top: -249px;
   height: 250px;
 }
 
 .categories {
-  > div {
+  >div {
     position: absolute;
     top: 10px;
     left: 10px;
     right: 10px;
     bottom: 10px;
-    > img {
+
+    >img {
       display: grid;
       height: 3.5rem;
     }
   }
 }
+
 .downloadnow {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  > div {
+
+  >div {
     align-self: center;
   }
 }
+
 .android {
-  > a {
-    > img {
+  >a {
+    >img {
       height: 60;
     }
   }
@@ -541,14 +583,17 @@ html {
   display: none;
   align-items: center;
 }
+
 .modal-title {
   display: grid;
   text-align: -webkit-right;
 }
+
 .modalcontent {
   display: grid;
   align-self: center;
 }
+
 .modalbox {
   display: grid;
   background-color: #fff;
@@ -560,20 +605,24 @@ html {
   justify-self: center;
   text-align: center;
   padding: 10px 30px 50px 30px;
+
   .subtitle-text {
     font-size: 18px;
   }
 }
+
 .close-button {
   display: grid;
   padding: 20px;
   cursor: pointer;
 }
+
 .volv-v {
-  > img {
+  >img {
     height: 100px;
   }
 }
+
 .footer {
   z-index: 1;
   display: grid;
@@ -587,12 +636,14 @@ html {
   font-size: 11px;
   font-weight: 400;
   width: 100%;
-  > div {
+
+  >div {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 }
+
 .footer-2 {
   font-family: "Inter", sans-serif;
   font-size: 11px;
@@ -604,16 +655,19 @@ html {
   grid-template-rows: auto auto;
   grid-gap: 50px;
   transition: 0.7s linear 0.3s;
+
   li {
     float: left;
     list-style-type: none;
   }
 }
+
 .footer-links {
   display: grid;
   justify-self: right;
   display: grid;
   grid-template-columns: repeat(4, max-content);
+
   a {
     display: grid;
     background-color: #eaeaea;
@@ -622,11 +676,13 @@ html {
     margin: 0px 0px 0px 10px;
     border-radius: 50%;
   }
+
   img {
     height: 17px;
     padding: 12px;
   }
 }
+
 .footer-first-half {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -635,6 +691,7 @@ html {
   margin-right: auto;
   width: 100%;
 }
+
 .footer-second-half {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -643,6 +700,7 @@ html {
   margin-right: auto;
   width: 100%;
 }
+
 .footer-volv-logo {
   img {
     display: none;
@@ -650,23 +708,28 @@ html {
     justify-self: left;
   }
 }
+
 .footer-second-left {
   display: grid;
   column-gap: 20px;
   grid-template-columns: max-content max-content;
 }
+
 .footer-second-right {
   display: grid;
   justify-items: right;
 }
+
 a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .volv-video {
   display: grid;
   justify-content: center;
@@ -675,6 +738,7 @@ a {
   width: 100%;
   max-width: 1280px;
   margin-top: 50px;
+
   iframe {
     width: 80vw;
     height: 45vw;
@@ -682,112 +746,15 @@ a {
 }
 
 .in-view {
-  animation: volv-window-desktop-animation 1s
-    cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
+  animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.15s forwards;
 }
+
 .test.in-view {
   animation: fadeInUp;
   animation-duration: 1s;
   animation-delay: 0s;
 }
-.joinus-sec1 {
-  z-index: -2;
-  background: linear-gradient(270deg, #d9e5dd, #f3efeb);
-  background-size: 200% 200%;
-  -webkit-animation: GradientAnimation 10s ease infinite;
-  -moz-animation: GradientAnimation 10s ease infinite;
-  animation: GradientAnimation 10s ease infinite;
-  height: 782px;
-}
-.joinus-animated-bg-gradient {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: baseline;
-  text-align: center;
-}
-.volv-v-back-2 {
-  mix-blend-mode: soft-light;
-  opacity: 0.4;
-  max-width: 1600px;
-  display: grid;
-  margin-left: 50vh;
-  margin-right: auto;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-.join-us {
-  text-align: center;
-  margin-top: -700px;
-}
-.join-us-options {
-  z-index: 5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
-}
-.join-us-option-card {
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 300ms ease-out;
-  &:hover {
-    background-color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
-    > .join-us-option-card-cta {
-      background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
-    }
-  }
-}
-.join-us-option-card-content {
-  padding: 30px;
-  height: 200px;
-}
-.join-us-option-card-cta {
-  background: linear-gradient(102.57deg, #ffffff 0%, #ffffff 98.03%);
-  transition: 300ms ease-out;
-  border-radius: 0px 0px 10px 10px;
-  padding: 30px;
-  margin-top: 50px;
-}
-.heading-serif {
-  font-family: "DM Serif Display", serif;
-  font-weight: unset;
-  font-size: 69px;
-  margin-block-start: 150px;
-  margin-block-end: 0px;
-}
-.caps-sans-serif {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 1px;
-  color: #749c84;
-  margin-block-start: 40px;
-  margin-block-end: 0px;
-}
-.body-sans-serif-1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 136.1%;
-}
-.body-sans-serif-2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 136.1%;
-}
+
 .fadeInUp {
   animation-name: fadeInUp;
 }
@@ -796,133 +763,165 @@ a {
   .header {
     position: absolute;
   }
+
   .volv-window-mobile {
     margin-top: 35px;
   }
+
   .volv-window-desktop {
     margin-top: 35px;
   }
+
   .sec1content {
     height: 500px;
   }
 }
+
 @media only screen and (max-height: 550px) {
   .header {
     position: absolute;
   }
+
   .volv-window-mobile {
     margin-top: 35px;
   }
+
   .volv-window-desktop {
     margin-top: 35px;
   }
 }
+
 @media only screen and (max-height: 820px) {
   .dive-in {
     margin-top: 0px;
   }
 }
+
 @media only screen and (max-height: 750px) {
   .volv-window-desktop {
     height: 400px;
   }
 }
+
 @media only screen and (max-width: 1700px) {
   .sec1content {
     padding-left: 50px;
     padding-right: 50px;
     max-width: unset;
   }
+
   .header {
-    > div {
+    >div {
       padding-left: 50px;
       padding-right: 50px;
       max-width: unset;
     }
   }
 }
+
 @media only screen and (max-width: 1400px) {
   .features {
     grid-gap: 30px;
   }
+
   .sec2container {
     .title-text {
       margin-top: 20px;
     }
+
     margin: 80px;
     height: 600px;
   }
+
   .sec1content {
     padding: 0px 60px 0px 60px;
-    > p {
+
+    >p {
       font-size: 36px;
       top: 150px;
     }
+
     .volv-button {
       top: 380px;
     }
   }
+
   .sec4container {
     margin: 80px;
     height: 600px;
   }
+
   .volv-v-back {
     margin-left: 45vh;
   }
 }
+
 @media only screen and (max-width: 1280px) {
   .sec1content {
-    > p {
+    >p {
       font-size: 36px;
     }
   }
+
   .sec2container {
     grid-template-columns: auto 1fr;
     height: 550px;
   }
+
   .sec4container {
     height: 550px;
   }
+
   .features {
     grid-template-columns: 1fr 1fr;
   }
+
   .volv-v-back {
     margin-left: 35vh;
   }
 }
+
 @media only screen and (max-width: 1180px) {
   .volv-v-back {
     margin-left: 30vh;
   }
 }
+
 @media only screen and (max-width: 1100px) {
   .sec2container {
     margin: 50px;
   }
+
   .section1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
+
   .section3 {
     margin: 50px 0px 50px 0px;
   }
+
   .features {
     p {
       font-size: 24px;
       line-height: 27px;
     }
+
     span {
       font-size: 14px;
     }
   }
+
   .sec1-3dphone {
     background-position: right;
   }
+
   .volv-v-back {
     margin-left: 25vh;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .sec2container {
     grid-template-columns: 1fr;
@@ -931,23 +930,28 @@ a {
     text-align: center;
     margin: 80px;
   }
+
   .sec1-3dphone {
     background-position: center;
   }
+
   .subtitle-text {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .features {
     p {
       font-size: 32px;
       line-height: 36px;
     }
+
     span {
       font-size: 20px;
     }
   }
+
   .sec4container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 500px;
@@ -956,6 +960,7 @@ a {
     grid-gap: 60px;
     margin: 80px;
   }
+
   .volv-window-desktop {
     width: 100%;
   }
@@ -968,6 +973,7 @@ a {
     width: auto;
     padding: 20px;
   }
+
   .bene_form {
     display: grid;
     grid-template-columns: 1fr;
@@ -978,23 +984,28 @@ a {
     max-width: 520px;
   }
 }
+
 @media only screen and (max-width: 885px) {
   .sec1content {
-    > p {
+    >p {
       font-size: 36px;
       margin-block-start: 0.2em;
       margin-block-end: 0.7em;
     }
+
     .volv-button {
       top: 380px;
     }
   }
+
   .sec2container {
     grid-gap: unset;
   }
+
   .sec4container {
     grid-gap: unset;
   }
+
   .features {
     grid-template-columns: 1fr;
     max-width: 450px;
@@ -1009,10 +1020,12 @@ a {
   .header {
     display: none;
   }
+
   .header-mobile {
     display: unset;
   }
 }
+
 @media only screen and (max-width: 740px) {
   .section1 {
     background-image: url(../assets/9-second-billboard-3-mobile-small.jpg);
@@ -1020,12 +1033,15 @@ a {
     background-size: cover;
     background-position: center;
   }
+
   .sec1content {
     text-align: -webkit-center;
-    > p {
+
+    >p {
       font-size: 34px;
       position: unset;
     }
+
     .volv-button {
       position: unset;
       top: 320px;
@@ -1033,10 +1049,12 @@ a {
       margin-right: auto;
     }
   }
+
   .features {
     grid-template-columns: 1fr;
     max-width: 300px;
     text-align: center;
+
     p {
       margin-left: auto;
       margin-right: auto;
@@ -1045,6 +1063,7 @@ a {
       line-height: 32px;
       width: fit-content;
     }
+
     span {
       font-family: "Inter", sans-serif;
       font-size: 18px;
@@ -1052,51 +1071,63 @@ a {
       line-height: 147.6%;
     }
   }
+
   .section3 {
     margin: 30px;
   }
 }
+
 @media only screen and (max-width: 680px) {
   .header {
-    > div {
+    >div {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
+
   .title-text {
     font-size: 26px;
   }
+
   .subtitle-text {
     font-size: 18px;
   }
+
   .sec1content {
     p {
       font-size: 32px;
       margin-top: 0.1em;
     }
+
     padding: unset;
     align-content: flex-start;
   }
+
   .sec2container {
     margin: unset;
     padding: 40px 20px 20px 20px;
   }
+
   .sec4container {
     margin: 0px 0px 30px 0px;
   }
+
   .section3 {
-    > .title-text {
+    >.title-text {
       line-height: unset;
     }
   }
+
   .caption-text {
     font-size: 18px;
     line-height: 28px;
   }
+
   .volv-window-desktop {
     height: unset;
     width: 100%;
   }
+
   .downloadnow {
     justify-content: center;
   }
@@ -1105,6 +1136,7 @@ a {
     height: 300px;
   }
 }
+
 @media only screen and (max-width: 580px) {
   .sec1content {
     p {
@@ -1112,56 +1144,71 @@ a {
       margin-top: 0.1em;
       margin-block-end: 1.5rem;
     }
-    > h3 {
+
+    >h3 {
       font-size: 13px;
     }
   }
 }
+
 @media only screen and (max-width: 470px) {
   .left-paddle {
     display: none;
   }
+
   .right-paddle {
     display: none;
   }
+
   .testimonials-scroll-wrapper {
-    > div {
+    >div {
       &:first-child {
         margin-left: 35px;
       }
     }
+
     grid-auto-columns: 300px;
   }
+
   .testimonial-text {
     font-size: 14px;
   }
+
   .testimonial-user {
     font-size: 11px;
   }
+
   .user-detail {
     font-size: 11px;
   }
+
   .sec1content {
     p {
       font-size: 22px;
     }
   }
+
   .section1 {
     height: 93vh;
   }
+
   .sec2container {
     grid-template-rows: auto 350px;
   }
+
   .features {
     padding: 20px 0px 20px 0px;
   }
+
   .sec4container {
     padding: 40px 30px 40px 30px;
     grid-gap: 0px;
   }
+
   .volv-window-desktop {
     display: none;
   }
+
   .volv-window-mobile {
     display: grid;
     width: 100%;
@@ -1176,62 +1223,75 @@ a {
     width: 100%;
     font-size: 16px;
   }
+
   .footer-2 {
     padding: 20px;
   }
+
   .footer-links {
     a {
       height: 36px;
       width: 36px;
     }
+
     img {
       height: 12px;
       padding: 12px;
     }
   }
+
   .footer-second-left {
     grid-template-columns: max-content;
     row-gap: 10px;
   }
+
   .footer-second-right {
     align-items: flex-end;
   }
 }
+
 @media only screen and (max-width: 375px) {
   .download {
-    > a {
-      > img {
+    >a {
+      >img {
         padding-right: 10px;
       }
-      > span {
+
+      >span {
         padding-right: 5px;
       }
     }
   }
+
   .sec1content {
     .volv-button {
       font-size: 14px;
       padding: 13px 27px;
     }
   }
+
   .sec2container {
     .title-text {
       font-size: 22px;
     }
   }
+
   .title-text {
     font-size: 22px;
   }
 }
+
 @media only screen and (max-width: 360px) {
   .features {
     div {
       padding: 20px;
       padding: 30px;
     }
+
     p {
       font-size: 22px;
     }
+
     span {
       font-size: 16px;
     }

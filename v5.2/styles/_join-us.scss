@@ -1,0 +1,218 @@
+.joinus-sec1 {
+    z-index: -2;
+    position: relative;
+    background: linear-gradient(270deg, #d9e5dd, #f3efeb);
+    background-size: 200% 200%;
+    -webkit-animation: GradientAnimation 10s ease infinite;
+    -moz-animation: GradientAnimation 10s ease infinite;
+    animation: GradientAnimation 10s ease infinite;
+    height: 782px;
+}
+
+.joinus-animated-bg-gradient {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: baseline;
+    text-align: center;
+}
+
+.volv-v-back-2 {
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+    max-width: 1600px;
+    display: grid;
+    margin-left: 50vh;
+    margin-right: auto;
+
+}
+
+.join-us {
+    text-align: center;
+    margin-top: -800px;
+}
+
+.join-us-options {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+}
+
+.join-us-option-card {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms ease-out;
+    transform: translateY(3px);
+
+    &:hover {
+        background-color: #fff;
+
+        cursor: pointer;
+        box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+        transform: translateX(0px);
+
+        >.join-us-option-card-cta {
+            background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
+
+        }
+    }
+}
+
+.join-us-option-card-content {
+    padding: 15px 25px;
+    height: 200px;
+}
+
+.join-us-option-card-cta {
+    background: linear-gradient(102.57deg, #b3cbbc00 0%, #edd8cb00 98.03%);
+    transition: 300ms ease-out;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 25px;
+    margin-top: 30px;
+
+
+
+}
+
+.heading-serif {
+    font-family: "DM Serif Display", serif;
+    font-weight: unset;
+    font-size: 64px;
+    margin-block-start: 150px;
+    margin-block-end: 0px;
+}
+
+.caps-sans-serif {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #749c84;
+    margin-block-start: 40px;
+    margin-block-end: 0px;
+}
+
+.body-sans-serif-1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.1%;
+}
+
+.body-sans-serif-2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.1%;
+}
+
+.body-sans-serif-3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 136.1%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .volv-v-back-2 {
+        margin-left: 45vh;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .volv-v-back-2 {
+        margin-left: 35vh;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .volv-v-back-2 {
+        margin-left: 30vh;
+    }
+
+    .join-us-options {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .volv-v-back-2 {
+        margin-left: 25vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .volv-v-back-2 {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .join-us-options {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .volv-v-back-2 {
+        display: none;
+    }
+}
+
+@media only screen and(max-width: 640px) {
+    .join-us-options {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .join-us-options {
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+    }
+
+    .join-us-option-card {
+        background-color: #fff;
+
+        cursor: pointer;
+        box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+        transform: translateX(0px);
+    }
+
+    .join-us-option-card-cta {
+        background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
+    }
+
+    .heading-serif {
+
+        font-size: 54px;
+        margin-block-start: 150px;
+        margin-block-end: 0px;
+    }
+
+    .caps-sans-serif {
+
+        font-size: 18px;
+
+        margin-block-start: 40px;
+        margin-block-end: 0px;
+    }
+
+    .body-sans-serif-2 {
+
+        font-size: 13px;
+
+    }
+}
