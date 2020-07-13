@@ -1,11 +1,11 @@
 .joinus-sec1 {
     z-index: -2;
     position: relative;
-    background: linear-gradient(270deg, #d9e5dd, #f3efeb);
+    background: linear-gradient(270deg, #d9e5dd, #f1e8df);
     background-size: 200% 200%;
-    -webkit-animation: GradientAnimation 10s ease infinite;
-    -moz-animation: GradientAnimation 10s ease infinite;
-    animation: GradientAnimation 10s ease infinite;
+    -webkit-animation: GradientAnimation 7s ease infinite;
+    -moz-animation: GradientAnimation 7s ease infinite;
+    animation: GradientAnimation 7s ease infinite;
     height: 782px;
 }
 
@@ -52,10 +52,11 @@
     cursor: pointer;
     transition: 300ms ease-out;
     transform: translateY(3px);
+    text-decoration: none;
 
     &:hover {
         background-color: #fff;
-
+        text-decoration: none;
         cursor: pointer;
         box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
         transform: translateX(0px);
