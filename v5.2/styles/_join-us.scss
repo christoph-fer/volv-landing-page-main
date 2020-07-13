@@ -37,9 +37,9 @@
 .join-us-options {
     z-index: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    max-width: 1280px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 75px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -62,7 +62,7 @@
         transform: translateX(0px);
 
         >.join-us-option-card-cta {
-            background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
+            background: linear-gradient(102.57deg, #b3cbbc80 0%, 80 98.03%);
 
         }
     }
@@ -155,6 +155,10 @@
     .volv-v-back-2 {
         margin-left: auto;
     }
+
+    .join-us-options {
+        grid-gap: 50px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -182,6 +186,7 @@
     .join-us-options {
         grid-template-columns: 1fr;
         margin-top: 120px;
+        grid-gap: 50px;
     }
 
     .join-us-option-card {
