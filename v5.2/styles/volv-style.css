@@ -471,6 +471,8 @@
 }
 
 .bssec1 {
+  z-index: -2;
+  position: relative;
   background: -webkit-gradient(linear, right top, left top, from(#fff2e8), to(#dbf0ff));
   background: linear-gradient(270deg, #fff2e8, #dbf0ff);
   background-size: 400% 400%;
