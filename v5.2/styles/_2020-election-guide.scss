@@ -1,0 +1,634 @@
+
+
+.election-guide-sec1 {
+    z-index: -2;
+    position: relative;
+    background: linear-gradient(270deg, #D1EFFF, #ffeaec);
+    background-size: 200% 200%;
+    -webkit-animation: GradientAnimation 7s ease infinite;
+    -moz-animation: GradientAnimation 7s ease infinite;
+    animation: GradientAnimation 7s ease infinite;
+    height: 782px;
+}
+
+.joinus-animated-bg-gradient {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: baseline;
+    text-align: center;
+}
+
+.volv-v-back-2 {
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+    max-width: 1600px;
+    display: grid;
+    margin-left: 50vh;
+    margin-right: auto;
+
+}
+
+.election-guide-header {
+    text-align: left;
+    margin-top: -750px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    >div{
+        .heading-serif {
+            font-family: "DM Serif Display", serif;
+            font-weight: unset;
+            font-size: 74px;
+            margin-block-start: 150px;
+            margin-block-end: 0px;
+        }
+        .heading-desc{
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 136.1%;
+        }
+    }
+}
+
+.biden-trump{
+    background-image: url(../assets/biden-trump-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.the-issues {
+    display: grid;
+    grid-template-columns: 22vw 3fr;
+    max-width: 1280px;
+    justify-items: center;
+    margin: 150px auto 0px auto;
+  }
+  .the-issues-branding {
+    object-fit: cover;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    height: fit-content;
+    top: 15vh;
+    img {
+      width: 100%;
+    }
+    p{
+        font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 300px;
+    margin-top: 30px;
+    }
+  }
+  .the-issues-list {
+    padding: 0px 0px 0px 100px;
+    
+    
+  }
+
+.the-issues-options {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 75px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-bottom: 50px;
+}
+
+.the-issues-option-card {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms ease-out;
+    transform: translateY(3px);
+    text-decoration: none;
+    width: 540px;;
+
+    &:hover {
+        background-color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+        transform: translateX(0px);
+
+        >div>div>.the-issues-option-card-cta {
+            background: linear-gradient(102.57deg, #d1efff9f 0%, #ffeaeca2 98.03%);
+
+        }
+    }
+    .the-issues-option-card-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 20px;
+        grid-gap: 20px;
+        height: 225px;
+        .the-issues-options-card-image img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .the-issues-option-card-title{
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 136.1%;
+            margin-left: 25px;
+        }
+        .the-issues-option-card-desc{
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 136.1%;
+            margin-left: 25px;
+        }
+        .the-issues-option-card-cta {
+            background: linear-gradient(102.57deg, #b3cbbc00 0%, #edd8cb00 98.03%);
+            transition: 300ms ease-out;
+            border-radius: 5px;
+            padding: 20px 25px;     
+            margin-top: 15px;       
+        }
+    }
+    
+    
+}
+
+
+
+
+
+.caps-sans-serif {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #749c84;
+    margin-block-start: 40px;
+    margin-block-end: 0px;
+}
+
+.body-sans-serif-1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.1%;
+}
+
+.body-sans-serif-2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.1%;
+}
+
+.body-sans-serif-3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 136.1%;
+}
+
+@media only screen and (max-width: 1800px){
+    .election-guide-header{
+        padding-left: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) {
+    .volv-v-back-2 {
+        margin-left: 45vh;
+    }
+    .election-guide-header{
+        padding-left: 50px;
+        >div{
+            .heading-serif {
+                font-size: 64px;
+            }
+        }
+    }
+    .the-issues{
+        margin: 150px 50px 0px 50px;
+        grid-template-columns: 30vw 3fr;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .volv-v-back-2 {
+        margin-left: 35vh;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .volv-v-back-2 {
+        margin-left: 30vh;
+    }
+    .election-guide-header{
+        padding-left: 50px;
+        >div{
+            .heading-serif {
+                font-size: 54px;
+            }
+        }
+    }
+
+    .join-us-options {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .volv-v-back-2 {
+        margin-left: 25vh;
+    }
+    .the-issues{
+        .the-issues-list{
+            padding: 0px 0px 0px 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .volv-v-back-2 {
+        margin-left: auto;
+    }
+    .election-guide-header{
+        padding-left: 50px;
+        >div{
+            .heading-serif {
+                font-size: 48px;
+            }
+            .heading-desc{
+                
+                font-size: 15px;
+               
+            }
+        }
+    }
+    .the-issues{
+        margin: 150px 50px 0px 50px;
+        grid-template-columns: 25vw 3fr;
+    }
+    
+
+    .join-us-options {
+        grid-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .the-issues{
+        grid-template-columns: 35vw 3fr;
+    }
+    
+    .the-issues-option-card {
+        
+        width: 100%;
+    
+        
+        .the-issues-option-card-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto;
+            padding: 20px 20px;
+            grid-gap: 20px;
+            height: fit-content;
+            .the-issues-options-card-image img{
+                
+                border-radius: 5px;
+            }
+            
+            .the-issues-option-card-title{
+                
+                margin-left: 25px;
+            }
+            .the-issues-option-card-desc{
+                
+                margin-left: 25px;
+            }
+            .the-issues-option-card-cta {
+                
+                border-radius: 5px;
+                padding: 20px 25px;     
+                margin-top: 20px;       
+            }
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (max-width: 725px) {
+    .biden-trump{
+        background-position: top;
+        height: 400px;
+        margin-top: 50px;
+    }
+        .election-guide-header {
+            text-align: center;
+            margin-top: -750px;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 70vw;
+            padding: 0px;
+            >div{
+                .heading-serif {
+                    font-family: "DM Serif Display", serif;
+                    font-weight: unset;
+                    font-size: 64px;
+                    margin-block-start: 150px;
+                    margin-block-end: 0px;
+                }
+                .heading-desc{
+                    font-family: "Inter", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 136.1%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+    .the-issues-option-card {
+        
+        width: 100%;
+    
+        
+        .the-issues-option-card-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto;
+            padding: 0px;
+            grid-gap: 20px;
+            height: fit-content;
+            .the-issues-options-card-image img{
+                
+                border-radius: 10px 10px 0px 0px ;
+            }
+            
+            .the-issues-option-card-title{
+                
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            .the-issues-option-card-desc{
+                
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            .the-issues-option-card-cta {
+                
+                border-radius: 0px 0px 10px 10px ;
+                padding: 20px 25px;     
+                margin-top: 20px;       
+            }
+        }
+        
+        
+    }
+}
+
+@media only screen and(max-width: 640px) {
+    
+    .the-issues{
+        grid-template-columns: 1fr;
+        margin: 30px 0px 0px 0px;
+        .the-issues-list{
+            padding: 30px;
+        }
+    }
+
+    .the-issues-branding{
+        width: 100%;
+        background-color: white;
+        padding: 50px 0px 40px 0px;
+        top: 50px;
+        z-index: 1;
+        >img{
+            width: 60vw;
+            margin: 0px 30px;
+        }
+        p{
+            display: none;
+        }
+    }
+
+    
+    .the-issues-option-card {
+        
+        width: 100%;
+
+        background-color: #fff;
+
+        box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+        
+    
+        
+        .the-issues-option-card-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto;
+            padding: 20px 20px;
+            grid-gap: 20px;
+            height: fit-content;
+            .the-issues-options-card-image img{
+                
+                border-radius: 5px;
+            }
+            
+            .the-issues-option-card-title{
+                
+                margin-left: 25px;
+            }
+            .the-issues-option-card-desc{
+                
+                margin-left: 25px;
+            }
+            .the-issues-option-card-cta {
+                
+                border-radius: 5px;
+                padding: 20px 25px;     
+                margin-top: 20px; 
+                background: linear-gradient(102.57deg, #d1efff9f 0%, #ffeaeca2 98.03%);      
+            }
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+
+    .election-guide-header {
+        text-align: center;
+        margin-top: -750px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        >div{
+            .heading-serif {
+                font-family: "DM Serif Display", serif;
+                font-weight: unset;
+                font-size: 54px;
+                margin-block-start: 150px;
+                margin-block-end: 0px;
+            }
+            .heading-desc{
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 136.1%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    .join-us-options {
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+        grid-gap: 50px;
+    }
+
+    .join-us-option-card {
+        background-color: #fff;
+
+        cursor: pointer;
+        box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+        transform: translateX(0px);
+    }
+
+    .join-us-option-card-cta {
+        background: linear-gradient(102.57deg, #b3cbbc80 0%, #edd8cb80 98.03%);
+    }
+
+    .heading-serif {
+
+        font-size: 54px;
+        margin-block-start: 150px;
+        margin-block-end: 0px;
+    }
+
+    .caps-sans-serif {
+
+        font-size: 18px;
+
+        margin-block-start: 40px;
+        margin-block-end: 0px;
+    }
+
+    .body-sans-serif-2 {
+
+        font-size: 13px;
+
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .election-guide-header {
+        text-align: center;
+        margin-top: -750px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 60vw;
+        padding: 30px;
+        >div{
+            .heading-serif {
+                font-family: "DM Serif Display", serif;
+                font-weight: unset;
+                font-size: 44px;
+                margin-block-start: 150px;
+                margin-block-end: 0px;
+            }
+            .heading-desc{
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 136.1%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .the-issues{
+        .the-issues-list{
+            padding: 20px;
+        }
+    }
+
+    .the-issues-branding{
+        
+        >img{
+            width: 60vw;
+            margin: 0px 20px;
+        }
+    }
+
+
+    .the-issues-option-card {
+        
+        width: 100%;
+    
+        
+        .the-issues-option-card-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto;
+            padding: 0px;
+            grid-gap: 20px;
+            height: fit-content;
+            .the-issues-options-card-image img{
+                
+                border-radius: 10px 10px 0px 0px ;
+            }
+            
+            .the-issues-option-card-title{
+                
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            .the-issues-option-card-desc{
+                
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            .the-issues-option-card-cta {
+                
+                border-radius: 0px 0px 10px 10px ;
+                padding: 20px 25px;     
+                margin-top: 20px;       
+            }
+        }
+        
+        
+    }
+}

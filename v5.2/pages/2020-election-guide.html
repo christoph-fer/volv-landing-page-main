@@ -1,0 +1,419 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Volv - 2020 Election Guide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/volv-style.css" />
+
+    <link rel="stylesheet" type="text/css" href="./sal.css" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" href="../assets/volv-fevicon.png" type="image/png" sizes="16x16" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    };
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar" id="navBar">
+            <div>
+                <div class="page-links">
+                    <a href="index.html">
+                        <span style="-webkit-filter: invert(100%); filter: invert(100%);">Home</span>
+                    </a>
+                    <a href="about.html">
+                        <span style="-webkit-filter: invert(100%); filter: invert(100%);">Our Story</span>
+                    </a>
+                    <a href="bias.html"><span style="
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+                
+              ">Why trust us?</span></a>
+
+                    <a href="2020-election-guide.html"><span style="
+                        -webkit-filter: invert(100%);
+                        filter: invert(100%);
+                        border-bottom: 2px solid
+                        
+                    ">2020 Election Guide</span></a>
+
+                    <a href="csm-launch.html">
+                        <span style="-webkit-filter: invert(100%); filter: invert(100%);">Culture Shifter
+                            Magazine</span>
+                    </a>
+                    <a href="join-us.html">
+                        <span style="-webkit-filter: invert(100%); filter: invert(100%);">Join
+                            Us</span>
+                    </a>
+                </div>
+                <div class="navbar-links">
+                    <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-icon-black.jpg"
+                            alt="" /></a>
+                    <a href="https://www.instagram.com/volvmedia/"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/instagram-white.png" alt="" /></a>
+                    <a href="https://twitter.com/volv_media" target="_blank"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/twitter-white.png" alt="" /></a>
+                    <a href="mailto:connect@volvmedia.com" target="_blank"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/main-icon-white.svg" alt="" /></a>
+                </div>
+                <div class="cta-button-navbar" w3-include-html="../components/volv-button-small.html"></div>
+            </div>
+        </div>
+
+        <div class="volv-header">
+            <div>
+                <div style="align-self: center;">
+                    <a href="index.html">
+                        <img class="volv-logo" style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/white volv svg.svg" />
+                    </a>
+                </div>
+
+                <div class="cta-button" style="justify-self: right; margin-right: 20px;"
+                    w3-include-html="../components/volv-button-small.html"></div>
+
+                <div class="ham-menu" id="hamMenu" onclick="openNav(x)">
+                    <img src="../assets/ham_menu.svg" height="13px" />
+                </div>
+
+                <div class="close-menu" id="closeMenu" onclick="closeNav()">
+                    <img src="../assets/close-button.svg" height="13px" />
+                </div>
+            </div>
+        </div>
+
+        <div class="election-guide-sec1">
+
+
+
+
+            <!-- <div class="joinus-animated-bg-gradient"></div> -->
+            <!-- <img class="volv-v-back-2" src="../assets/volv-v-back.svg" /> -->
+        </div>
+        <div class="sec1-fade"></div>
+
+        <div class="election-guide-header">
+            <div>
+                <h1 class="heading-serif" style="line-height: 1.2em;">2020<br>Election Guide</h1>
+                <!-- <h5 class="caps-sans-serif">WHO WE ARE AT VOLV</h5> -->
+                <p class="heading-desc" style="max-width: 400px;">
+                    We’ve got you covered on all the nonpartisan info you need to know about the candidates and issues
+                    so
+                    that you can vote with confidence.
+                </p>
+            </div>
+            <div>
+                <div class="biden-trump"></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="the-issues">
+            <div data-sal="fade" class="the-issues-branding">
+                <img src="../assets/the-issues-branding.svg" />
+                <p>A deep dive and unbiased take on various issues and where these presidential candidates stand</p>
+            </div>
+
+            <div class="the-issues-list">
+                <div class="the-issues-options">
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-climate-change.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Climate Change
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-abortion.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Abortion
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-economy.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Economy
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-education.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Education
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-guns.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Guns
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <a href="../docs/Volv - Be a Brand Ambassador!.pdf" target="_blank" class="the-issues-option-card">
+                        <div class="the-issues-option-card-content">
+                            <div class="the-issues-options-card-image">
+                                <img src="../assets/issues-healthcare.png">
+                            </div>
+                            <div style="display: grid; align-content: flex-start;">
+                                <p class="the-issues-option-card-title">
+                                    Healthcare
+                                </p>
+                                <p class="the-issues-option-card-desc">
+                                    Many are frustrated with the state of health care in the US – an issue that’s taken
+                                    center stage in the midst of a pandemic.
+                                </p>
+                                <div class="the-issues-option-card-cta">
+                                    <span class="body-sans-serif-3">Read more&nbsp;&nbsp;</span>
+                                    <img src="../assets/arrow.svg" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-2">
+            <div class="footer-first-half">
+                <div class="footer-volv-logo">
+                    <img src="../assets/volv-logo-black.svg" alt="Volv" />
+                </div>
+                <div class="footer-links">
+                    <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-icon-black.jpg"
+                            alt="" /></a>
+                    <a href="https://www.instagram.com/volvmedia/"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/instagram-white.png" alt="" /></a>
+                    <a href="https://twitter.com/volv_media" target="_blank"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/twitter-white.png" alt="" /></a>
+                    <a href="mailto:connect@volvmedia.com" target="_blank"><img
+                            style="-webkit-filter: invert(100%); filter: invert(100%);"
+                            src="../assets/main-icon-white.svg" alt="" /></a>
+                </div>
+            </div>
+            <div class="footer-second-half">
+                <div class="footer-second-left">
+                    <a target="_blank" href="https://volvmedia.com/PrivacyPolicy">Privacy Policy</a>
+                    <a target="_blank" href="https://volvmedia.com/TermsAndConditions">Terms And Conditions</a>
+                </div>
+                <div class="footer-second-right">
+                    <a href="" style="text-decoration: none; cursor: unset;">© Copyright Volv 2020</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".volv-header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".volv-header").removeClass("active");
+            }
+        });
+    </script>
+
+    <script>
+        function openNav(x) {
+            if (x.matches) {
+                document.getElementById("navBar").style.height = "520px";
+                document.getElementById("navBar").style.opacity = "1";
+                document.getElementById("hamMenu").style.display = "none";
+                document.getElementById("closeMenu").style.display = "grid";
+            } else {
+                document.getElementById("navBar").style.height = "320px";
+                document.getElementById("navBar").style.opacity = "1";
+                document.getElementById("hamMenu").style.display = "none";
+                document.getElementById("closeMenu").style.display = "grid";
+            }
+        }
+
+        function closeNav() {
+            document.getElementById("navBar").style.height = "0px";
+            document.getElementById("navBar").style.opacity = "0";
+            document.getElementById("hamMenu").style.display = "grid";
+            document.getElementById("closeMenu").style.display = "none";
+        }
+
+        var x = window.matchMedia("(max-width: 669px)");
+    // openNav(x) // Call listener function at run time
+    // x.addListener(openNav) // Attach listener function on state changes
+
+    // function closeNav() {
+    //     document.getElementById("mySidenav").style.width = "0";
+    // }
+    </script>
+
+    <script>
+        function getOS() {
+            var userAgent = window.navigator.userAgent,
+                platform = window.navigator.platform,
+                macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+                windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+                iosPlatforms = ["iPhone", "iPad", "iPod"],
+                os = null;
+            if (macosPlatforms.indexOf(platform) !== -1) {
+                os = "Mac OS";
+                $(".downloadnow").addClass("active");
+                $(".downloadnow").toggleClass("option");
+                // window.location.href = "#download-now-desktop";
+                // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
+            } else if (iosPlatforms.indexOf(platform) !== -1) {
+                os = "iOS";
+                window.location.href =
+                    "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
+            } else if (windowsPlatforms.indexOf(platform) !== -1) {
+                os = "Windows";
+                // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+                // window.location.href = "#download-now-desktop";
+                $(".downloadnow").addClass("active");
+                $(".downloadnow").toggleClass("option");
+            } else if (/Android/.test(userAgent)) {
+                os = "Android";
+                window.location.href =
+                    "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+            } else if (!os && /Linux/.test(platform)) {
+                os = "Linux";
+                $(".downloadnow").addClass("active");
+                $(".downloadnow").toggleClass("option");
+                // window.location.href = "#download-now-desktop";
+                // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+            }
+            return os;
+        }
+    </script>
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
