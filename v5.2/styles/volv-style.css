@@ -766,6 +766,8 @@
           margin-block-start: 150px;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
+  -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .election-guide-header > div .heading-desc {
@@ -773,6 +775,8 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 136.1%;
+  -webkit-animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .biden-trump {
@@ -782,6 +786,8 @@
   background-position: bottom;
   height: 400px;
   margin-top: 100px;
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .the-issues {
@@ -792,6 +798,8 @@
   max-width: 1280px;
   justify-items: center;
   margin: 150px auto 0px auto;
+  -webkit-animation: volv-window-desktop-animation 1.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .the-issues-branding {
@@ -1321,6 +1329,422 @@
     border-radius: 0px 0px 10px 10px;
     padding: 20px 25px;
     margin-top: 20px;
+  }
+}
+
+.election-guide-sec1 {
+  z-index: -2;
+  position: relative;
+  background: -webkit-gradient(linear, right top, left top, from(#D1EFFF), to(#ffeaec));
+  background: linear-gradient(270deg, #D1EFFF, #ffeaec);
+  background-size: 200% 200%;
+  -webkit-animation: GradientAnimation 7s ease infinite;
+  animation: GradientAnimation 7s ease infinite;
+  height: 782px;
+}
+
+.joinus-animated-bg-gradient {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+  text-align: center;
+}
+
+.volv-v-back-2 {
+  mix-blend-mode: soft-light;
+  opacity: 0.3;
+  max-width: 1600px;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 50vh;
+  margin-right: auto;
+}
+
+.election-guide-article-title {
+  text-align: center;
+  margin-top: -600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+}
+
+.election-guide-article-title h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: unset;
+  font-size: 64px;
+  -webkit-margin-before: -20px;
+          margin-block-start: -20px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.election-guide-article-title p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136.1%;
+}
+
+.election-guide-article-picture {
+  max-width: 840px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+}
+
+.election-guide-article-picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.election-guide-article-body {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+}
+
+.election-guide-article-body h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: unset;
+  font-size: 28px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.election-guide-article-body p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 164%;
+}
+
+.election-guide-article-body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.election-guide-article-body ul {
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+}
+
+.volv-ad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F6F6F6;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.volv-ad .ad-gif .sec4-gif {
+  height: 30vw;
+}
+
+.volv-ad h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  color: #E77329;
+}
+
+.volv-ad h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: unset;
+  font-size: 36px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+}
+
+.volv-ad .downloadnow {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.other-issues {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  padding: unset;
+}
+
+.other-issues .the-issues-list {
+  margin-top: 50px;
+  padding: unset;
+}
+
+.other-issues .the-issues-list .the-issues-options {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: unset;
+  overflow-x: visible;
+  overflow-y: hidden;
+  max-width: 1600px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .other-issues > img {
+    margin: 50px;
+  }
+  .volv-ad .ad-gif .sec4-gif {
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .volv-v-back-2 {
+    margin-left: 45vh;
+  }
+  .volv-ad {
+    margin: 0px 50px;
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .volv-v-back-2 {
+    margin-left: 35vh;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .volv-v-back-2 {
+    margin-left: 30vh;
+  }
+  .join-us-options {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .volv-v-back-2 {
+    margin-left: 25vh;
+  }
+  .volv-ad h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .volv-v-back-2 {
+    margin-left: auto;
+  }
+  .volv-ad .ad-gif .sec4-gif {
+    height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .election-guide-article-body {
+    padding: 0px 50px;
+  }
+  .election-guide-article-picture {
+    padding: 0px 50px;
+    height: 50vw;
+  }
+  .volv-ad h2 {
+    font-size: 24px;
+  }
+  .volv-ad h3 {
+    font-size: 13px;
+  }
+  .other-issues {
+    margin: 0px 0px;
+    margin-left: unset;
+  }
+  .other-issues > img {
+    margin: 50px;
+    margin-top: 100px;
+    width: 60vw;
+  }
+  .other-issues .the-issues-list {
+    margin-top: 50px;
+    padding: unset;
+  }
+  .other-issues .the-issues-list .the-issues-options {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .volv-v-back-2 {
+    display: none;
+  }
+  .volv-ad {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 50px;
+  }
+  .volv-ad h2 {
+    font-size: 32px;
+  }
+  .volv-ad h3 {
+    font-size: 13px;
+  }
+  .volv-ad .downloadnow {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .other-issues .the-issues-list {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .other-issues .the-issues-list .the-issues-options {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .volv-ad .ad-gif .sec4-gif {
+    height: 80vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .volv-ad {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 50px;
+  }
+  .volv-ad h2 {
+    font-size: 26px;
+  }
+  .volv-ad h3 {
+    font-size: 13px;
+  }
+  .volv-ad .ad-gif .sec4-gif {
+    height: 100vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .volv-ad {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 50px;
+    margin: 0px 0px;
+    padding: 30px 0px;
+  }
+  .volv-ad h2 {
+    font-size: 24px;
+  }
+  .volv-ad h3 {
+    font-size: 13px;
+  }
+  .volv-ad .ad-gif .sec4-gif {
+    height: 130vw;
+  }
+  .election-guide-article-title h1 {
+    font-size: 42px;
+  }
+  .election-guide-article-title p {
+    font-size: 13px;
+  }
+  .election-guide-article-picture {
+    padding: 0px 0px;
+    height: 70vw;
+  }
+  .election-guide-article-picture img {
+    border-radius: 0px;
+  }
+  .election-guide-article-body {
+    padding: 0px 30px;
+    margin-top: 30px;
+  }
+  .election-guide-article-body h2 {
+    font-size: 22px;
+  }
+  .election-guide-article-body p {
+    font-size: 16px;
+  }
+  .other-issues .the-issues-list {
+    margin-top: 50px;
+    padding: unset;
+  }
+  .other-issues .the-issues-list .the-issues-options {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .election-guide-article-body {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+  .election-guide-article-body h2 {
+    font-size: 22px;
+  }
+  .election-guide-article-body p {
+    font-size: 16px;
+  }
+  .volv-ad {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 50px;
+    margin: 0px 0px;
+    padding: 30px 0px;
+  }
+  .volv-ad h2 {
+    font-size: 21px;
+  }
+  .volv-ad h3 {
+    font-size: 11px;
+  }
+  .other-issues > img {
+    margin: 50px 20px 0px 20px;
+    width: 80vw;
   }
 }
 

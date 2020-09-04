@@ -46,12 +46,16 @@
             font-size: 74px;
             margin-block-start: 150px;
             margin-block-end: 0px;
+            animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
         }
         .heading-desc{
             font-family: "Inter", sans-serif;
             font-weight: 600;
             font-size: 18px;
             line-height: 136.1%;
+            animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
         }
     }
 }
@@ -63,6 +67,8 @@
     background-position: bottom;
     height: 400px;
     margin-top: 100px;
+    animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
 }
 
 .the-issues {
@@ -71,6 +77,8 @@
     max-width: 1280px;
     justify-items: center;
     margin: 150px auto 0px auto;
+    animation: volv-window-desktop-animation 1.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
   }
   .the-issues-branding {
     object-fit: cover;
@@ -283,6 +291,7 @@
         margin: 150px 50px 0px 50px;
         grid-template-columns: 25vw 3fr;
     }
+    
     
 
     .join-us-options {
