@@ -136,6 +136,9 @@
             background: linear-gradient(102.57deg, #d1efff9f 0%, #ffeaeca2 98.03%);
 
         }
+        >div>div>.the-issues-option-card-cta>img{
+            transform: translateX(5px);
+        }
     }
     .the-issues-option-card-content {
         display: grid;
@@ -168,7 +171,11 @@
             transition: 300ms ease-out;
             border-radius: 5px;
             padding: 20px 25px;     
-            margin-top: 15px;       
+            margin-top: 15px;    
+            img{
+                transform: translateX(0px);
+                transition: 300ms ease-out;
+            }   
         }
     }
     
