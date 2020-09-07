@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
   font-family: "Helvetica";
   src: url("assets/HelveticaNeueLTProTh.otf");
@@ -1393,9 +1394,9 @@
 }
 
 .election-guide-article-title h1 {
-  font-family: "DM Serif Display", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: unset;
-  font-size: 64px;
+  font-size: 84px;
   -webkit-margin-before: -20px;
           margin-block-start: -20px;
   -webkit-margin-after: 0px;
@@ -1786,7 +1787,7 @@
     height: 130vw;
   }
   .election-guide-article-title h1 {
-    font-size: 42px;
+    font-size: 62px;
   }
   .election-guide-article-title p {
     font-size: 13px;
