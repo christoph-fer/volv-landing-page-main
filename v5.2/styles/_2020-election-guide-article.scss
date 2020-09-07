@@ -98,6 +98,7 @@
             text-align: center;
             width: 100%;
             margin-top: 50px;
+            object-position: bottom;
     }
     .rnc-point{
         //border: black solid 1.5px;
@@ -208,8 +209,17 @@
         margin-block-start: 0px;
         margin-block-end: 30px;
     }   
-    .downloadnow{
-        justify-content: left;
+    >div{
+        .download-appstore{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: left;
+
+
+            >div {
+                align-self: center;
+            }
+        }
     }
 }
 
@@ -358,9 +368,19 @@
         h3{
             font-size: 13px;
         }
-        .downloadnow{
-            justify-content: center;
+        >div{
+            .download-appstore{
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+    
+    
+                >div {
+                    align-self: center;
+                }
+            }
         }
+        
     }
     
     .other-issues{
@@ -465,6 +485,9 @@
             li{
                 font-size: 14px;
             }
+        }
+        img{
+            height: 40vw;
         }
     }
 

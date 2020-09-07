@@ -1462,6 +1462,8 @@
   text-align: center;
   width: 100%;
   margin-top: 50px;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .election-guide-article-body .rnc-point {
@@ -1577,10 +1579,20 @@
           margin-block-end: 30px;
 }
 
-.volv-ad .downloadnow {
+.volv-ad > div .download-appstore {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+.volv-ad > div .download-appstore > div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .other-issues {
@@ -1710,10 +1722,19 @@
   .volv-ad h3 {
     font-size: 13px;
   }
-  .volv-ad .downloadnow {
+  .volv-ad > div .download-appstore {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .volv-ad > div .download-appstore > div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .other-issues .the-issues-list {
     margin-top: 50px;
@@ -1789,6 +1810,9 @@
   }
   .election-guide-article-body ul li {
     font-size: 14px;
+  }
+  .election-guide-article-body img {
+    height: 40vw;
   }
   .other-issues .the-issues-list {
     margin-top: 50px;
