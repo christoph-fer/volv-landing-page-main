@@ -2175,10 +2175,25 @@
   padding: 17vw 0px 0px 0px;
 }
 
+.csm-intro {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.csm-intro p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 136.1%;
+  color: #000000;
+  margin: 0px 0px 20px 0px;
+}
+
 .csmsec2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-top: -35vh;
 }
 
 .csm-article-pic-style-1 {
@@ -2190,10 +2205,11 @@
   height: -moz-fit-content;
   height: fit-content;
   margin: 100px auto 100px auto;
+  max-width: 1440px;
 }
 
 .csm-article-pic-style-1 img {
-  width: 60%;
+  width: 70%;
   margin: 0px auto 0px auto;
 }
 
@@ -2261,12 +2277,7 @@
 }
 
 .qna {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30vw 3fr;
-      grid-template-columns: 30vw 3fr;
   max-width: 1440px;
-  justify-items: center;
   margin: 0px auto 0px auto;
 }
 
@@ -2284,9 +2295,10 @@
 }
 
 .qna-content {
-  padding: 0px 5vw 0px 100px;
-  -ms-grid-columns: 30vw 3fr;
-      grid-template-columns: 30vw 3fr;
+  max-width: 700px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .qna-content a {
@@ -2299,8 +2311,8 @@
 }
 
 .qna-set {
-  -ms-grid-columns: 30vw 3fr;
-      grid-template-columns: 30vw 3fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -2314,10 +2326,15 @@
   color: #000000;
 }
 
+.csm-highlight {
+  background-color: #ffedce;
+  padding: 2px;
+}
+
 .csm-ans {
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  line-height: 136.1%;
+  line-height: 164%;
   color: #000000;
   margin: 0px 0px 70px 0px;
 }
@@ -2370,6 +2387,18 @@
 }
 
 @media only screen and (max-width: 680px) {
+  .csm-article-pic-style-1 {
+    margin: 50px auto 50px auto;
+  }
+  .csm-article-pic-style-1 img {
+    width: 70%;
+  }
+  .csmsec2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: -48vh;
+  }
   .csm-qtn {
     font-size: 18px;
   }
@@ -2382,17 +2411,10 @@
 }
 
 @media only screen and (max-width: 580px) {
-  .csmsec1 {
-    height: 100vw;
-    width: 100%;
+  .csm-article-pic-style-1 {
+    margin: 50px auto 50px auto;
   }
-  .csmsec1 > img {
-    width: 70%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin: 0px auto 0px auto;
-    padding: 24vw 0px 0px 0px;
-    padding: 48vw 0px 0px 0px;
+  .csm-article-pic-style-1 img {
     width: 90%;
   }
   .qna {
@@ -2406,12 +2428,6 @@
   }
   .qna-branding img {
     width: 30vh;
-  }
-  .csm-article-pic-style-1 {
-    margin: 40px auto 0px auto;
-  }
-  .csm-article-pic-style-1 img {
-    width: 75%;
   }
   .csm-footer {
     display: -ms-grid;
@@ -2443,6 +2459,15 @@
 }
 
 @media only screen and (max-width: 470px) {
+  .csm-header-pic {
+    height: 44vh;
+  }
+  .csmsec2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: -56vh;
+  }
   .qna-branding {
     width: 100%;
     background-color: white;

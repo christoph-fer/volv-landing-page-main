@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Volv | Culture Shifter Magazine</title>
+    <title>Volv | Sophie Katirai - Culture Shifter Magazine</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/volv-style.css" />
 
@@ -17,351 +17,241 @@
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      }
+    </script>
   </head>
 
   <body>
     <wrapper>
       <div class="navbar" id="navBar">
-        <br /><br /><br /><br />
-        <a href="index.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Home</span
-          ></a
-        >
-        <a href="csm-sophie-katirai.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Culture Shifter Magazine</span
-          ></a
-        >
-        <a href="bias.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >Why trust us?</span
-          ></a
-        >
-        <a href="about.html"
-          ><span style="-webkit-filter: invert(100%); filter: invert(100%);"
-            >About Us</span
-          ></a
-        >
         <div>
-          <a href="https://twitter.com/volv_media" target="_blank"
-            ><img
-              title="Volv on Twitter"
-              style="-webkit-filter: invert(100%); filter: invert(100%);"
-              src="../assets/twitter-white.png"
-          /></a>
-          <!-- <span>Follow us:</span> -->
-
-          <a href="https://www.instagram.com/volvmedia/" target="_blank"
-            ><img
-              title="Volv on Instagram"
-              src="../assets/instagram-white.png"
-              style="-webkit-filter: invert(100%); filter: invert(100%);"
-          /></a>
-
-          <a href="mailto:connect@volvmedia.com" target="_blank"
-            ><img
-              title="E-mail us"
-              src="../assets/main-icon-white.svg"
-              style="-webkit-filter: invert(100%); filter: invert(100%);"
-          /></a>
-        </div>
-
-        <input
-          class="volv-button-small"
-          type="button"
-          onclick="getOS()"
-          value="DOWNLOAD NOW - IT'S FREE"
-        />
-      </div>
-
-      <div class="csmsec1">
-        <div class="header">
-          <div>
-            <div style="align-self: center;">
-              <a href="index.html"
-                ><img
-                  class="volv-logo"
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/white volv svg.svg"
-              /></a>
-            </div>
-
-            <div class="download">
-              <a href="csm-sophie-katirai.html"
-                ><span
-                  style="
+          <div class="page-links">
+            <a href="index.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);">Home</span>
+            </a>
+            <a href="about.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);">Our Story</span>
+            </a>
+            <a href="bias.html"><span style="
                     -webkit-filter: invert(100%);
                     filter: invert(100%);
-                    border-bottom: 2px solid;
-                  "
-                  >Culture Shifter Magazine</span
-                ></a
-              >
-              <a href="bias.html"
-                ><span
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  >Why trust us?</span
-                ></a
-              >
-              <a href="about.html"
-                ><span
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  >About Us</span
-                ></a
-              >
-              <a href="https://twitter.com/volv_media" target="_blank"
-                ><img
-                  title="Volv on Twitter"
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/twitter-white.png"
-              /></a>
-              <!-- <span>Follow us:</span> -->
+                   
+                  ">Why trust us?</span></a>
+  
+                  
+            <a href="2020-election-guide.html"><span style="
+              -webkit-filter: invert(100%);
+              filter: invert(100%);">2020 Election Guide</span></a>
+  
+            <a href="csm-launch.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);  border-bottom: 2px solid;">Culture Shifter
+                Magazine</span>
+            </a>
+            <a href="join-us.html">
+              <span style="-webkit-filter: invert(100%); filter: invert(100%);">Join Us</span>
+            </a>
+          </div>
+          <div class="navbar-links">
+            <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-icon-black.jpg"
+                alt="" /></a>
+            <a href="https://www.instagram.com/volvmedia/"><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/instagram-white.png"
+                alt="" /></a>
+            <a href="https://twitter.com/volv_media" target="_blank"><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/twitter-white.png"
+                alt="" /></a>
+            <a href="mailto:connect@volvmedia.com" target="_blank"><img
+                style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/main-icon-white.svg"
+                alt="" /></a>
+          </div>
+          <div class="cta-button-navbar" w3-include-html="../components/volv-button-small.html"></div>
+        </div>
+      </div>
 
-              <a href="https://www.instagram.com/volvmedia/" target="_blank"
-                ><img
-                  title="Volv on Instagram"
-                  src="../assets/instagram-white.png"
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-              /></a>
-
-              <a href="mailto:connect@volvmedia.com" target="_blank"
-                ><img
-                  title="E-mail us"
-                  src="../assets/main-icon-white.svg"
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-              /></a>
-
-              <div
-                class="volv-button-small"
-                type="button"
-                onclick="getOS()"
-                value="DOWNLOAD NOW - IT'S FREE"
-              >
-                DOWNLOAD NOW - IT'S FREE
-                <div class="downloadnow option">
-                  <div
-                    style="
-                      grid-column: 1/3;
-                      color: black;
-                      text-align: center;
-                      margin-bottom: 10px;
-                    "
-                  >
-                    Available on Android and iOS
-                  </div>
-                  <div class="android">
-                    <a
-                      target="_blank"
-                      href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                    >
-                      <img
-                        alt="Get it on Google Play"
-                        style="margin-left: -10;"
-                        src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                    /></a>
-                  </div>
-                  <div class="ios">
-                    <a
-                      target="_blank"
-                      href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
-                    >
-                      <img
-                        alt="Download on the App Store"
-                        src="../assets/app-store.svg"
-                    /></a>
-                  </div>
-                </div>
-              </div>
+      <div class="csm-launch">
+        <div class="volv-header">
+          <div>
+            <div style="align-self: center;">
+              <a href="index.html">
+                <img class="volv-logo" style="-webkit-filter: invert(100%); filter: invert(100%);"
+                  src="../assets/white volv svg.svg" />
+              </a>
+            </div>
+  
+            <div class="cta-button" style="justify-self: right; margin-right: 20px;"
+              w3-include-html="../components/volv-button-small.html"></div>
+  
+            <div class="ham-menu" id="hamMenu" onclick="openNav(x)">
+              <img src="../assets/ham_menu.svg" height="13px" />
+            </div>
+  
+            <div class="close-menu" id="closeMenu" onclick="closeNav()">
+              <img src="../assets/close-button.svg" height="13px" />
             </div>
           </div>
         </div>
+  
+  
+  
+  
+        <img class="csm-header-pic" />
+        <!-- <img class="csm-launch-date" src="../assets/csm-launch-date.svg" /> -->
+      </div>
 
-        <div class="header-mobile">
+      <!-- <div class="csmsec1">
+        
+
+        <div class="volv-header">
           <div>
             <div style="align-self: center;">
-              <a href="index.html"
-                ><img
-                  class="volv-logo"
-                  style="-webkit-filter: invert(100%); filter: invert(100%);"
-                  src="../assets/white volv svg.svg"
-              /></a>
+              <a href="index.html">
+                <img class="volv-logo" style="-webkit-filter: invert(100%); filter: invert(100%);"
+                  src="../assets/white volv svg.svg" />
+              </a>
             </div>
-
-            <!-- <div
-              class="volv-button-small"
-              type="button"
-              onclick="getOS()"
-              value="DOWNLOAD NOW - IT'S FREE"
-              style="
-                height: fit-content;
-                align-self: center;
-                margin-right: 20px;
-              "
-            >
-              <span>DOWNLOAD THE APP</span>
-              <span style="opacity: 0.7;"> — IT’S FREE</span>
-              <div class="downloadnow option">
-                <div
-                  style="
-                    grid-column: 1/3;
-                    color: black;
-                    text-align: center;
-                    margin-bottom: 10px;
-                  "
-                >
-                  Available on Android and iOS
-                </div>
-                <div class="android">
-                  <a
-                    target="_blank"
-                    href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                  >
-                    <img
-                      alt="Get it on Google Play"
-                      style="margin-left: -10;"
-                      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                  /></a>
-                </div>
-                <div class="ios">
-                  <a
-                    target="_blank"
-                    href="https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1"
-                  >
-                    <img
-                      alt="Download on the App Store"
-                      src="../assets/app-store.svg"
-                  /></a>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="ham-menu" id="hamMenu" onclick="openNav()">
+  
+            <div class="cta-button" style="justify-self: right; margin-right: 20px;"
+              w3-include-html="../components/volv-button-small.html"></div>
+  
+            <div class="ham-menu" id="hamMenu" onclick="openNav(x)">
               <img src="../assets/ham_menu.svg" height="13px" />
             </div>
-
+  
             <div class="close-menu" id="closeMenu" onclick="closeNav()">
               <img src="../assets/close-button.svg" height="13px" />
             </div>
           </div>
         </div>
         <img src="../assets/culture-shifter-magazine-header-text.svg" />
-      </div>
+      </div> -->
 
-      <div class="csmsec2">
-        <div class="csm-article-pic-style-1">
-          <img src="../assets/sophie-katirai-title.svg" />
-        </div>
-      </div>
+      
+      
 
       <div class="qna">
-        <div data-sal="fade" class="qna-branding">
+        
+        <!-- <div data-sal="fade" class="qna-branding">
           <img src="../assets/Q&A.svg" />
+        </div> -->
+        <div class="csmsec2">
+          <div class="csm-article-pic-style-1">
+            <img src="../assets/sophie-katirai-title.svg" />
+          </div>
         </div>
+        
+     
 
         <div class="qna-content">
           <div class="qna-set">
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                What made you get into Augmented Reality? What inspired you to
-                create your first filter?
-              </p>
+            <div>
+              
               <p class="csm-ans">
-                I have a bachelor's degree in graphic design and have always
-                been very fascinated with AR filters on Snapchat and Instagram
-                so when I found out that Facebook’s Spark AR platform has moved
-                out of its closed beta and designers are able to publish their
-                own Spark AR effects on the platform I immediately decided to
-                dedicate at least 4-8 hours a day to learning everything I can
-                about the platform and start creating.
-              </p>
-            </div>
+                At a time when 15-year-old makeup gurus make us want to step up the ante, and the lockdown has made us lockup our makeup for over 6 months, the meaning of a “no-make up look” is most definitely an AR-flushed look. 
+<br><br>
+Even though we use these filters daily, we don’t really know much about the full-blown profession. So, we decided to dig in. And, of course, we chose to get the scoop from a millennial designer who sold her filter to make-up mogul, Kylie Jenner.
+<br><br>
+Let’s dive in with make-up artist and Spark AR designer, Sophie Katirai.
 
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                So, Kylie Jenner bought the rights to your filter. How did you
-                make that happen?
-              </p>
-              <p class="csm-ans">
-                I am a huge Kylie fan. She’s the main reason I started posting
-                makeup looks on Instagram and I own almost every shade of the
-                Kylie Cosmetics Lip Kits! I was up at 6am on January 7th with my
-                1 year old daughter and saw Kylie had just posted a story about
-                the Stormi Collection with three beautiful moving butterflies in
-                her hair. I found the look SO beautiful and immediately wanted
-                to recreate that look as a filter. I started right away to draw
-                the butterflies and animate them and then recreate Kylie's
-                beautiful makeup, which was done by Ariel Tejada her makeup
-                artist, to the filter. The filter was ready to publish by 3pm
-                that same day so it took me a little over 8 hours (I skipped
-                breakfast and lunch!). Of course I spent another week perfecting
-                thefilter and the butterfly movement but I wanted to have it
-                ready on the same day and I posted the filter on my feed and
-                left a comment under Kylie's last photo about the filter and
-                also shared with Ariel that his makeup inspired the makeup in my
-                filter. A few days later I got an email from the team and it was
-                one of the best days of my life.
               </p>
             </div>
           </div>
         </div>
-        <div></div>
+        
+  
+       
+        <div class="qna-content">
+          <div class="qna-set">
+            <div>
+              <p class="csm-qtn">
+                The leg into the industry
+              </p>
+              <p class="csm-ans">
+                “I have a Bachelor's degree in Graphic Design and I’ve always been very fascinated with AR filters on Snapchat and Instagram. When I found out that Facebook’s Spark AR platform moved out of its closed beta, allowing designers to publish their own Spark AR effects on the platform, I immediately decided to dedicate at least 4-8 hours a day to learn everything about the platform and start creating.”
+              <br><br>
+              (PS- Spark AR Studio is the software used to create Instagram as well as Facebook filters)
+              </p>
+            </div>
+
+            <div>
+              <p class="csm-qtn">
+                You know you’re onto something special when Kylie Jenner endorses your creation. 
+              </p>
+              <p class="csm-ans">
+                I am a huge Kylie fan; I own almost every shade of the Kylie Cosmetics Lip Kits. She’s also the main reason I started posting makeup looks on Instagram. Back In January, I was up at 6am with my 1-year-old daughter and Kylie had just posted a story about the Stormi Collection with three beautiful moving butterflies in her hair. I found the look extremely beautiful and immediately decided to recreate her look as a filter. I immediately started drawing and animating the butterflies and I also recreated Kylie's makeup, which was done by her makeup artist Ariel Tejada.
+                <br><br>
+                I skipped breakfast and lunch and finished the initial design in about 8 hours. Of course, I spent another week perfecting the filter and the movement of the butterfly but I wanted to have it ready on the same day. I posted the filter on my feed, left a comment on Kylie's picture about the filter, and also shared it with Ariel saying his creation inspired the makeup in my filter. <span class="csm-highlight">Kylie posted a story using the filter and a few days later, I got an email from Kylie’s team</span> - It was one of the best days of my life.
+
+              </p>
+            </div>
+
+            
+          </div>
+        </div>
 
         <div class="csm-article-pic-style-4">
           <img src="../assets/butterfly-pretty.svg" />
         </div>
 
         <div></div>
+        
         <div class="qna-content">
           <div class="qna-set">
-            <div data-sal="fade">
+            <div>
               <p class="csm-qtn">
-                Since this is such a niche industry, could you tell us a bit
-                more about how things work - how does one attach a monetary
-                value to a filter? And how much can artists expect to earn
-                through a filter (range)?
+                On what it takes to become a Spark AR designer
               </p>
               <p class="csm-ans">
-                Since this is such a niche industry, could you tell us a bit
-                more about how things work - how does one attach a monetary
-                value to a filter? And how much can artists expect to earn
-                through a filter (range)? AR filter creators with a coding
-                background create very technical and complex filters and games.
-                Graphic artists, painters and designers like myself combine our
-                drawing skills with our knowledge of programming and 3D
-                animation to create art that you can wear on your face. Just
-                like any other work the value depends on the complexity and time
-                it takes to complete. For my filters for example I like to start
-                with drawing all themakeup elements in Illustrator and Photoshop
-                and that alone requires many hours. And then I import everything
-                I have created outside of Spark AR and begin the designing and
-                coding process that is needed to complete the project. Filters
-                can take between 1 day to weeks and even months when working
-                with clients so it’s hard to give you a range as it really
-                depends on what we are creating.
+                The simple answer is - the more skills the better. I have a graphic design background and I’m also a painter and a makeup artist so I bring all these skills together when I create my filters. Knowledge of coding and script is also a must.
+              <br><br>
+              AR filter creators with a coding background create very technical and complex filters and games. Graphic artists, painters and designers, like myself, combine drawing skills with programming and 3D animation to create art that you can wear on your face. 
+
+              <br><br>
+              For my filters, I like to start by drawing all the makeup elements in Illustrator and Photoshop, and that alone requires several hours. Then, I import everything I have created outside of Spark AR and begin the designing and coding process that is needed to complete the project. 
+
               </p>
             </div>
 
             <div data-sal="fade">
               <p class="csm-qtn">
-                Do you also make custom filters for brands or clients?
+                On claims that the use of filters causes “Snapchat dysmorphia” since teenagers are getting plastic surgery to replicate their “filter look” 
               </p>
               <p class="csm-ans">
-                Yes of course. I’ve worked with celebrities, influencers,
-                businesses and brands.
-              </p>
-            </div>
+                “My filters do not include facial warping or deformation. I don’t change the shape or size of the users face or any of their facial features. <span class="csm-highlight">Changing people’s features is what causes the dysmorphia and it’s actually banned on Instagram.</span> In November 2019, Instagram stopped approving filters related to plastic surgery because they seem to have negative implications on mental health. People become dissatisfied with their natural looks because they want to look like the filter-version of themselves with a smaller nose and bigger eyes and lips. 
+                <br><br>
+                But, the features you see in my filters are your own. I just add layers of makeup and shading, something that is totally achievable in real life with makeup too. You can notice that in the pictures that I post without using my filters. 
 
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                How do you make these filters - what skills do you need and how
-                do you start?
-              </p>
-              <p class="csm-ans">
-                The more skills the better! Like I wrote above I have a graphic
-                design background and I’m also a painter and makeup artist so I
-                bring together all these skills when I create my filters.
-                Knowledge of coding and script is also a must.
               </p>
             </div>
           </div>
@@ -375,41 +265,25 @@
 
         <div class="qna-content">
           <div class="qna-set">
-            <div data-sal="fade">
+            <div>
               <p class="csm-qtn">
-                Several researchers are against such filters claiming it causes
-                “Snapchat dysmorphia.” What’s your take on it?
+                Pro-tips to achieve the filter look IRL
               </p>
               <p class="csm-ans">
-                My filters do not include facial warping or deformation. I do
-                not change the shape or size of the users face or any of their
-                facial features in my filters. This change is what causes the
-                dysmorphia you describe and it’s actually banned in Instagram.
-                In Novemver 2019 Instagram stopped approving filters relating to
-                plastic surgery because they have been found to be harmful to
-                mental health. People have become dissatisfied with their
-                natural looks because they want to look like the filters with a
-                smaller nose, bigger eyes and lips. The eyes, nose, lips and
-                everything you see in my filters is your own. I add layers of
-                makeup and shading that is completely achievable in real life
-                with makeup asyou can see in my makeup photos that I post
-                without using my filters. Although I don’t use this type of
-                facial morphing in my filters I personally am not against it at
-                all. I feel people should be free to decide what they would like
-                to do with their face and filters should be fun and not taken
-                seriously. I see nothing wrong with having bigger lips with a
-                filter and in fact you don’t require plastic surgery to get
-                bigger lips so I think Instagram should rethink their ban in the
-                future and allow artists and users to make their own decision
-                and choice.
+                I love contouring the cheeks with different shades of bronzer and blush, and using eyeliner and strip lashes to achieve dramatic eye looks. I also like to contour the lips with lip liner and different shades of lipstick and top it off with lip-gloss for a more plump look. 
+              <br><br>
+              Here’s a link to <a target="_blank"
+              href="https://www.instagram.com/sophie/"
+              >Sophie’s makeup tutorials on Instagram.</a>
+
               </p>
             </div>
           </div>
         </div>
 
-        <div class="csm-article-pic-style-3">
+        <!-- <div class="csm-article-pic-style-3">
           <img src="../assets/sophie-katirai-quote-1-mobile.svg" />
-        </div>
+        </div> -->
 
         <div></div>
 
@@ -417,49 +291,14 @@
           <div class="qna-set">
             <div data-sal="fade">
               <p class="csm-qtn">
-                Since you’re based in Dubai, do you think people’s makeup
-                preferences differ depending on where they’re from?
+                “People should be free to decide what they would like to do with their face”
               </p>
               <p class="csm-ans">
-                Women in the gulf region love heavy makeup and have been wearing
-                the full glam face for years before it became so trendy on
-                Instagram. I grew up admiring the beautifully drawn faces and
-                eyes of women around me here. When I used to go home to Canada
-                every summer everyone was more natural and wore a lot less
-                makeup but I see that this is has definitely changednow and
-                women everywhere are experimenting more with makeup.
+                Although I don’t use this type of facial morphing in my filters, I am not against it. I believe people should be free to decide what they would like to do with their face. Besides, filters should be fun. They shouldn’t be taken seriously. I see nothing wrong with having bigger lips by using a filter. You don’t require plastic surgery to get bigger lips and so, I think Instagram should rethink their ban in the future and allow artists and users to make their own decisions.
               </p>
             </div>
 
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                As a makeup artist, what are a few important tips you can give
-                us to achieve these looks IRL?
-              </p>
-              <p class="csm-ans">
-                Watch my makeup tutorials and stories on Instagram! I use the
-                same style and technique to apply my makeup in real life. I love
-                contouring my cheeks with different shades of bronzer and blush,
-                using eyeliner and strip lashes to achieve dramatic eye looks
-                and contouring my lips with lipliner, different shades of
-                lipstick and adding lipgloss for a more plump look.
-              </p>
-            </div>
-
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                What do you think is next in terms of Instagram filters? Where
-                do you see this industry going?
-              </p>
-              <p class="csm-ans">
-                It’s such an exciting time right now because people are
-                discovering filters and enjoying them so much and learning they
-                can have or create their own filters too! This means that soon
-                many Instagram users will have their own filter galleries. It’s
-                definitely going to grow and get more complex by the day. I’m
-                super excited and can’t wait to see where this will take me.
-              </p>
-            </div>
+            
           </div>
         </div>
 
@@ -473,42 +312,20 @@
           <div class="qna-set">
             <div data-sal="fade">
               <p class="csm-qtn">
-                Volv is centered around culture shifters - those who are
-                multifaceted and want to change the status quo. How do you
-                embody that?
+                On culture defining make-up preferences 
               </p>
               <p class="csm-ans">
-                I’ve always been the odd artistic one amongst serious number
-                focused or technical individuals and I really enjoy bringing
-                color and art into my interactions. I was the only Graphic
-                Designer getting a Master’s Degree in Business Administration in
-                my class (2004 Sauder School of Business at UBC Canada). And I
-                often felt like my views about the importance of design,
-                branding, color, made people roll their eyes simply because they
-                didn’t understand what I was talking about or thought it was too
-                easy or unimportant. I get this same feeling now with some of my
-                peers in the Spark AR community who come from a coding
-                background and can write very complex codes but don’t know
-                anything about makeup and not too excited byit. But luckily I
-                have found a group of amazing artists who are equally passionate
-                about beauty filters and we enjoy exchanging tips and tricks and
-                together our filters get hundreds of billions of impressions per
-                week.
+                Women in the gulf region love heavy makeup and have been wearing the full glam face for years before it became so trendy on Instagram. I grew up admiring the beautifully drawn faces and eyes of women around me here. When I used to go home to Canada every summer everyone was more natural and wore a lot less makeup but I see that this is has definitely changed now and women everywhere are experimenting more with makeup.
+                <br><br>
+                On diverging from the status quo and sticking to her strengths 
+                <br><br>
+                I’ve always been the odd artistic one amongst serious, number-focused or technical individuals and I was the only Graphic Designer getting a Master’s Degree in Business Administration in my class at the Sauder School of Business at UBC, Canada. I often felt like my views about the importance of design, branding, color, made people roll their eyes simply because they didn’t understand what I was talking about or thought it was too easy or unimportant. I get this same feeling now too with some of my peers in the Spark AR community. They can write very complex codes but they don’t know anything about makeup and nor are they excited by it. But, luckily I have found a group of amazing artists who are equally passionate about beauty filters and we enjoy exchanging tips and tricks and together our filters get hundreds of billions of impressions per week.
               </p>
             </div>
 
-            <div data-sal="fade">
-              <p class="csm-qtn">
-                If you can share one piece of advice with Millennials, what
-                would it be?
-              </p>
-              <p class="csm-ans">
-                Work hard and stay focused on your goals. Nothing is impossible
-                if we want it hard enough.
-              </p>
-            </div>
+            
 
-            <div data-sal="fade">
+            <div>
               <p class="csm-ans">
                 Be sure to check out her Instagram<br /><a
                   href="https://www.instagram.com/sophie/"
@@ -552,135 +369,88 @@
     </wrapper>
 
     <script>
-      function openNav() {
-        document.getElementById("navBar").style.width = "100%";
-        document.getElementById("hamMenu").style.display = "none";
-        document.getElementById("closeMenu").style.display = "grid";
+      $(window).on("scroll", function () {
+          if ($(window).scrollTop() > 50) {
+              $(".volv-header").addClass("active");
+          } else {
+              //remove the background property so it comes transparent again (defined in your css)
+              $(".volv-header").removeClass("active");
+          }
+      });
+  </script>
+
+  <script>
+      function openNav(x) {
+          if (x.matches) {
+              document.getElementById("navBar").style.height = "520px";
+              document.getElementById("navBar").style.opacity = "1";
+              document.getElementById("hamMenu").style.display = "none";
+              document.getElementById("closeMenu").style.display = "grid";
+          } else {
+              document.getElementById("navBar").style.height = "320px";
+              document.getElementById("navBar").style.opacity = "1";
+              document.getElementById("hamMenu").style.display = "none";
+              document.getElementById("closeMenu").style.display = "grid";
+          }
       }
 
       function closeNav() {
-        document.getElementById("navBar").style.width = "0";
-        document.getElementById("hamMenu").style.display = "grid";
-        document.getElementById("closeMenu").style.display = "none";
+          document.getElementById("navBar").style.height = "0px";
+          document.getElementById("navBar").style.opacity = "0";
+          document.getElementById("hamMenu").style.display = "grid";
+          document.getElementById("closeMenu").style.display = "none";
       }
 
-      // function closeNav() {
-      //     document.getElementById("mySidenav").style.width = "0";
-      // }
-    </script>
+      var x = window.matchMedia("(max-width: 669px)");
+  // openNav(x) // Call listener function at run time
+  // x.addListener(openNav) // Attach listener function on state changes
 
-    <script>
-      $(document).ready(function () {
-        // ps: disable on small devices!
-        var $animationElements = $(".animation-element");
-        var $window = $(window);
+  // function closeNav() {
+  //     document.getElementById("mySidenav").style.width = "0";
+  // }
+  </script>
 
-        // ps: Let's FIRST disable triggering on small devices!
-        var isMobile = window.matchMedia("only screen and (max-width: 768px)");
-        if (isMobile.matches) {
-          $animationElements.removeClass("animation-element");
-        }
-
-        function checkIfInView() {
-          var windowHeight = $window.height();
-          var windowTopPosition = $window.scrollTop();
-          var windowBottomPosition = windowTopPosition + windowHeight;
-
-          $.each($animationElements, function () {
-            var $element = $(this);
-            var elementHeight = $element.outerHeight();
-            var elementTopPosition = $element.offset().top;
-            var elementBottomPosition = elementTopPosition + elementHeight;
-
-            //check to see if this current container is within viewport
-            if (
-              elementBottomPosition >= windowTopPosition &&
-              elementTopPosition <= windowBottomPosition
-            ) {
-              $element.addClass("in-view");
-            } else {
-              $element.removeClass("in-view");
-            }
-          });
-        }
-
-        $window.on("scroll resize", checkIfInView);
-        $window.trigger("scroll");
-
-        /* @end viewport trigger script  */
-      });
-    </script>
-    <script>
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-          $(".header").addClass("active");
-        } else {
-          //remove the background property so it comes transparent again (defined in your css)
-          $(".header").removeClass("active");
-        }
-      });
-    </script>
-    <script>
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 50) {
-          $(".header-mobile > div").addClass("active");
-        } else {
-          //remove the background property so it comes transparent again (defined in your css)
-          $(".header-mobile > div").removeClass("active");
-        }
-      });
-    </script>
-    <!-- <script>
-      $("p").click(function () {
-        alert("The paragraph was clicked.");
-      });
-    </script> -->
-    <script>
+  <script>
       function getOS() {
-        var userAgent = window.navigator.userAgent,
-          platform = window.navigator.platform,
-          macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-          windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-          iosPlatforms = ["iPhone", "iPad", "iPod"],
-          os = null;
-        if (macosPlatforms.indexOf(platform) !== -1) {
-          os = "Mac OS";
-          $(".downloadnow").addClass("active");
-          $(".downloadnow").toggleClass("option");
-          // window.location.href = "#download-now-desktop";
-          // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
-        } else if (iosPlatforms.indexOf(platform) !== -1) {
-          os = "iOS";
-          window.location.href =
-            "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
-        } else if (windowsPlatforms.indexOf(platform) !== -1) {
-          os = "Windows";
-          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
-          // window.location.href = "#download-now-desktop";
-          $(".downloadnow").addClass("active");
-          $(".downloadnow").toggleClass("option");
-        } else if (/Android/.test(userAgent)) {
-          os = "Android";
-          window.location.href =
-            "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
-        } else if (!os && /Linux/.test(platform)) {
-          os = "Linux";
-          $(".downloadnow").addClass("active");
-          $(".downloadnow").toggleClass("option");
-          // window.location.href = "#download-now-desktop";
-          // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
-        }
-        return os;
+          var userAgent = window.navigator.userAgent,
+              platform = window.navigator.platform,
+              macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+              windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+              iosPlatforms = ["iPhone", "iPad", "iPod"],
+              os = null;
+          if (macosPlatforms.indexOf(platform) !== -1) {
+              os = "Mac OS";
+              $(".downloadnow").addClass("active");
+              $(".downloadnow").toggleClass("option");
+              // window.location.href = "#download-now-desktop";
+              // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
+          } else if (iosPlatforms.indexOf(platform) !== -1) {
+              os = "iOS";
+              window.location.href =
+                  "https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1";
+          } else if (windowsPlatforms.indexOf(platform) !== -1) {
+              os = "Windows";
+              // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+              // window.location.href = "#download-now-desktop";
+              $(".downloadnow").addClass("active");
+              $(".downloadnow").toggleClass("option");
+          } else if (/Android/.test(userAgent)) {
+              os = "Android";
+              window.location.href =
+                  "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+          } else if (!os && /Linux/.test(platform)) {
+              os = "Linux";
+              $(".downloadnow").addClass("active");
+              $(".downloadnow").toggleClass("option");
+              // window.location.href = "#download-now-desktop";
+              // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
+          }
+          return os;
       }
-    </script>
+  </script>
 
-    <script src="./sal.js"></script>
-
-    <script>
-      sal({
-        threshold: 0,
-        once: true,
-      });
-    </script>
+  <script>
+      includeHTML();
+  </script>
   </body>
 </html>
