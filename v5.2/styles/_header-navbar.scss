@@ -125,12 +125,18 @@
   display: grid;
   align-self: center;
   cursor: pointer;
+  img{
+    height: 15px;
+  }
 }
 
 .close-menu {
   display: none;
   align-self: center;
   cursor: pointer;
+  img{
+    height: 15px;
+  }
 }
 
 @media only screen and (max-width: 1636px) {

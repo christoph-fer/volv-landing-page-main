@@ -27,7 +27,9 @@
 }
 .csmsec2 {
   height: fit-content;
-  margin-top: -35vh
+  margin-top: -35vh;
+  animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  
 }
 
 .csm-article-pic-style-1 {
@@ -133,6 +135,12 @@
   color: #000000;
   margin: 0px 0px 70px 0px;
 }
+.csm-quote{
+  margin-bottom: 85px;
+  img{
+    width: 100%;
+  }
+}
 .csm-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -186,10 +194,10 @@
     margin-top: -48vh
   }
   .csm-qtn {
-    font-size: 18px;
+    font-size: 17px;
   }
   .csm-ans {
-    font-size: 13px;
+    font-size: 15px;
   }
   .csm-header-pic {
     height: 52vh;
@@ -216,6 +224,16 @@
     top: 50px;
     img {
       width: 30vh;
+    }
+  }
+
+  .csm-ans {
+    margin: 0px 0px 30px 0px;
+  }
+  .csm-quote{
+    margin-bottom: 40px;
+    img{
+      width: 100%;
     }
   }
   
