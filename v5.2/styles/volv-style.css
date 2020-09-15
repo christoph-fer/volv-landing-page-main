@@ -2018,7 +2018,6 @@
   margin-right: auto;
   margin-top: -25vh;
   margin-bottom: 200px;
-  position: relative;
   -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
           animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
@@ -2071,6 +2070,28 @@
 .csm-cta:hover img {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
+}
+
+@media only screen and (max-width: 800px) {
+  .csm-cta {
+    position: unset;
+    margin-top: 1vw;
+    outline: 1.2px solid black;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .csm-headline {
+    margin-top: -40vh;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .csm-headline {
+    margin-top: -50vh;
+    margin-bottom: 100px;
+  }
 }
 
 .csmsec1 {
