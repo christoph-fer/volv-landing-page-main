@@ -2034,6 +2034,8 @@
   max-width: 400px;
   -webkit-animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
           animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  margin-left: 375px;
+  margin-top: -105px;
 }
 
 .csm-headline:hover > div {
@@ -2085,6 +2087,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .csm-headline p {
+    margin: unset;
+    margin-top: 30px;
+  }
   .csm-cta {
     position: unset;
     margin-top: 20px;
@@ -3084,7 +3090,7 @@ html {
 }
 
 .sec1-3dphone {
-  background-image: url(../assets/3d-phone-2.jpg);
+  background-image: url(../assets/3d-phone-3.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

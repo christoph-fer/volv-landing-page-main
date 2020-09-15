@@ -19,7 +19,8 @@
     font-weight: 600;
     max-width: 400px;
     animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
-
+    margin-left: 375px;
+    margin-top: -105px;
   }
   &:hover{
     >div{
@@ -62,6 +63,12 @@
 }
 
 @media only screen and (max-width: 800px){
+  .csm-headline{
+    p{
+      margin: unset;
+      margin-top: 30px;
+    }
+  }
   .csm-cta{
     position: unset;
     margin-top: 20px;  
