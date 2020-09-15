@@ -1961,7 +1961,6 @@
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  min-height: 663px;
   width: 100%;
 }
 
@@ -2018,12 +2017,23 @@
   margin-right: auto;
   margin-top: -25vh;
   margin-bottom: 100px;
+  cursor: pointer;
   -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
           animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .csm-headline img {
   width: 100%;
+}
+
+.csm-headline p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 600;
+  max-width: 400px;
+  -webkit-animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .csm-headline:hover > div {
@@ -2040,7 +2050,7 @@
   top: 280px;
   left: 170px;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(3px);
@@ -2056,6 +2066,8 @@
           align-items: center;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
+  -webkit-animation: volv-window-desktop-animation 1.4s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1.4s cubic-bezier(0.5, 0, 0, 0.99) forwards;
   cursor: pointer;
 }
 
@@ -2075,8 +2087,8 @@
 @media only screen and (max-width: 800px) {
   .csm-cta {
     position: unset;
-    margin-top: 1vw;
-    outline: 1.2px solid black;
+    margin-top: 20px;
+    outline: 1.15px solid black;
   }
 }
 
@@ -2085,12 +2097,20 @@
     margin-top: -40vh;
     margin-bottom: 100px;
   }
+  .csm-headline p {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 470px) {
   .csm-headline {
     margin-top: -50vh;
     margin-bottom: 100px;
+  }
+  .csm-cta {
+    font-size: 12px;
+    padding: 14px;
+    outline: 1px solid black;
   }
 }
 
@@ -2235,6 +2255,8 @@
 }
 
 .qna-content {
+  -webkit-animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1.2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
   max-width: 700px;
   padding: 0px;
   margin-left: auto;
