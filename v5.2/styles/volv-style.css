@@ -2017,7 +2017,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -25vh;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
           animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
