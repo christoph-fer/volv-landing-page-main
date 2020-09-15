@@ -2019,6 +2019,8 @@
   margin-top: -25vh;
   margin-bottom: 200px;
   position: relative;
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
 }
 
 .csm-headline img {
@@ -2048,8 +2050,8 @@
   width: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80px 20px;
-      grid-template-columns: 80px 20px;
+  -ms-grid-columns: 75px 20px;
+      grid-template-columns: 75px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

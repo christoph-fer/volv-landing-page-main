@@ -6,6 +6,7 @@
   margin-top: -25vh;
   margin-bottom: 200px;
   position: relative;
+  animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
   img{
     width: 100%;
     
@@ -33,7 +34,7 @@
   padding: 17px;
   width: 100px;
   display: grid;
-  grid-template-columns: 80px 20px;
+  grid-template-columns: 75px 20px;
   align-items: center;
   transition: 300ms ease-out;
   cursor: pointer;
