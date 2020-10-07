@@ -404,6 +404,26 @@
       </div>
     </div>
 
+    <br><br>
+
+      <p style="text-align: center; font-weight: 600;">Check out other stuff we do 👇</p>
+
+      <br><br>
+
+    <div class="other-features-ad">
+      <div class="feature-1">
+        <a href="../pages/2020-election-guide.html"><img class="feature-1-brand" src="../assets/2020-election-guide-check-it-out.svg" alt=""></a>
+        <img class="feature-1-img" src="../assets/biden-trump-2.png" alt="">
+      </div>
+      <div class="divider">
+        <img src="../assets/divider.svg" alt="">
+      </div>
+      <div class="feature-2">
+        <a href="../pages/csm-headlines.html"><img class="feature-2-brand" src="../assets/csm-check-it-out.svg" alt=""></a>
+        <img class="feature-2-img" src="../assets/csm-statue-solo.png" alt="">
+      </div>
+    </div>
+
     <div class="footer-2">
       <div class="footer-first-half">
         <div class="footer-volv-logo">
@@ -492,18 +512,29 @@
     });
   </script>
 
+<script>
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 50) {
+      $(".navbar").addClass("active");
+    } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $(".navbar").removeClass("active");
+    }
+  });
+</script>
+
   <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script> -->
 
-  <script src="./sal.js"></script>
+  <!-- <script src="./sal.js"></script>
 
   <script>
     sal({
       threshold: 0,
     });
-  </script>
+  </script> -->
 
   <script>
     function openNav(x) {
