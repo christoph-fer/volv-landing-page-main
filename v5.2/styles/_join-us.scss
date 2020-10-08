@@ -32,6 +32,7 @@
 .join-us {
     text-align: center;
     margin-top: -800px;
+    
 }
 
 .join-us-options {
@@ -45,6 +46,8 @@
     margin-top: 150px;
     padding: 0px 50px;
     margin-bottom: 50px;
+    animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
 }
 
 .join-us-option-card {
@@ -53,6 +56,7 @@
     transition: 300ms ease-out;
     transform: translateY(3px);
     text-decoration: none;
+
 
     &:hover {
         background-color: #fff;
@@ -90,6 +94,8 @@
     font-size: 64px;
     margin-block-start: 150px;
     margin-block-end: 0px;
+    animation: volv-window-desktop-animation 0.5s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
 }
 
 .caps-sans-serif {
@@ -100,6 +106,8 @@
     color: #749c84;
     margin-block-start: 40px;
     margin-block-end: 0px;
+    animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
 }
 
 .body-sans-serif-1 {
@@ -107,6 +115,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 136.1%;
+    
 }
 
 .body-sans-serif-2 {
@@ -114,6 +123,8 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 136.1%;
+    animation: volv-window-desktop-animation 0.7s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+
 }
 
 .body-sans-serif-3 {
