@@ -55,9 +55,9 @@
         <div class="navbar" id="navBar">
             <div>
                 <div class="page-links">
-                    <a href="index.html">
+                    <!-- <a href="index.html">
                         <span style="-webkit-filter: invert(100%); filter: invert(100%);">Home</span>
-                    </a>
+                    </a> -->
                     <a href="about.html">
                         <span style="-webkit-filter: invert(100%); filter: invert(100%);">Our Story</span>
                     </a>
@@ -210,11 +210,14 @@
                 document.getElementById("navBar").style.opacity = "1";
                 document.getElementById("hamMenu").style.display = "none";
                 document.getElementById("closeMenu").style.display = "grid";
+                // document.getElementsByClassName('navbar-links')[0].style.display = "grid";
             } else {
                 document.getElementById("navBar").style.height = "320px";
                 document.getElementById("navBar").style.opacity = "1";
                 document.getElementById("hamMenu").style.display = "none";
+                document.getElementById("navBar").style.display = "grid";
                 document.getElementById("closeMenu").style.display = "grid";
+                // document.getElementsByClassName('navbar-links')[0].style.display = "grid";
             }
         }
 

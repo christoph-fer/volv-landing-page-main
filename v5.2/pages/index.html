@@ -40,11 +40,34 @@
       filter: invert(100%);
     }
 
+    .navbar{
+      transform: unset;
+      left: unset;
+      right: 0;
+    }
 
+    /* .navbar>div>div{
+      margin-right: unset;
+    } */
+
+    .navbar>div a{
+      color: #000;
+    }
 
     .footer-2 {
       background-color: transparent;
       color: #0000007c;
+    }
+    
+    @media only screen and (max-width: 1240px){
+      .navbar{
+        transform: translate(-50%,0);
+        left: 50%;
+        right: unset;
+      }
+      .navbar>div a{
+        color: #fff;
+      }
     }
   </style>
 </head>
@@ -94,13 +117,13 @@
     <div class="navbar" id="navBar">
       <div>
         <div class="page-links">
-          <a href="index.html">
+          <!-- <a href="index.html">
             <span style="
                   -webkit-filter: invert(100%);
                   filter: invert(100%);
                   border-bottom: 2px solid;
                 ">Home</span>
-          </a>
+          </a> -->
           <a href="about.html">
             <span style="-webkit-filter: invert(100%); filter: invert(100%);">Our Story</span>
           </a>
@@ -406,9 +429,9 @@
 
     <br><br>
 
-      <p style="text-align: center; font-weight: 600;">Check out other stuff we do 👇</p>
+      <p class="check-out-ad">Check out other stuff we do 👇</p>
 
-      <br><br>
+    <br><br>
 
     <div class="other-features-ad">
       <div class="feature-1">
@@ -543,11 +566,17 @@
         document.getElementById("navBar").style.opacity = "1";
         document.getElementById("hamMenu").style.display = "none";
         document.getElementById("closeMenu").style.display = "grid";
+        document.getElementsByClassName('navbar-links')[0].style.opacity = "1";
+
+        document.getElementsByClassName('navbar')[0].style.transform = "translate(-50%, 0)";
       } else {
         document.getElementById("navBar").style.height = "320px";
         document.getElementById("navBar").style.opacity = "1";
         document.getElementById("hamMenu").style.display = "none";
         document.getElementById("closeMenu").style.display = "grid";
+
+        document.getElementsByClassName('navbar')[0].style.transform = "translate(-50%, 0)";
+        document.getElementsByClassName('navbar-links')[0].style.opacity = "1";
       }
     }
 
@@ -558,7 +587,7 @@
       document.getElementById("closeMenu").style.display = "none";
     }
 
-    var x = window.matchMedia("(max-width: 669px)");
+    var x = window.matchMedia("(max-width: 720px)");
     // openNav(x) // Call listener function at run time
     // x.addListener(openNav) // Attach listener function on state changes
 
