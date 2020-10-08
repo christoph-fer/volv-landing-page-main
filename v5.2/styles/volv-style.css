@@ -542,6 +542,29 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .other-features-ad {
+    -ms-grid-columns: 1fr 0px 1fr;
+        grid-template-columns: 1fr 0px 1fr;
+    height: 49vw;
+  }
+  .other-features-ad .feature-1 {
+    padding-top: 10vw;
+  }
+  .other-features-ad .feature-1 .feature-1-brand {
+    height: 21vw;
+  }
+  .other-features-ad .divider {
+    opacity: 0;
+  }
+  .other-features-ad .feature-2 {
+    padding-top: 10vw;
+  }
+  .other-features-ad .feature-2 .feature-2-brand {
+    height: 21vw;
+  }
+}
+
 .our-story-section1 {
   background: -webkit-gradient(linear, right top, left top, from(#ffe2af), to(#b1c4e5));
   background: linear-gradient(270deg, #ffe2af, #b1c4e5);

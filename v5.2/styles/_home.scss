@@ -92,3 +92,24 @@
     }
   }
 }
+@media only screen and (max-width: 450px){
+  .other-features-ad{
+    grid-template-columns: 1fr 0px 1fr;
+    height: 49vw;
+    .feature-1{
+      padding-top: 10vw;
+      .feature-1-brand{
+        height: 21vw;
+      }
+    }
+    .divider{
+      opacity: 0;
+    }
+    .feature-2{
+      padding-top: 10vw;
+      .feature-2-brand{
+        height: 21vw;
+      }
+    }
+  }
+}
