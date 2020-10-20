@@ -1557,10 +1557,11 @@
   font-family: "Bebas Neue", sans-serif;
   font-weight: unset;
   font-size: 84px;
-  -webkit-margin-before: -20px;
-          margin-block-start: -20px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
+  line-height: 64px;
 }
 
 .election-guide-article-title p {
