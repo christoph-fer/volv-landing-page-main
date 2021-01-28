@@ -460,7 +460,7 @@
 }
 
 body {
-  background: #FBFBFB;
+  background-color: #FBFBFB !important;
 }
 
 .container {
@@ -552,6 +552,7 @@ img {
 }
 
 .phone-number-box {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
@@ -610,6 +611,7 @@ img {
 
 .video-container {
   width: 50vw;
+  max-width: 800px;
   height: 100vh;
   z-index: -1;
   background-color: #FBFBFB;
