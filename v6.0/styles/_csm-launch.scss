@@ -1,0 +1,56 @@
+.csm-header-pic {
+  display: grid;
+  height: 65vh;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../assets/csm-header-launch-svg.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+.csm-launch {
+  display: grid;
+  height: 100vh;
+  //min-height: 663px;
+  width: 100%;
+}
+.csm-header-text {
+  width: 42%;
+  object-fit: contain;
+  margin: 0px auto 0px auto;
+  padding: 20vh 0px 0px 0px;
+}
+.csm-launch-date {
+  display: grid;
+  justify-content: center;
+  z-index: -1;
+  height: 35vh;
+  object-fit: contain;
+  position: absolute;
+  top: 58vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99)
+    forwards;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+@media only screen and (max-width: 680px) {
+  .csm-launch-date {
+    top: 46vh;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .csm-launch-date {
+    top: 38vh;
+    height: 30vh;
+  }
+}

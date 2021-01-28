@@ -1,0 +1,240 @@
+.bssec1 {
+  z-index: -2;
+  position: relative;
+  background: linear-gradient(270deg, #fff2e8, #dbf0ff);
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
+  height: 782px;
+}
+
+.bssec1content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: baseline;
+}
+
+.bssec1text {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 136.1%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  z-index: 10;
+}
+
+.bias-window-desktop {
+  display: grid;
+  margin-left: 10vh;
+  margin-right: auto;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  margin-top: 120px;
+  z-index: 10;
+}
+
+.bias-window-2-desktop {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  animation: volv-window-desktop-animation 2s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  z-index: 10;
+}
+
+.bias-window-2-mobile {
+  display: none;
+}
+
+.bias-window-mobile {
+  display: none;
+}
+
+.bias-ex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  background: url(../assets/bias-ex.svg);
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+
+.bssec3 {
+  display: grid;
+  margin: 0px 0px 100px 0px;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.chart {
+  display: grid;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f9f9f9;
+  width: 100%;
+}
+
+.chart-mobile {
+  display: none;
+}
+
+.bssec4 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.bssec5 {
+  display: grid;
+  height: 40vh;
+  text-align: center;
+  align-content: center;
+
+  .title-text {
+    font-family: "Frank Ruhl Libre", serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.3px;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bias-window-desktop {
+    margin-left: auto;
+  }
+
+  .bssec1text {
+    font-size: 54px;
+  }
+
+  .bias-ex {
+    background: url(../assets/bias-ex-mobile.svg);
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+    display: block;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .bias-window-desktop {
+    display: none;
+  }
+
+  .bias-window-mobile {
+    display: unset;
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .bias-window-2-desktop {
+    display: none;
+  }
+
+  .bias-window-2-mobile {
+    display: unset;
+    width: 100%;
+  }
+
+  .bssec1text {
+    margin-top: 50px;
+    font-size: 54px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .bssec1text {
+    font-size: 42px;
+  }
+
+  .bias-ex {
+    margin-top: unset;
+    background: url(../assets/bias-ex-mobile-2.svg);
+    background-size: contain;
+    background-position: center;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  }
+
+  .bssec5 {
+    .title-text {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  .bssec1 {
+    height: unset;
+  }
+
+  .chart-mobile {
+    display: grid;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f9f9f9;
+    width: 100%;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .bssec3 {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .bssec1text {
+    font-size: 29px;
+  }
+
+  .bssec5 {
+    .title-text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .bssec1text {
+    font-size: 24px;
+  }
+
+  .bias-ex {
+    height: 700px;
+  }
+}
