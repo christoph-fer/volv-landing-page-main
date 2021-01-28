@@ -2,10 +2,6 @@ body{
     background-color: #FBFBFB !important;
 }
 
-.wrapper{
-
-}
-
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,7 +97,7 @@ img{
     }
     .phone-number-submit{
         position: absolute;
-        left: 7vw;
+        //left: 7vw;
         margin-left: 300px;
         font-family: Apercu Pro;
         font-size: 16px;
@@ -114,7 +110,12 @@ img{
         letter-spacing: -0.03em;
         padding: 16px 24px;
         cursor: pointer;
+        transition: 300ms;
+        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
         background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
+        &:hover{
+            opacity: 0.7;
+        }
     }
 }
 
