@@ -10,6 +10,12 @@
 }
 
 @font-face {
+  font-family: "Shapiro 75 Heavy Wide";
+  src: url("../fonts/Shapiro/Shapiro 75 Heavy Wide.ttf");
+  font-weight: 500;
+}
+
+@font-face {
   font-family: "Apercu Pro";
   src: url("../fonts/Apercu Pro/Apercu Pro Bold.otf");
   font-weight: 600;
@@ -165,7 +171,9 @@
   grid-gap: 5px;
   position: relative;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
   border: none;
   outline: none;
   padding: 10px 22px;
@@ -175,8 +183,6 @@
   letter-spacing: 0.02em;
   font-weight: 600;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
-          box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: 300ms;
@@ -459,11 +465,7 @@
   }
 }
 
-body {
-  background-color: #FBFBFB !important;
-}
-
-.container {
+.text-app-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -476,20 +478,20 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .container {
+  .text-app-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-img {
+.text-app-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.cta {
+.text-app-cta {
   display: -ms-grid;
   display: grid;
   padding-left: 7vw;
@@ -501,32 +503,32 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
-  .cta {
+  .text-app-cta {
     height: unset;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .cta {
+  .text-app-cta {
     text-align: center;
     padding: 0px 20px;
     justify-items: center;
   }
 }
 
-.cta .volv-logo {
+.text-app-cta .volv-logo {
   width: 100px;
   height: 100px;
   margin-top: 7vh;
 }
 
 @media only screen and (max-width: 540px) {
-  .cta .volv-logo {
+  .text-app-cta .volv-logo {
     height: 70px;
   }
 }
 
-.cta h1 {
+.text-app-cta h1 {
   font-family: Apercu Pro;
   font-weight: 600;
   font-size: 54px;
@@ -534,27 +536,27 @@ img {
 }
 
 @media only screen and (max-width: 540px) {
-  .cta h1 {
+  .text-app-cta h1 {
     font-size: 32px;
   }
 }
 
-.cta p {
+.text-app-cta p {
   font-family: Apercu Pro;
   font-size: 20px;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 540px) {
-  .cta p {
+  .text-app-cta p {
     font-size: 16px;
   }
 }
 
-.cta h5 {
+.text-app-cta h5 {
   font-family: Apercu Pro;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   font-size: 16px;
   font-weight: 600;
   background: linear-gradient(147.97deg, #E77329 17.72%, #FFC451 99.11%), #FFB37D;
@@ -565,7 +567,7 @@ img {
   width: fit-content;
 }
 
-.cta h5 span {
+.text-app-cta h5 span {
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
   background: none;
@@ -573,24 +575,24 @@ img {
 }
 
 @media only screen and (max-width: 540px) {
-  .cta h5 {
+  .text-app-cta h5 {
     font-size: 13px;
   }
 }
 
-.cta .explore-volv {
+.text-app-cta .explore-volv {
   width: 170px;
   margin-top: 50px;
 }
 
 @media only screen and (max-width: 540px) {
-  .cta .explore-volv {
+  .text-app-cta .explore-volv {
     width: 140px;
     margin-top: 30px;
   }
 }
 
-.download-appstore {
+.text-app-download-appstore {
   display: none;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
@@ -600,24 +602,25 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
-  .download-appstore {
+  .text-app-download-appstore {
     display: -ms-grid;
     display: grid;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .download-appstore {
+  .text-app-download-appstore {
     -ms-grid-column-align: center;
         justify-self: center;
   }
 }
 
-.download-appstore a {
+.text-app-download-appstore a {
   width: 120px;
 }
 
 .phone-number-box {
+  background-color: white;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -858,6 +861,178 @@ img {
   .other-features-ad .feature-2 .feature-2-brand {
     height: 21vw;
   }
+}
+
+h5 {
+  font-family: Apercu Pro;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(147.97deg, #E77329 17.72%, #FFC451 99.11%), #FFB37D;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h5 span {
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background: none;
+  color: black;
+}
+
+@media only screen and (max-width: 540px) {
+  h5 {
+    font-size: 13px;
+  }
+}
+
+.h6-sec1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 226, 243, 0.7)), to(rgba(255, 238, 232, 0.7)));
+  background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
+}
+
+.h6-sec1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.h6-sec1 .usp {
+  padding: 10vw;
+}
+
+.h6-sec1 .usp .the-millenial-news-app {
+  margin-top: 5vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 200px;
+}
+
+.h6-sec1 .usp h1 {
+  font-family: Apercu Pro;
+  font-size: 36px;
+  letter-spacing: -0.05em;
+}
+
+.h6-sec1 .billboard {
+  display: -ms-grid;
+  display: grid;
+}
+
+.h6-sec1 .billboard img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.h6-sec2 {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 1fr 300px 1fr;
+      grid-template-columns: 1fr 300px 1fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Apercu Pro;
+}
+
+.h6-sec2 p {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.h6-sec2 .phone-white {
+  height: 700px;
+}
+
+.h6-sec2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.h6-sec2 .text-app-download-appstore {
+  display: -ms-grid;
+  display: grid;
+}
+
+.h6-sec2 h6 {
+  text-align: center;
+  font-size: 18px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  letter-spacing: -0.03em;
+}
+
+.h6-sec2 .million-stories-swiped {
+  position: absolute;
+  width: 600px;
+  top: 230px;
+  z-index: -1;
+}
+
+.h6-sec3 {
+  background: linear-gradient(322.44deg, rgba(255, 238, 232, 0.4) -0.71%, rgba(209, 236, 236, 0.4) 133.69%);
+  height: 300px;
+  margin-top: -120px;
+  z-index: -2;
+  position: relative;
+}
+
+.h6-sec4 {
+  margin-top: -100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0px 100px 80px;
+  -webkit-box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
+  background-color: white;
+}
+
+.h6-sec4 h2 {
+  font-family: "Shapiro 75 Heavy Wide";
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.h6-sec4 p {
+  font-family: Apercu Pro;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.h6-sec4 div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+}
+
+.h6-sec4 img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 40vw;
 }
 
 .our-story-section1 {

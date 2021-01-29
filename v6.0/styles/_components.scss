@@ -4,7 +4,11 @@
   grid-gap: 5px;
   position: relative;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
+  
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
+  
+  // background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
   border: none;
   outline: none;
   padding: 10px 22px;
@@ -14,7 +18,7 @@
   letter-spacing: 0.02em;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
+  // box-shadow: 0 5px 10px 0 rgba(244, 126, 71, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: 300ms;
