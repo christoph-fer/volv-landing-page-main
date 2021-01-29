@@ -506,10 +506,24 @@ img {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  .cta {
+    text-align: center;
+    padding: 0px 20px;
+    justify-items: center;
+  }
+}
+
 .cta .volv-logo {
   width: 100px;
   height: 100px;
   margin-top: 7vh;
+}
+
+@media only screen and (max-width: 540px) {
+  .cta .volv-logo {
+    height: 70px;
+  }
 }
 
 .cta h1 {
@@ -519,10 +533,22 @@ img {
   letter-spacing: -0.03em;
 }
 
+@media only screen and (max-width: 540px) {
+  .cta h1 {
+    font-size: 32px;
+  }
+}
+
 .cta p {
   font-family: Apercu Pro;
   font-size: 20px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 540px) {
+  .cta p {
+    font-size: 16px;
+  }
 }
 
 .cta h5 {
@@ -546,9 +572,49 @@ img {
   color: black;
 }
 
+@media only screen and (max-width: 540px) {
+  .cta h5 {
+    font-size: 13px;
+  }
+}
+
 .cta .explore-volv {
   width: 170px;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: 540px) {
+  .cta .explore-volv {
+    width: 140px;
+    margin-top: 30px;
+  }
+}
+
+.download-appstore {
+  display: none;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .download-appstore {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .download-appstore {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.download-appstore a {
+  width: 120px;
 }
 
 .phone-number-box {
@@ -560,7 +626,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 445px;
+  width: 420px;
   margin-top: 30px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -577,6 +643,12 @@ img {
   height: 50px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .phone-number-box {
+    display: none;
+  }
+}
+
 .phone-number-box .phone-field {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -591,6 +663,7 @@ img {
 
 .phone-number-box .phone-number-submit {
   position: absolute;
+  right: 10px;
   margin-left: 300px;
   font-family: Apercu Pro;
   font-size: 16px;
@@ -648,6 +721,12 @@ img {
     margin-top: -5vw;
     margin-left: -55vw;
     width: 150%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .video-container .shul-car-loop {
+    margin-top: 0px;
   }
 }
 
