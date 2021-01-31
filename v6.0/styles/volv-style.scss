@@ -654,7 +654,7 @@ html {
 }
 
 .footer-2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Apercu Pro", sans-serif;
   font-size: 11px;
   color: #909090;
   height: fit-content;
@@ -664,11 +664,19 @@ html {
   grid-template-rows: auto auto;
   grid-gap: 50px;
   transition: 0.7s linear 0.3s;
-
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   li {
     float: left;
     list-style-type: none;
   }
+}
+
+.footer-feedback-links{
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 10px;
+  font-size: 14px;
+  letter-spacing: -0.03em;
 }
 
 .footer-links {
@@ -679,7 +687,7 @@ html {
 
   a {
     display: grid;
-    background-color: #eaeaea;
+    //background-color: #eaeaea;
     height: 42px;
     width: 42px;
     margin: 0px 0px 0px 10px;
@@ -708,6 +716,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  opacity: 0.7;
 }
 
 .footer-volv-logo {
@@ -747,10 +756,10 @@ a {
   width: 100%;
   max-width: 1280px;
   margin-top: 50px;
-
   iframe {
     width: 80vw;
     height: 45vw;
+    border-radius: 10px;
   }
 }
 

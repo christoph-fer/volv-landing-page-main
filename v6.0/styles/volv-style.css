@@ -170,7 +170,7 @@
       grid-template-columns: auto auto;
   grid-gap: 5px;
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Apercu Pro", sans-serif;
   -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
   background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
@@ -179,9 +179,9 @@
   padding: 10px 22px;
   border-radius: 20px;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.02em;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -346,14 +346,13 @@
 
 .navbar > div a {
   text-align: right;
-  font-family: "Inter", sans-serif;
+  font-family: "Apercu Pro", sans-serif;
   opacity: 1;
   color: #fff;
-  text-transform: uppercase;
   margin: 0px 0px;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.01rem;
   display: inline-block;
   -webkit-transition: 0.1s;
@@ -896,8 +895,19 @@ h5 span {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 80vh;
+  min-height: 820px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 226, 243, 0.7)), to(rgba(255, 238, 232, 0.7)));
   background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 .h6-sec1 img {
@@ -909,6 +919,18 @@ h5 span {
 
 .h6-sec1 .usp {
   padding: 10vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec1 .usp {
+    padding: 10vw 10vw 0px 10vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec1 .usp {
+    text-align: center;
+  }
 }
 
 .h6-sec1 .usp .the-millenial-news-app {
@@ -925,6 +947,26 @@ h5 span {
   letter-spacing: -0.05em;
 }
 
+@media only screen and (max-width: 480px) {
+  .h6-sec1 .usp h1 {
+    font-size: 30px;
+  }
+}
+
+.h6-sec1 .usp .text-app-download-appstore {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec1 .usp .text-app-download-appstore {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .h6-sec1 .billboard {
   display: -ms-grid;
   display: grid;
@@ -933,6 +975,12 @@ h5 span {
 .h6-sec1 .billboard img {
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec1 .billboard img {
+    height: 50vw;
+  }
 }
 
 .h6-sec2 {
@@ -949,6 +997,24 @@ h5 span {
       -ms-flex-align: center;
           align-items: center;
   font-family: Apercu Pro;
+}
+
+@media only screen and (max-width: 960px) {
+  .h6-sec2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    row-gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .h6-sec2 .million-download {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
 }
 
 .h6-sec2 p {
@@ -990,6 +1056,13 @@ h5 span {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1024px) {
+  .h6-sec2 .million-stories-swiped {
+    width: 80%;
+    top: 450px;
+  }
+}
+
 .h6-sec3 {
   background: linear-gradient(322.44deg, rgba(255, 238, 232, 0.4) -0.71%, rgba(209, 236, 236, 0.4) 133.69%);
   height: 300px;
@@ -999,20 +1072,35 @@ h5 span {
 }
 
 .h6-sec4 {
+  display: -ms-grid;
+  display: grid;
   margin-top: -100px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
-  padding: 50px 0px 100px 80px;
+  padding: 50px 80px 100px 80px;
   -webkit-box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
   background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 {
+    margin: -100px 7vw 7vw 7vw;
+    padding: 7vw 5vw;
+  }
 }
 
 .h6-sec4 h2 {
   font-family: "Shapiro 75 Heavy Wide";
   text-align: center;
   margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .h6-sec4 p {
@@ -1022,17 +1110,169 @@ h5 span {
   letter-spacing: -0.03em;
 }
 
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 p {
+    text-align: center;
+  }
+}
+
 .h6-sec4 div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 300px auto;
       grid-template-columns: 300px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 div {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 50px;
+  }
+}
+
+.h6-sec4 div .bias-desc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 div .bias-desc {
+    justify-items: center;
+    max-width: 400px;
+  }
+}
+
+.h6-sec4 div .bias-desc img {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .h6-sec4 img {
   -ms-grid-column-align: center;
       justify-self: center;
   width: 40vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec4 img {
+    width: 100%;
+  }
+}
+
+.h6-sec5 {
+  margin-top: -50px;
+  padding: 50px 0px 100px 0px;
+}
+
+.h6-sec5 h2 {
+  font-family: "Shapiro 75 Heavy Wide";
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.h6-sec5 p {
+  font-family: Apercu Pro;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.h6-sec5 div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+}
+
+.h6-sec5 img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 40vw;
+}
+
+.h6-sec5 .reviews-6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  padding: 0px 0px 50px 150px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.h6-sec5 .reviews-6 div {
+  width: 320px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 204, 177, 0.6)), to(rgba(209, 236, 236, 0.324)));
+  background: linear-gradient(180deg, rgba(252, 204, 177, 0.6) 0%, rgba(209, 236, 236, 0.324) 100%);
+  border-radius: 7px;
+  font-family: Apercu Pro;
+  padding: 20px 40px 30px 40px;
+}
+
+.h6-sec5 .reviews-6 .quote-review {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  padding: 20px 40px 30px 40px;
+}
+
+.h6-sec5 .reviews-6 .quote-review p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.h6-sec5 .reviews-6 .quote-review h3 {
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+
+.h6-sec5 .reviews-6 .quote-review span {
+  font-size: 12px;
+}
+
+.h6-sec5 .reviews-6 .youtube-review {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  padding: 20px 20px 30px 20px;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.h6-sec5 .reviews-6 .youtube-review h3 {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: white;
+}
+
+.h6-sec5 .reviews-6 .youtube-review img {
+  height: 30px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-grid-column-align: left;
+      justify-self: left;
 }
 
 .our-story-section1 {
@@ -3996,7 +4236,7 @@ html {
 }
 
 .footer-2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Apercu Pro", sans-serif;
   font-size: 11px;
   color: #909090;
   height: -webkit-fit-content;
@@ -4011,11 +4251,22 @@ html {
   grid-gap: 50px;
   -webkit-transition: 0.7s linear 0.3s;
   transition: 0.7s linear 0.3s;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer-2 li {
   float: left;
   list-style-type: none;
+}
+
+.footer-feedback-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  row-gap: 10px;
+  font-size: 14px;
+  letter-spacing: -0.03em;
 }
 
 .footer-links {
@@ -4032,7 +4283,6 @@ html {
 .footer-links a {
   display: -ms-grid;
   display: grid;
-  background-color: #eaeaea;
   height: 42px;
   width: 42px;
   margin: 0px 0px 0px 10px;
@@ -4064,6 +4314,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  opacity: 0.7;
 }
 
 .footer-volv-logo img {
@@ -4115,6 +4366,7 @@ a:hover {
 .volv-video iframe {
   width: 80vw;
   height: 45vw;
+  border-radius: 10px;
 }
 
 .in-view {
