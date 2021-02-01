@@ -1235,6 +1235,12 @@ h5 span {
 }
 
 @media only screen and (max-width: 480px) {
+  .h6-sec5 h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .h6-sec5 {
     font-size: 13px;
   }
