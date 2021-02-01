@@ -907,10 +907,8 @@ h5 span {
 
 @media only screen and (max-width: 1024px) {
   .h6-sec1 {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
-    grid-auto-rows: minmax(min-content, max-content);
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
   }
 }
 
@@ -1017,10 +1015,8 @@ h5 span {
 
 @media only screen and (max-width: 960px) {
   .h6-sec2 {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
-    grid-auto-rows: minmax(min-content, max-content);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     row-gap: 30px;
     text-align: center;
     margin-top: 30px;
