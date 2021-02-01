@@ -1275,6 +1275,16 @@ h5 span {
       justify-self: left;
 }
 
+.h6-sec5 .reviews-6 .youtube-review a {
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.h6-sec5 .reviews-6 .youtube-review a:hover {
+  opacity: 0.5;
+}
+
 .our-story-section1 {
   background: -webkit-gradient(linear, right top, left top, from(#ffe2af), to(#b1c4e5));
   background: linear-gradient(270deg, #ffe2af, #b1c4e5);

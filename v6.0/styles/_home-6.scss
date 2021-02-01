@@ -273,6 +273,13 @@ h5{
                 object-fit: contain;
                 justify-self: left;
             }
+            a{
+                text-decoration: none;
+                transition: 300ms;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
         }
     }
 }
