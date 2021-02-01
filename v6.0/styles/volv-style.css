@@ -4403,6 +4403,8 @@ html {
   -ms-grid-column-align: right;
       justify-self: right;
   display: grid;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   -ms-grid-columns: (max-content)[4];
       grid-template-columns: repeat(4, -webkit-max-content);
       grid-template-columns: repeat(4, max-content);
@@ -4447,8 +4449,7 @@ html {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  row-gap: 15px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -4949,7 +4950,7 @@ a:hover {
     width: 36px;
   }
   .footer-links img {
-    height: 12px;
+    height: 15px;
     padding: 12px;
   }
   .footer-second-left {

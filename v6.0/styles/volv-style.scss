@@ -683,6 +683,7 @@ html {
   display: grid;
   justify-self: right;
   display: grid;
+  column-gap: 10px;
   grid-template-columns: repeat(4, max-content);
   @media only screen and (max-width: 420px){
     justify-self: left;
@@ -712,7 +713,7 @@ html {
 .footer-first-half {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
+  row-gap: 15px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -1266,7 +1267,7 @@ a {
     }
 
     img {
-      height: 12px;
+      height: 15px;
       padding: 12px;
     }
   }
