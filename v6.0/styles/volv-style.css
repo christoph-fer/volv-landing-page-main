@@ -909,9 +909,8 @@ h5 span {
   .h6-sec1 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+    grid-auto-rows: minmax(min-content, max-content);
   }
 }
 
@@ -1020,6 +1019,8 @@ h5 span {
   .h6-sec2 {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+    grid-auto-rows: minmax(min-content, max-content);
     row-gap: 30px;
     text-align: center;
     margin-top: 30px;
@@ -1055,11 +1056,6 @@ h5 span {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.h6-sec2 .text-app-download-appstore {
-  display: -ms-grid;
-  display: grid;
 }
 
 .h6-sec2 h6 {

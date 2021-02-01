@@ -30,7 +30,7 @@ h5{
     background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
     @media only screen and (max-width: 1024px){
         grid-template-columns: 1fr;
-        height: fit-content;
+        grid-auto-rows: minmax(min-content, max-content);
     }
     @media only screen and (max-width: 480px){
         padding-top: 50px;
@@ -94,6 +94,7 @@ h5{
     font-family: Apercu Pro;
     @media only screen and (max-width: 960px){
         grid-template-columns: auto;
+        grid-auto-rows: minmax(min-content, max-content);
         row-gap: 30px;
         text-align: center;
         margin-top: 30px;
@@ -123,7 +124,7 @@ h5{
         object-fit: contain;
     }
     .text-app-download-appstore{
-        display: grid;
+        //display: grid;
     }
     h6{
         text-align: center;
