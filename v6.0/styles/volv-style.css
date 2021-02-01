@@ -909,13 +909,13 @@ h5 span {
   .h6-sec1 {
     -ms-grid-columns: unset;
         grid-template-columns: unset;
-    height: unset;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .h6-sec1 {
     padding-top: 50px;
+    height: 588px;
   }
 }
 
@@ -1021,6 +1021,7 @@ h5 span {
     row-gap: 30px;
     text-align: center;
     margin-top: 30px;
+    height: 960px;
   }
 }
 

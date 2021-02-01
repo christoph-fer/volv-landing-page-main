@@ -30,10 +30,10 @@ h5{
     background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
     @media only screen and (max-width: 1024px){
         grid-template-columns: unset;
-        height: unset;
     }
     @media only screen and (max-width: 480px){
         padding-top: 50px;
+        height: 588px;
     }
     img{
         height: 100%;
@@ -97,6 +97,7 @@ h5{
         row-gap: 30px;
         text-align: center;
         margin-top: 30px;
+        height: 960px;
     }
     // @media only screen and (max-width: 480px){
     //     grid-template-rows: auto auto 200vw;
