@@ -17,17 +17,23 @@ h5{
     @media only screen and (max-width: 540px){
         font-size: 13px;
     }
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 }
 
 .h6-sec1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 80vh;
-    min-height: 820px;
+    //min-height: 820px;
     background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
     @media only screen and (max-width: 1024px){
         grid-template-columns: 1fr;
         height: fit-content;
+    }
+    @media only screen and (max-width: 480px){
+        padding-top: 50px;
     }
     img{
         height: 100%;
@@ -36,6 +42,9 @@ h5{
     }
     .usp{
         padding: 10vw;
+        @media only screen and (max-height: 840px){
+            padding: 7vw;
+        }
         @media only screen and (max-width: 1024px){
             padding: 10vw 10vw 0px 10vw;
         }
@@ -89,6 +98,9 @@ h5{
         text-align: center;
         margin-top: 30px;
     }
+    // @media only screen and (max-width: 480px){
+    //     grid-template-rows: auto auto 200vw;
+    // }
     .million-download{
         @media only screen and (max-width: 960px){
             grid-row: 2/3;
@@ -101,7 +113,9 @@ h5{
     }
     .phone-white{
         height: 700px;
-        
+        @media only screen and (max-width: 480px){
+            height: 160vw;
+        }
     }
     img{
         width: 100%;
@@ -125,8 +139,20 @@ h5{
         top: 230px;
         z-index: -1;
         @media only screen and (max-width: 1024px){
-            width: 80%;
-            top: 450px;
+            width: 70%;
+            top: 250px;
+        }
+        @media only screen and (max-width: 960px){
+            top: 440px;
+        }
+        @media only screen and (max-width: 640px){
+            top: 420px;
+        }
+        @media only screen and (max-width: 480px){
+            top: 420px;
+        }
+        @media only screen and (max-width: 420px){
+            top: 114vw;
         }
     }
 }
@@ -159,6 +185,10 @@ h5{
         @media only screen and (max-width: 1024px){
             margin-bottom: 30px;
         }
+        @media only screen and (max-width: 480px){
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
     }
     p{
         font-family: Apercu Pro;
@@ -167,6 +197,9 @@ h5{
         letter-spacing: -0.03em;
         @media only screen and (max-width: 1024px){
             text-align: center;
+        }
+        @media only screen and (max-width: 480px){
+            font-size: 18px;
         }
     }
     div{
@@ -211,6 +244,9 @@ h5{
         text-align: center;
         margin-bottom: 70px;
     }
+    @media only screen and (max-width: 480px){
+        font-size: 13px;
+    }
     p{
         font-family: Apercu Pro;
         font-weight: 300;
@@ -232,17 +268,27 @@ h5{
         column-gap: 40px;
         overflow-x: visible;
         overflow-y: hidden;
+        @media only screen and (max-width: 768px){
+            padding: 0px 0px 25px 20px;
+            column-gap: 20px;
+        }
         div{
             width: 320px;
             background: linear-gradient(180deg, rgba(252, 204, 177, 0.6) 0%, rgba(209, 236, 236, 0.324) 100%);
             border-radius: 7px;
             font-family: Apercu Pro;
             padding: 20px 40px 30px 40px;
+            @media only screen and (max-width: 768px){
+                width: 240px;
+            }
         }
         .quote-review{
             display: grid;
             grid-template-columns: auto;
             padding: 20px 40px 30px 40px;
+            @media only screen and (max-width: 768px){
+                padding: 10px 20px 15px 20px;
+            }
             p{
                 font-weight: 300;
                 font-size: 18px;
@@ -253,6 +299,17 @@ h5{
             span{
                 font-size: 12px;
             }
+            @media only screen and (max-width: 768px){
+                p{
+                    font-size: 14px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 10px;
+                }
+            }
         }
         .youtube-review{
             display: grid;
@@ -261,6 +318,9 @@ h5{
             padding: 20px 20px 30px 20px;
             background-size: cover;
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+            @media only screen and (max-width: 768px){
+                padding: 10px 20px 15px 20px;
+            }
             h3{
                 font-size: 26px;
                 font-weight: 400;
@@ -278,6 +338,15 @@ h5{
                 transition: 300ms;
                 &:hover{
                     opacity: 0.5;
+                }
+            }
+            @media only screen and (max-width: 768px){
+                h3{
+                    font-size: 18px;
+                }
+                img{
+                    height: 20px;
+                    object-position: left;
                 }
             }
         }

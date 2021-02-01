@@ -171,8 +171,8 @@
   grid-gap: 5px;
   position: relative;
   font-family: "Apercu Pro", sans-serif;
-  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
   border: none;
   outline: none;
@@ -200,8 +200,8 @@
 }
 
 .volv-button-small:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
-          box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
+  -webkit-box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
 }
 
 .downloadnow.option {
@@ -352,11 +352,11 @@
   margin: 0px 0px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.01rem;
   display: inline-block;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 5px;
   text-decoration: none;
   height: -webkit-fit-content;
@@ -889,13 +889,18 @@ h5 span {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  h5 {
+    width: 100%;
+  }
+}
+
 .h6-sec1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 80vh;
-  min-height: 820px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 226, 243, 0.7)), to(rgba(255, 238, 232, 0.7)));
   background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
 }
@@ -910,6 +915,12 @@ h5 span {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .h6-sec1 {
+    padding-top: 50px;
+  }
+}
+
 .h6-sec1 img {
   height: 100%;
   width: 100%;
@@ -919,6 +930,12 @@ h5 span {
 
 .h6-sec1 .usp {
   padding: 10vw;
+}
+
+@media only screen and (max-height: 840px) {
+  .h6-sec1 .usp {
+    padding: 7vw;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1027,6 +1044,12 @@ h5 span {
   height: 700px;
 }
 
+@media only screen and (max-width: 480px) {
+  .h6-sec2 .phone-white {
+    height: 160vw;
+  }
+}
+
 .h6-sec2 img {
   width: 100%;
   height: 100%;
@@ -1058,8 +1081,32 @@ h5 span {
 
 @media only screen and (max-width: 1024px) {
   .h6-sec2 .million-stories-swiped {
-    width: 80%;
-    top: 450px;
+    width: 70%;
+    top: 250px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 440px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 420px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 114vw;
   }
 }
 
@@ -1103,6 +1150,13 @@ h5 span {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .h6-sec4 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .h6-sec4 p {
   font-family: Apercu Pro;
   font-weight: 300;
@@ -1113,6 +1167,12 @@ h5 span {
 @media only screen and (max-width: 1024px) {
   .h6-sec4 p {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec4 p {
+    font-size: 18px;
   }
 }
 
@@ -1181,6 +1241,12 @@ h5 span {
   margin-bottom: 70px;
 }
 
+@media only screen and (max-width: 480px) {
+  .h6-sec5 {
+    font-size: 13px;
+  }
+}
+
 .h6-sec5 p {
   font-family: Apercu Pro;
   font-weight: 300;
@@ -1213,6 +1279,14 @@ h5 span {
   overflow-y: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 {
+    padding: 0px 0px 25px 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
 .h6-sec5 .reviews-6 div {
   width: 320px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 204, 177, 0.6)), to(rgba(209, 236, 236, 0.324)));
@@ -1222,12 +1296,24 @@ h5 span {
   padding: 20px 40px 30px 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 div {
+    width: 240px;
+  }
+}
+
 .h6-sec5 .reviews-6 .quote-review {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   padding: 20px 40px 30px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .quote-review {
+    padding: 10px 20px 15px 20px;
+  }
 }
 
 .h6-sec5 .reviews-6 .quote-review p {
@@ -1244,6 +1330,18 @@ h5 span {
   font-size: 12px;
 }
 
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .quote-review p {
+    font-size: 14px;
+  }
+  .h6-sec5 .reviews-6 .quote-review h3 {
+    font-size: 16px;
+  }
+  .h6-sec5 .reviews-6 .quote-review span {
+    font-size: 10px;
+  }
+}
+
 .h6-sec5 .reviews-6 .youtube-review {
   display: -ms-grid;
   display: grid;
@@ -1255,6 +1353,12 @@ h5 span {
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .youtube-review {
+    padding: 10px 20px 15px 20px;
+  }
 }
 
 .h6-sec5 .reviews-6 .youtube-review h3 {
@@ -1283,6 +1387,17 @@ h5 span {
 
 .h6-sec5 .reviews-6 .youtube-review a:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .youtube-review h3 {
+    font-size: 18px;
+  }
+  .h6-sec5 .reviews-6 .youtube-review img {
+    height: 20px;
+    -o-object-position: left;
+       object-position: left;
+  }
 }
 
 .our-story-section1 {
@@ -1331,8 +1446,9 @@ h5 span {
 }
 
 .our-story-content h1 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
+  font-family: Apercu Pro;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   text-align: center;
   margin-bottom: 40px;
   font-size: 42px;
@@ -1380,13 +1496,13 @@ h5 span {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  font-family: "DM Serif Display", serif;
+  font-family: Apercu Pro;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 64px;
   line-height: 136.1%;
   text-align: center;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.05em;
   z-index: 10;
 }
 
@@ -1488,11 +1604,12 @@ h5 span {
 }
 
 .bssec5 .title-text {
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: Apercu Pro;
   font-style: normal;
+  font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.03em;
   color: #000000;
 }
 
@@ -2678,8 +2795,9 @@ h5 span {
 }
 
 .heading-serif {
-  font-family: "DM Serif Display", serif;
-  font-weight: unset;
+  font-family: Apercu Pro;
+  font-weight: 700;
+  letter-spacing: -0.03em;
   font-size: 64px;
   -webkit-margin-before: 150px;
           margin-block-start: 150px;
@@ -2704,8 +2822,8 @@ h5 span {
 }
 
 .body-sans-serif-1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-family: Apercu Pro;
+  font-weight: 700;
   font-size: 18px;
   line-height: 136.1%;
 }
@@ -4290,12 +4408,22 @@ html {
       grid-template-columns: repeat(4, max-content);
 }
 
+@media only screen and (max-width: 420px) {
+  .footer-links {
+    -ms-grid-column-align: left;
+        justify-self: left;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 /2;
+  }
+}
+
 .footer-links a {
   display: -ms-grid;
   display: grid;
   height: 42px;
   width: 42px;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 10px 20px -10px;
   border-radius: 50%;
 }
 
@@ -4313,6 +4441,13 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+@media only screen and (max-width: 420px) {
+  .footer-first-half {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 .footer-second-half {
@@ -4370,7 +4505,7 @@ a:hover {
   background-color: #fff;
   width: 100%;
   max-width: 1280px;
-  margin-top: 50px;
+  margin-top: -100px;
 }
 
 .volv-video iframe {

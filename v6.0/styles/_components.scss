@@ -5,7 +5,7 @@
   position: relative;
   font-family: "Apercu Pro", sans-serif;
   
-  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
   background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
   
   // background: linear-gradient(-45deg, #e15b2b 20%, #e77422);
@@ -29,7 +29,8 @@
   display: inline-grid;
 
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
+    // box-shadow: 0 8px 16px 0 rgba(255, 89, 12, 0.3);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
   }
 }
 

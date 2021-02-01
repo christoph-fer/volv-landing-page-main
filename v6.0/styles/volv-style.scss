@@ -684,13 +684,16 @@ html {
   justify-self: right;
   display: grid;
   grid-template-columns: repeat(4, max-content);
-
+  @media only screen and (max-width: 420px){
+    justify-self: left;
+    grid-row: 1 /2;
+  }
   a {
     display: grid;
     //background-color: #eaeaea;
     height: 42px;
     width: 42px;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 10px 20px -10px;
     border-radius: 50%;
   }
 
@@ -707,6 +710,9 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  @media only screen and (max-width: 420px){
+    grid-template-columns: auto;
+  }
 }
 
 .footer-second-half {
@@ -755,7 +761,7 @@ a {
   background-color: #fff;
   width: 100%;
   max-width: 1280px;
-  margin-top: 50px;
+  margin-top: -100px;
   iframe {
     width: 80vw;
     height: 45vw;
