@@ -909,6 +909,7 @@ h5 span {
   .h6-sec1 {
     -ms-grid-columns: unset;
         grid-template-columns: unset;
+    height: unset;
   }
 }
 
