@@ -688,6 +688,12 @@ html {
     justify-self: left;
     grid-row: 1 /2;
   }
+  p{
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    grid-column: 1/4;
+    margin-block-end: 0.5em;
+  }
   a {
     display: grid;
     //background-color: #eaeaea;
@@ -706,6 +712,7 @@ html {
 .footer-first-half {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
