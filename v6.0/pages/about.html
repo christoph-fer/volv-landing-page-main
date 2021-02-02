@@ -10,16 +10,6 @@
 
   <link rel="icon" href="../assets/volv-fevicon.png" type="image/png" sizes="16x16" />
 
-  <style>
-    .footer-2 {
-      background-color: transparent;
-      color: #0000007c;
-    }
-
-    .footer-links a {
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-  </style>
   <script>
     function includeHTML() {
       var z, i, elmnt, file, xhttp;
@@ -60,9 +50,6 @@
     <div class="navbar" id="navBar">
       <div>
         <div class="page-links">
-          <!-- <a href="index.html">
-            <span style="-webkit-filter: invert(100%); filter: invert(100%);">Home</span>
-          </a> -->
           <a href="about.html">
             <span style="
                   -webkit-filter: invert(100%);
@@ -72,11 +59,6 @@
           </a>
           <a href="bias.html"><span style="-webkit-filter: invert(100%); filter: invert(100%);">Why trust us?</span></a>
 
-
-          <!-- <a href="2020-election-guide.html"><span style="
-            -webkit-filter: invert(100%);
-            filter: invert(100%);">2020 Election Guide</span></a> -->
-
           <a href="csm-headlines.html">
             <span style="-webkit-filter: invert(100%); filter: invert(100%);">Culture Shifter Magazine</span>
           </a>
@@ -85,17 +67,14 @@
           </a>
         </div>
         <div class="navbar-links">
-          <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-icon-black.jpg"
+          <a href="https://www.instagram.com/volvmedia/" target="_blank"><img src="../assets/instagram-logo.svg"
               alt="" /></a>
-          <a href="https://www.instagram.com/volvmedia/"><img
-              style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/instagram-white.png"
+          <a href="mailto:connect@volvmedia.com" target="_blank"><img src="../assets/main-icon-black.svg"
               alt="" /></a>
-          <a href="https://twitter.com/volv_media" target="_blank"><img
-              style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/twitter-white.png"
-              alt="" /></a>
-          <a href="mailto:connect@volvmedia.com" target="_blank"><img
-              style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/main-icon-white.svg"
-              alt="" /></a>
+          <a href="https://twitter.com/volv_media" target="_blank"><img src="../assets/twitter-logo.svg"
+            alt="" /></a>
+          <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-logo.svg"
+            alt="" /></a>
         </div>
         <div class="cta-button-navbar" w3-include-html="../components/volv-button-small.html"></div>
       </div>
@@ -204,35 +183,9 @@
           </div>
         </div>
 
-        <div class="footer-2" style="background-color: transparent;">
-          <div class="footer-first-half">
-            <div class="footer-volv-logo">
-              <img src="assets/volv-logo-black.svg" alt="Volv" />
-            </div>
-            <div class="footer-links">
-              <a href="https://medium.com/@volvmedia" target="_blank"><img src="../assets/medium-icon-black.jpg"
-                  alt="" /></a>
-              <a href="https://www.instagram.com/volvmedia/"><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/instagram-white.png"
-                  alt="" /></a>
-              <a href="https://twitter.com/volv_media" target="_blank"><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/twitter-white.png"
-                  alt="" /></a>
-              <a href="mailto:connect@volvmedia.com" target="_blank"><img
-                  style="-webkit-filter: invert(100%); filter: invert(100%);" src="../assets/main-icon-white.svg"
-                  alt="" /></a>
-            </div>
-          </div>
-          <div class="footer-second-half">
-            <div class="footer-second-left">
-              <a target="_blank" href="https://volvmedia.com/PrivacyPolicy">Privacy Policy</a>
-              <a target="_blank" href="https://volvmedia.com/TermsAndConditions">Terms And Conditions</a>
-            </div>
-            <div class="footer-second-right">
-              <a href="" style="text-decoration: none; cursor: unset;">© Copyright Volv 2020</a>
-            </div>
-          </div>
-        </div>
+        <!-- Footer -->
+        <div w3-include-html="../components/footer-3.html"></div>
+
 
         <!-- <a id="dive-in" href="#section2"><img class="dive-in" src="assets/dive-in.svg" /></a> -->
       </div>
