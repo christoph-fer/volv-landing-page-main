@@ -102,6 +102,7 @@
 }
 
 .phone-number-box{
+    animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     background-color: white;
     position: relative;
     display: grid;

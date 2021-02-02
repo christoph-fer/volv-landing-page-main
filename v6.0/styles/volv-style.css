@@ -770,6 +770,8 @@ a:hover {
 }
 
 .phone-number-box {
+  -webkit-animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   background-color: white;
   position: relative;
   display: -ms-grid;
@@ -1044,6 +1046,8 @@ a:hover {
 
 .h6-sec1 h5 {
   font-family: Apercu Pro;
+  -webkit-animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -1105,6 +1109,8 @@ a:hover {
 }
 
 .h6-sec1 .usp .the-millenial-news-app {
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin-top: 5vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1119,6 +1125,8 @@ a:hover {
 }
 
 .h6-sec1 .usp h1 {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: Apercu Pro;
   font-size: 36px;
   letter-spacing: -0.05em;
@@ -1131,6 +1139,8 @@ a:hover {
 }
 
 .h6-sec1 .usp .text-app-download-appstore {
+  -webkit-animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -1151,6 +1161,8 @@ a:hover {
 }
 
 .h6-sec1 .billboard img {
+  -webkit-animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   -o-object-position: bottom;
      object-position: bottom;
 }
@@ -1242,6 +1254,8 @@ a:hover {
 }
 
 .h6-sec2 .phone-white {
+  -webkit-animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   height: 700px;
 }
 

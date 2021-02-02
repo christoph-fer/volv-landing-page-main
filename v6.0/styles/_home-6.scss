@@ -14,6 +14,7 @@
     }
     h5{
         font-family: Apercu Pro;
+        animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         text-transform: uppercase;
         letter-spacing: 0.02em;
         font-size: 16px;
@@ -53,6 +54,7 @@
             text-align: center;
         }
         .the-millenial-news-app{
+            animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
             margin-top: 5vh;
             height: fit-content;
             width: 200px;
@@ -61,6 +63,7 @@
             }
         }
         h1{
+            animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
             font-family: Apercu Pro;
             font-size: 36px;
             letter-spacing: -0.05em;
@@ -69,6 +72,7 @@
             }
         }
         .text-app-download-appstore{
+            animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
             justify-content: left;
             @media only screen and (max-width: 480px){
                 justify-content: center;
@@ -79,6 +83,7 @@
     .billboard{
         display: grid;
         img{
+            animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
             object-position: bottom;
             @media only screen and (max-width: 1024px){
                 height: 50vw;
@@ -145,6 +150,7 @@
         letter-spacing: -0.03em;
     }
     .phone-white{
+        animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         height: 700px;
         @media only screen and (max-width: 480px){
             height: 160vw;
