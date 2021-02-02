@@ -176,11 +176,11 @@
   background: linear-gradient(91.39deg, #E77329 -0.35%, #B1C4E5 110.16%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.87);
   border: none;
   outline: none;
-  padding: 10px 22px;
+  padding: 11px 24px;
   border-radius: 20px;
   color: white;
-  font-size: 10px;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  letter-spacing: 0.04em;
   font-weight: 500;
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
