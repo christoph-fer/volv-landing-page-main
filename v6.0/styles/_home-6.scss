@@ -30,6 +30,7 @@ h5{
     background: linear-gradient(180deg, rgba(215, 226, 243, 0.7) 0%, rgba(255, 238, 232, 0.7) 100%);
     @media only screen and (max-width: 1024px){
         grid-template-columns: unset;
+        height: fit-content;
     }
     @media only screen and (max-width: 480px){
         padding-top: 50px;
@@ -123,6 +124,7 @@ h5{
         height: 700px;
         @media only screen and (max-width: 480px){
             height: 160vw;
+            margin-top: 20px;
         }
     }
     img{
@@ -132,6 +134,9 @@ h5{
     }
     .text-app-download-appstore{
         //display: grid;
+        @media only screen and (max-width: 480px){
+            height: 60px;
+        }
     }
     h6{
         text-align: center;
@@ -160,7 +165,13 @@ h5{
             top: 420px;
         }
         @media only screen and (max-width: 420px){
-            top: 114vw;
+            top: 110vw;
+        }
+        @media only screen and (max-width: 375px){
+            top: 120vw;
+        }
+        @media only screen and (max-width: 320px){
+            top: 140vw;
         }
     }
 }
@@ -171,6 +182,9 @@ h5{
     margin-top: -120px;
     z-index: -2;
     position: relative;
+    @media only screen and (max-width: 480px){
+        margin-top: -200px;
+    }
 }
 
 .h6-sec4{
@@ -185,6 +199,9 @@ h5{
     @media only screen and (max-width: 1024px){
         margin: -100px 7vw 7vw 7vw;
         padding: 7vw 5vw;
+        @media only screen and (max-width: 480px){
+            margin: -50px 7vw 7vw 7vw;
+        }
     }
     h2{
         font-family: "Shapiro 75 Heavy Wide";

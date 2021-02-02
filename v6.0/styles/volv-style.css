@@ -909,6 +909,9 @@ h5 span {
   .h6-sec1 {
     -ms-grid-columns: unset;
         grid-template-columns: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -1061,6 +1064,7 @@ h5 span {
 @media only screen and (max-width: 480px) {
   .h6-sec2 .phone-white {
     height: 160vw;
+    margin-top: 20px;
   }
 }
 
@@ -1069,6 +1073,12 @@ h5 span {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec2 .text-app-download-appstore {
+    height: 60px;
+  }
 }
 
 .h6-sec2 h6 {
@@ -1115,7 +1125,19 @@ h5 span {
 
 @media only screen and (max-width: 420px) {
   .h6-sec2 .million-stories-swiped {
-    top: 114vw;
+    top: 110vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 120vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .h6-sec2 .million-stories-swiped {
+    top: 140vw;
   }
 }
 
@@ -1125,6 +1147,12 @@ h5 span {
   margin-top: -120px;
   z-index: -2;
   position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec3 {
+    margin-top: -200px;
+  }
 }
 
 .h6-sec4 {
@@ -1144,6 +1172,12 @@ h5 span {
   .h6-sec4 {
     margin: -100px 7vw 7vw 7vw;
     padding: 7vw 5vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 480px) {
+  .h6-sec4 {
+    margin: -50px 7vw 7vw 7vw;
   }
 }
 
