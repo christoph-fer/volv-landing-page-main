@@ -915,7 +915,9 @@ h5 span {
 @media only screen and (max-width: 480px) {
   .h6-sec1 {
     padding-top: 50px;
-    height: 588px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -954,6 +956,12 @@ h5 span {
   height: -moz-fit-content;
   height: fit-content;
   width: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec1 .usp .the-millenial-news-app {
+    margin-top: 20px;
+  }
 }
 
 .h6-sec1 .usp h1 {
@@ -1031,6 +1039,12 @@ h5 span {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec2 .million-download {
+    height: 130px;
   }
 }
 
