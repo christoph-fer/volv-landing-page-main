@@ -619,6 +619,10 @@ a:hover {
   text-decoration: underline;
 }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
 .text-app-container {
   display: -ms-grid;
   display: grid;
