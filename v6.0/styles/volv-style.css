@@ -266,7 +266,6 @@
 
 .navbar {
   height: 192px;
-  width: 800px;
   z-index: 101;
   position: fixed;
   top: 0;
@@ -288,7 +287,6 @@
 
 .navbar > div {
   max-width: 1600px;
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -50px;
@@ -298,6 +296,12 @@
       grid-template-rows: 1fr 1fr;
   grid-gap: 50px;
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 720px) {
+  .navbar > div {
+    width: 800px;
+  }
 }
 
 .navbar > div > div {
@@ -1248,6 +1252,8 @@ a:hover {
 }
 
 .h6-sec2 p {
+  -webkit-animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-weight: 300;
   font-size: 24px;
   letter-spacing: -0.03em;
@@ -1271,6 +1277,11 @@ a:hover {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.h6-sec2 .text-app-download-appstore {
+  display: -ms-grid;
+  display: grid;
 }
 
 @media only screen and (max-width: 480px) {

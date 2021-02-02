@@ -145,6 +145,7 @@
         }
     }
     p{
+        animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         font-weight: 300;
         font-size: 24px;
         letter-spacing: -0.03em;
@@ -163,7 +164,7 @@
         object-fit: contain;
     }
     .text-app-download-appstore{
-        //display: grid;
+        display: grid;
         @media only screen and (max-width: 480px){
             height: 60px;
         }
