@@ -100,6 +100,7 @@
     grid-template-columns: 1fr 300px 1fr;
     height: fit-content;
     justify-items: center;
+    text-align: center;
     align-items: center;
     font-family: Apercu Pro;
     @media only screen and (max-width: 960px){
@@ -118,7 +119,7 @@
         background: linear-gradient(147.97deg, #E77329 17.72%, #FFC451 99.11%), #FFB37D;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        width: fit-content;
+        //width: fit-content;
         span{
         -webkit-background-clip: unset;
         -webkit-text-fill-color: unset;

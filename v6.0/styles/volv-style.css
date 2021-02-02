@@ -1201,6 +1201,7 @@ a:hover {
   height: -moz-fit-content;
   height: fit-content;
   justify-items: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1227,9 +1228,6 @@ a:hover {
   background: linear-gradient(147.97deg, #E77329 17.72%, #FFC451 99.11%), #FFB37D;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .h6-sec2 h5 span {
