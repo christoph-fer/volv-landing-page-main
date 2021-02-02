@@ -671,6 +671,8 @@ a:hover {
 }
 
 .text-app-cta .volv-logo {
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   width: 100px;
   height: 100px;
   margin-top: 7vh;
@@ -683,6 +685,8 @@ a:hover {
 }
 
 .text-app-cta h1 {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: Apercu Pro;
   font-weight: 600;
   font-size: 54px;
@@ -696,6 +700,8 @@ a:hover {
 }
 
 .text-app-cta p {
+  -webkit-animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: Apercu Pro;
   font-size: 20px;
   font-weight: 400;
@@ -708,6 +714,8 @@ a:hover {
 }
 
 .text-app-cta h5 {
+  -webkit-animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: Apercu Pro;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -735,6 +743,8 @@ a:hover {
 }
 
 .text-app-cta .explore-volv {
+  -webkit-animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   width: 170px;
   margin-top: 50px;
 }
@@ -747,6 +757,8 @@ a:hover {
 }
 
 .text-app-download-appstore {
+  -webkit-animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   display: none;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
@@ -868,6 +880,8 @@ a:hover {
 }
 
 .video-container .shul-car-loop {
+  -webkit-animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   width: 170%;
   margin-left: -37vw;
   margin-top: 13vh;
@@ -1472,9 +1486,9 @@ a:hover {
 }
 
 .h6-sec4 img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  width: 40vw;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  width: 50vw;
 }
 
 @media only screen and (max-width: 1024px) {

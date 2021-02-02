@@ -31,6 +31,7 @@
         justify-items: center;
     }
     .volv-logo{
+        animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         width: 100px;
         height: 100px;
         margin-top: 7vh;
@@ -39,6 +40,7 @@
         }
     }
     h1{
+        animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         font-family: Apercu Pro;
         font-weight: 600;
         font-size: 54px;
@@ -48,6 +50,7 @@
         }
     }
     p{
+        animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         font-family: Apercu Pro;
         font-size: 20px;
         font-weight: 400;
@@ -56,6 +59,7 @@
         }
     }
     h5{
+        animation: volv-window-desktop-animation 1.9s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         font-family: Apercu Pro;
         text-transform: uppercase;
         letter-spacing: 0.02em;
@@ -76,6 +80,7 @@
         }
     }
     .explore-volv{
+        animation: volv-window-desktop-animation 2.1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         width: 170px;
         margin-top: 50px;
         @media only screen and (max-width: 540px){
@@ -92,6 +97,7 @@
     @media only screen and (max-width: 540px){
         justify-self: center;
     }
+    animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     display: none;
     grid-template-columns: auto auto;
     column-gap: 20px;
@@ -171,6 +177,7 @@
         height: auto;
     }
       .shul-car-loop{
+        animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         width: 170%;
         margin-left: -37vw;
         margin-top: 13vh;
