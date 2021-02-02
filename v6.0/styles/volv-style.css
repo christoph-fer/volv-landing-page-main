@@ -1356,9 +1356,10 @@ h5 span {
 .h6-sec5 .reviews-6 .quote-review {
   display: -ms-grid;
   display: grid;
+  position: relative;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  padding: 20px 40px 30px 40px;
+  padding: 25px 40px 30px 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1367,7 +1368,28 @@ h5 span {
   }
 }
 
+.h6-sec5 .reviews-6 .quote-review img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40px;
+  width: 50px;
+  left: 30px;
+  top: 25px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .quote-review img {
+    left: 15px;
+    top: 15px;
+    height: 30px;
+    width: 40px;
+  }
+}
+
 .h6-sec5 .reviews-6 .quote-review p {
+  z-index: 1;
   font-weight: 300;
   font-size: 18px;
 }
@@ -1417,6 +1439,23 @@ h5 span {
   font-weight: 400;
   letter-spacing: -0.03em;
   color: white;
+  position: relative;
+}
+
+.h6-sec5 .reviews-6 .youtube-review h3 img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 60px;
+  width: 60px;
+  left: -10px;
+  bottom: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+  .h6-sec5 .reviews-6 .youtube-review h3 img {
+    bottom: 60px;
+  }
 }
 
 .h6-sec5 .reviews-6 .youtube-review img {

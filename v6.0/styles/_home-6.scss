@@ -314,12 +314,29 @@ h5{
         }
         .quote-review{
             display: grid;
+            position: relative;
             grid-template-columns: auto;
-            padding: 20px 40px 30px 40px;
+            padding: 25px 40px 30px 40px;
             @media only screen and (max-width: 768px){
                 padding: 10px 20px 15px 20px;
             }
+            img{
+                position: absolute;
+                object-fit: contain;
+                height: 40px;
+                width: 50px;
+                left: 30px;
+                top: 25px;
+                z-index: 0;
+                @media only screen and (max-width: 768px){
+                    left: 15px;
+                    top: 15px;
+                    height: 30px;
+                    width: 40px;
+                }
+            }
             p{
+                z-index: 1;
                 font-weight: 300;
                 font-size: 18px;
             }
@@ -356,6 +373,18 @@ h5{
                 font-weight: 400;
                 letter-spacing: -0.03em;
                 color: white;
+                position: relative;
+                img{
+                    position: absolute;
+                    object-fit: contain;
+                    height: 60px;
+                    width: 60px;
+                    left: -10px;
+                    bottom: 90px;
+                    @media only screen and (max-width: 768px){
+                        bottom: 60px;
+                    }
+                }
             }
             img{
                 height: 30px;
