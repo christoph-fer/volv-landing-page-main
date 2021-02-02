@@ -866,8 +866,8 @@ a:hover {
   height: 100vh;
   z-index: -1;
   background-color: #FBFBFB;
-  margin-left: 50vw;
-  position: fixed;
+  margin-left: 49vw;
+  position: absolute;
 }
 
 @media only screen and (max-width: 1024px) {
