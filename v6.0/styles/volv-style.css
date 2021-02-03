@@ -1546,8 +1546,8 @@ video::-webkit-media-controls-start-playback-button {
 .h6-sec5 .reviews-6 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
   padding: 0px 0px 50px 150px;
   -webkit-column-gap: 40px;
           column-gap: 40px;
@@ -1620,6 +1620,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .h6-sec5 .reviews-6 .quote-review h3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -webkit-margin-after: 5px;
           margin-block-end: 5px;
 }

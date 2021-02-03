@@ -325,7 +325,7 @@
     }
     .reviews-6{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
         padding: 0px 0px 50px 150px;
         column-gap: 40px;
         overflow-x: visible;
@@ -373,6 +373,7 @@
                 font-size: 18px;
             }
             h3{
+                align-self: flex-end;
                 margin-block-end: 5px;
             }
             span{
