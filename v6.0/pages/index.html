@@ -70,6 +70,22 @@
       background-color: transparent;
       color: #0000007c;
     }
+
+    .cc-picker-code-filter {
+      margin: 30px 0px 0 -25px;
+      padding: 22px 20px;
+      width: 272px;
+      height: 23px;
+      position: absolute;
+      border: none;
+      /* border: 1px solid #dad8d8; */
+      font-family: Inter;
+      font-weight: 300;
+      font-size: 14px;
+      border-radius: 20px;
+      outline: none;
+      box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
 
@@ -147,11 +163,11 @@
             </h1>
             <form class="phone-number-box" id="mainForm" action="dialer.html" method="POST">
                                 
-                <div class="number-input" class="input">
-                    <input id="phoneField3" name="phoneField3" class="phone-field"/>
-                </div>
-                <input class="phone-number-submit" type="submit" value="Text me the app">
-            </form>
+              <div class="number-input" class="input">
+                  <input id="phoneField3" name="phoneField3" class="phone-field"/>
+              </div>
+              <input class="phone-number-submit" type="submit" value="Text me the app">
+          </form>
 
             <div class="text-app-download-appstore" >
                 <a href="https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_US" target="_blank"><img src="../assets/android-icon-white.svg" alt=""></a>
@@ -340,8 +356,8 @@
         os = null;
       if (macosPlatforms.indexOf(platform) !== -1) {
         os = "Mac OS";
-        $(".downloadnow").addClass("active");
-        $(".downloadnow").toggleClass("option");
+        // $(".downloadnow").addClass("active");
+        $(".downloadnow").toggleClass("active");
         // window.location.href = "#download-now-desktop";
         // window.open("https://apps.apple.com/us/app/volv-read-less-know-more/id1474813657?ls=1")
       } else if (iosPlatforms.indexOf(platform) !== -1) {
@@ -352,16 +368,16 @@
         os = "Windows";
         // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
         // window.location.href = "#download-now-desktop";
-        $(".downloadnow").addClass("active");
-        $(".downloadnow").toggleClass("option");
+        // $(".downloadnow").addClass("active");
+        $(".downloadnow").toggleClass("active");
       } else if (/Android/.test(userAgent)) {
         os = "Android";
         window.location.href =
           "https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
       } else if (!os && /Linux/.test(platform)) {
         os = "Linux";
-        $(".downloadnow").addClass("active");
-        $(".downloadnow").toggleClass("option");
+        // $(".downloadnow").addClass("active");
+        $(".downloadnow").toggleClass("active");
         // window.location.href = "#download-now-desktop";
         // window.open("https://play.google.com/store/apps/details?id=com.volvmedia.volvapp&hl=en_IN&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1")
       }
