@@ -570,7 +570,7 @@ html {
   grid-template-columns: auto auto;
   justify-content: center;
 
-
+  column-gap: 20px;
   >div {
     align-self: center;
   }
@@ -579,7 +579,15 @@ html {
 .android {
   >a {
     >img {
-      height: 60;
+      height: 50;
+    }
+  }
+}
+
+.iOS {
+  >a {
+    >img {
+      height: 50;
     }
   }
 }

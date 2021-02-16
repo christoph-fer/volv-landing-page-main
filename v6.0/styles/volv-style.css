@@ -207,14 +207,19 @@
 .volv-button-small .downloadnow {
   display: -ms-grid;
   display: grid;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   pointer-events: none;
   position: absolute;
   top: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   right: 1;
   background: white;
   -webkit-backdrop-filter: blur(20px) !important;
   backdrop-filter: blur(20px) !important;
-  padding: 30px;
+  padding: 25px;
   border-radius: 5px;
   -webkit-box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.05);
@@ -4590,6 +4595,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .downloadnow > div {
@@ -4599,7 +4606,11 @@ html {
 }
 
 .android > a > img {
-  height: 60;
+  height: 50;
+}
+
+.iOS > a > img {
+  height: 50;
 }
 
 .modal {
