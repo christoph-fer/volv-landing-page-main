@@ -797,6 +797,42 @@ video::-webkit-media-controls-start-playback-button {
   width: 120px;
 }
 
+.error {
+  font-family: Apercu Pro;
+  display: none;
+  margin-top: 20px;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+}
+
+.success {
+  font-family: Apercu Pro;
+  display: none;
+  margin-top: 20px;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+}
+
+.phone-number-box.error {
+  -webkit-box-shadow: 0px 15px 50px #ff000020;
+          box-shadow: 0px 15px 50px #ff000020;
+}
+
+.phone-number-box.error ~ .error {
+  display: block;
+  color: #ff0000;
+}
+
+.phone-number-box.success {
+  -webkit-box-shadow: 0px 15px 50px #e7722930;
+          box-shadow: 0px 15px 50px #e7722930;
+}
+
+.phone-number-box.success ~ .success {
+  display: block;
+  color: #E77329;
+}
+
 .phone-number-box {
   -webkit-animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 1.7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
