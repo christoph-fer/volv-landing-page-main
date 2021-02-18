@@ -663,8 +663,8 @@ video::-webkit-media-controls-start-playback-button {
   padding-left: 7vw;
   background-color: #FBFBFB;
   height: 100vh;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
   justify-items: flex-start;
 }
 
@@ -687,7 +687,13 @@ video::-webkit-media-controls-start-playback-button {
           animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   width: 100px;
   height: 100px;
-  margin-top: 7vh;
+  margin-top: -10vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .text-app-cta .volv-logo {
+    margin-top: 7vh;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -776,7 +782,7 @@ video::-webkit-media-controls-start-playback-button {
       grid-template-columns: auto auto;
   -webkit-column-gap: 20px;
           column-gap: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -909,45 +915,52 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .video-container {
+  display: -ms-grid;
+  display: grid;
   width: 50vw;
   max-width: 800px;
   height: 100vh;
   z-index: -1;
   background-color: #FBFBFB;
-  margin-left: 49vw;
-  position: absolute;
 }
 
 @media only screen and (max-width: 1024px) {
   .video-container {
     margin-left: unset;
-    width: 100vw;
+    width: 100%;
+    max-width: unset;
     position: unset;
     height: auto;
   }
 }
 
 .video-container .shul-car-loop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-grid-row-align: center;
+      align-self: center;
   -webkit-animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  width: 170%;
-  margin-left: -37vw;
-  margin-top: 13vh;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) {
   .video-container .shul-car-loop {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 80vw;
     margin-top: -5vw;
-    margin-left: -55vw;
-    width: 150%;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .video-container .shul-car-loop {
     margin-top: 0px;
+    width: 100vw;
   }
 }
 
