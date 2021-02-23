@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: "Mullingar";
+  src: url("../fonts/Mullingar/Mullingar DEMO.otf");
+}
+
+@font-face {
   font-family: "Shapiro 75 Heavy Wide";
   src: url("../fonts/Shapiro/Shapiro 75 Heavy Wide.ttf");
   font-weight: 500;
@@ -235,6 +240,55 @@
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   pointer-events: unset;
+}
+
+.volv-primary-button {
+  font-family: "Apercu Pro";
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  background-color: white;
+  padding: 14px 24px;
+  border-radius: 34px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.volv-primary-button:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+}
+
+.volv-primary-button:active {
+  opacity: 0.5;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.hiring-page-link {
+  position: absolute;
+  left: -100;
+  color: black;
+  letter-spacing: -0.03em;
+  font-size: 14px;
+  top: -5;
 }
 
 .volv-header {
@@ -3313,6 +3367,303 @@ video::-webkit-media-controls-start-playback-button {
   .body-sans-serif-2 {
     font-size: 13px;
   }
+}
+
+.hiring-sec1 {
+  display: -ms-grid;
+  display: grid;
+  background: linear-gradient(-25deg, #e7722970, #466db53b);
+  background-size: 200% 200%;
+  -webkit-animation: GradientAnimation 13s ease infinite;
+  animation: GradientAnimation 13s ease infinite;
+  height: 80vh;
+  min-height: 400px;
+}
+
+.hiring-sec1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hiring-sec1 .hiring-sec1-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  width: 100%;
+  max-width: 1600px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hiring-sec1 .hiring-sec1-container > div {
+  padding: 0vw 5vw;
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text h2 {
+  font-family: "Mullingar";
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text p {
+  font-family: "Apercu Pro";
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text .volv-primary-button {
+  margin-top: 35px;
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-pic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: self-end;
+      align-self: self-end;
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-pic img {
+  height: 350px;
+}
+
+.hiring-sec2 {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000010), to(rgba(246, 246, 246, 0)));
+  background: linear-gradient(180deg, #00000010 0%, rgba(246, 246, 246, 0) 100%);
+  padding-top: 7vw;
+}
+
+.hiring-sec2 > h1 {
+  font-family: "Apercu Pro";
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.hiring-options {
+  z-index: 1;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px 300px 300px 300px 1px;
+      grid-template-columns: 300px 300px 300px 300px 300px 300px 1px;
+  grid-gap: 75px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vw;
+  margin-bottom: 50px;
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.5, 0, 0, 0.99) forwards;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+.hiring-options::-webkit-scrollbar {
+  display: none;
+}
+
+.hiring-option-card {
+  border-radius: 10px;
+  border: 1px solid #00000010;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  text-decoration: none;
+}
+
+.hiring-option-card:hover {
+  background-color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.hiring-option-card:hover > .hiring-option-card-cta {
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  background: linear-gradient(102.57deg, #466db528 0%, #e7722948 98.03%);
+}
+
+.hiring-option-card:hover > .hiring-option-card-cta > img {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: 300ms cubic-bezier(0.5, 0, 0, 0.99);
+  transition: 300ms cubic-bezier(0.5, 0, 0, 0.99);
+}
+
+.hiring-option-card h1 {
+  font-family: "Apercu Pro";
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.hiring-option-card h5 {
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  text-align: left;
+  color: #FC9860;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hiring-option-card p {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.hiring-option-card ul {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  -webkit-padding-start: 12px;
+          padding-inline-start: 12px;
+}
+
+.hiring-option-card ul li {
+  margin-bottom: 10px;
+}
+
+.hiring-option-card .skill-table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.hiring-option-card .skill-table p {
+  margin: 5px 0px;
+}
+
+.hiring-option-card .skill-table .skill-type {
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.hiring-option-card-content {
+  padding: 15px 25px;
+  height: 250px;
+}
+
+.hiring-option-card-cta {
+  background: linear-gradient(102.57deg, #b3cbbc00 0%, #edd8cb00 98.03%);
+  -webkit-transition: 300ms ease-out !important;
+  transition: 300ms ease-out !important;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px 25px;
+  margin-top: 30px;
+}
+
+.hiring-option-card-cta > span {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.go-right-button {
+  position: absolute;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  top: 58%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-radius: 80px;
+  right: 50px;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  opacity: 0;
+  -webkit-box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.go-right-button:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.go-right-button:active {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.go-left-button {
+  position: absolute;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  top: 58%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-radius: 80px;
+  left: 50px;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  opacity: 0;
+  -webkit-box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 36.3441px 72.6882px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.go-left-button:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.go-left-button:active {
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.go-left-button img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .csm-header-pic {
