@@ -3839,6 +3839,7 @@ video::-webkit-media-controls-start-playback-button {
   font-family: "Shapiro 75 Heavy Wide";
   margin: 0px;
   font-size: 36px;
+  font-weight: 500;
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > p {
