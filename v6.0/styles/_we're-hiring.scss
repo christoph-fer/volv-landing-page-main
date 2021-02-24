@@ -102,9 +102,13 @@
             background: linear-gradient(102.57deg, #466db528 0%, #e7722948 98.03%);
             >img{
                 transform: translateX(5px);
-                transition: 300ms cubic-bezier(0.5, 0, 0, 0.99);
+                transition: 300ms cubic-bezier(0.5, 0, 0, 0.95);
             }
         }
+    }
+    &:active{
+        transform: scale(0.97);
+        opacity: 0.7;
     }
     h1{ 
         font-family: "Apercu Pro";

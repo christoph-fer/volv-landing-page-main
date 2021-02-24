@@ -3583,8 +3583,14 @@ video::-webkit-media-controls-start-playback-button {
 .hiring-option-card:hover > .hiring-option-card-cta > img {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
-  -webkit-transition: 300ms cubic-bezier(0.5, 0, 0, 0.99);
-  transition: 300ms cubic-bezier(0.5, 0, 0, 0.99);
+  -webkit-transition: 300ms cubic-bezier(0.5, 0, 0, 0.95);
+  transition: 300ms cubic-bezier(0.5, 0, 0, 0.95);
+}
+
+.hiring-option-card:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  opacity: 0.7;
 }
 
 .hiring-option-card h1 {
