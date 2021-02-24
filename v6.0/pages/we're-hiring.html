@@ -269,6 +269,15 @@
   
     </div>
 
+    <div class="hiring-sec3">
+      <h1>
+        Share this with a friend that you think would be great for the job 🙌
+      </h1>
+      <a class="share-button volv-primary-button-grey" type="button">
+        <span>Copy link 🔗</span>
+      </a>
+    </div>
+
     
     <!-- Footer -->
     <div w3-include-html="../components/footer-3.html"></div>
@@ -277,6 +286,19 @@
 
   <!-- Typeform - feedback feature -->
   <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+  <script>
+    const shareButton = document.querySelector('.share-button');
+    shareButton.addEventListener('click', event => {
+      navigator.share({
+        title: 'Work at Volv Media',
+        url: 'https://volvmedia.com'
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      })
+      .catch(console.error);
+    });
+  </script>
 
   <!-- Horizontal scroll -->
   <script>

@@ -282,6 +282,46 @@
           transform: scale(0.9);
 }
 
+.volv-primary-button-grey {
+  font-family: "Apercu Pro";
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  background-color: #EDEDED;
+  padding: 14px 24px;
+  border-radius: 34px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.volv-primary-button-grey:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+}
+
+.volv-primary-button-grey:active {
+  opacity: 0.5;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 .hiring-page-link {
   position: absolute;
   left: -100;
@@ -3664,6 +3704,20 @@ video::-webkit-media-controls-start-playback-button {
 .go-left-button img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.hiring-sec3 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+
+.hiring-sec3 h1 {
+  font-family: "Apercu Pro";
+  font-weight: 300;
+  max-width: 600px;
+  text-align: center;
 }
 
 .csm-header-pic {

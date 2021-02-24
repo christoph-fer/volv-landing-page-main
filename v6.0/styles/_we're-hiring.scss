@@ -225,3 +225,15 @@
         transform: rotate(180deg);
     }
 }
+
+.hiring-sec3 {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 100px;
+    h1{
+        font-family: "Apercu Pro";
+        font-weight: 300;
+        max-width: 600px;
+        text-align: center;
+    }
+}

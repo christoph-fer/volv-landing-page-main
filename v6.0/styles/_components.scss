@@ -86,6 +86,33 @@
   }
 }
 
+.volv-primary-button-grey{
+  font-family: "Apercu Pro";
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  background-color: #EDEDED;
+  padding: 14px 24px;
+  border-radius: 34px;
+  display: grid;
+  justify-items: center;
+  width: fit-content;
+  font-size: 16px;
+  transition: 300ms;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  appearance: none;
+  &:hover{
+    text-decoration: none;
+    opacity: 0.8;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+  }
+  &:active{
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+}
+
 .hiring-page-link{
   position: absolute;
   left: -100;
