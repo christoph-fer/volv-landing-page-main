@@ -23,6 +23,7 @@
       padding: 0vw 5vw;
     }
     .hiring-sec1-heading-text {
+        animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
       h2 {
         font-family: "Mullingar";
         font-weight: 500;
@@ -38,6 +39,7 @@
       }
     }
     .hiring-sec1-heading-pic {
+        animation: volv-window-desktop-animation 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
       display: grid;
       justify-self: center;
       align-self: self-end;
@@ -53,6 +55,7 @@
     background: linear-gradient(180deg, #00000010 0%, rgba(246, 246, 246, 0) 100%);
     padding-top: 7vw;
     >h1 {
+        animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         font-family: "Apercu Pro";
         font-weight: 300;
         font-size: 36px;

@@ -3474,6 +3474,11 @@ video::-webkit-media-controls-start-playback-button {
   padding: 0vw 5vw;
 }
 
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text {
+  -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text h2 {
   font-family: "Mullingar";
   font-weight: 500;
@@ -3491,6 +3496,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-pic {
+  -webkit-animation: volv-window-desktop-animation 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   display: -ms-grid;
   display: grid;
   -ms-grid-column-align: center;
@@ -3511,6 +3518,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-sec2 > h1 {
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-weight: 300;
   font-size: 36px;
@@ -3752,11 +3761,20 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 {
+  -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   display: -ms-grid;
   display: grid;
   background: linear-gradient(-25deg, #ffffff, #e7722921);
-  background-size: 60% 1%;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
   min-height: 500px;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 {
+    background-size: 100% 40%;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container {
@@ -3768,6 +3786,13 @@ video::-webkit-media-controls-start-playback-button {
   margin-right: auto;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container > div {
@@ -3789,7 +3814,18 @@ video::-webkit-media-controls-start-playback-button {
   padding: 0px 5vw;
 }
 
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .heading {
+    height: 80vh;
+    position: unset;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
 .hiring-detail-sec1 .hiring-detail-container > .heading > h5 {
+  -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-size: 17px;
   color: #E77329;
@@ -3798,12 +3834,16 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > h1 {
+  -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Shapiro 75 Heavy Wide";
   margin: 0px;
   font-size: 36px;
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > p {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-size: 24px;
   max-width: 400px;
@@ -3812,6 +3852,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > .exp {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-size: 20px;
   font-weight: 400;
@@ -3820,6 +3862,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > .hiring-actions {
+  -webkit-animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin-top: 100px;
   display: -ms-grid;
   display: grid;
@@ -3843,6 +3887,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .content p {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-size: 20px;
   letter-spacing: -0.03em;
@@ -3850,6 +3896,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .content h1 {
+  -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -3858,6 +3906,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .content ul {
+  -webkit-animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+          animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   font-family: "Apercu Pro";
   font-size: 20px;
   letter-spacing: -0.03em;
