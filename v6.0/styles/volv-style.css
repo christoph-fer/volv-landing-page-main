@@ -3842,6 +3842,13 @@ video::-webkit-media-controls-start-playback-button {
   padding: 5px 5vw;
 }
 
+.hiring-detail-sec1 .hiring-detail-container > .content p {
+  font-family: "Apercu Pro";
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  margin-top: 90px;
+}
+
 .hiring-detail-sec1 .hiring-detail-container > .content h1 {
   font-family: "Apercu Pro";
   font-weight: 600;

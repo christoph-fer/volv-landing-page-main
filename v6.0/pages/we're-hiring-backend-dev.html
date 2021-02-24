@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-  <title>Volv - We're hiring!</title>
+  <title>Backend Developer | Volv</title>
   <link rel="stylesheet" type="text/css" href="../styles/volv-style.css" />
 
   <link rel="stylesheet" type="text/css" href="./sal.css" />
@@ -119,10 +119,10 @@
       <div class="hiring-detail-container">
         <div class="heading">
           <h5>We're Hiring</h5>
-          <h1>Back-end Developer</h1>
-          <p>We're looking for a Back End engineer who can take charge of our custom dashboard that is linked to our app, Volv.</p>
+          <h1>Backend Developer</h1>
+          <p>We're looking for a Backend Engineer who can take charge of our custom dashboard that is linked to our app, Volv.</p>
           <div class="exp">
-            <span style="opacity: 0.5;">Experience:</span><span>~2 years</span>
+            <span style="opacity: 0.5;">Experience: </span><span>~2 years</span>
           </div>
           <div class="hiring-actions">
             <a href="mailto:connect@volvmedia.com" class="volv-primary-button" type="button">
@@ -165,27 +165,8 @@
   <!-- Typeform - feedback feature -->
   <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
-  <script>
-    const shareButton = document.querySelector('.share-button');
-    shareButton.addEventListener('click', event => {
-      if (navigator.share){
-        navigator.share({
-        title: 'Work at Volv Media',
-        url: 'https://volvmedia.com'
-      }).then(() => {
-        console.log('Thanks for sharing!');
-      })
-      .catch(console.error);
-      } else{
-        https://volvmedia.com
-        $(".volv-browser-notif").addClass("active"),
-        setTimeout(function() { 
-            $(".volv-browser-notif").removeClass("active"); 
-        }, 2000);
-      }
-      
-    });
-  </script>
+  <!-- Share experience -->
+  <script src="../js/share-experience.js"></script>
 
   <!-- Horizontal scroll -->
   <script>
