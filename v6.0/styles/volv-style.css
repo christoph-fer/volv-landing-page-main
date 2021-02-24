@@ -3446,12 +3446,20 @@ video::-webkit-media-controls-start-playback-button {
   -webkit-animation: GradientAnimation 13s ease infinite;
   animation: GradientAnimation 13s ease infinite;
   height: 80vh;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 @media only screen and (max-width: 1024px) {
   .hiring-sec1 {
     height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -3465,8 +3473,8 @@ video::-webkit-media-controls-start-playback-button {
 .hiring-sec1 .hiring-sec1-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
   width: 100%;
   max-width: 1600px;
   -ms-grid-column-align: center;
@@ -3474,6 +3482,16 @@ video::-webkit-media-controls-start-playback-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 3fr 2fr;
+        grid-template-rows: 3fr 2fr;
+    text-align: -webkit-center;
+  }
 }
 
 .hiring-sec1 .hiring-sec1-container > div {
@@ -3491,10 +3509,28 @@ video::-webkit-media-controls-start-playback-button {
   font-size: 36px;
 }
 
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text h2 {
+    font-size: 24px;
+  }
+}
+
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text p {
   font-family: "Apercu Pro";
   font-size: 24px;
   letter-spacing: -0.03em;
+}
+
+@media only screen and (max-width: 920px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text p {
+    font-size: 14px;
+  }
 }
 
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text .volv-primary-button {
@@ -3514,6 +3550,14 @@ video::-webkit-media-controls-start-playback-button {
 
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-pic img {
   height: 350px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+@media only screen and (max-width: 768px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-pic img {
+    height: 250px;
+  }
 }
 
 .hiring-sec2 {
@@ -3531,6 +3575,12 @@ video::-webkit-media-controls-start-playback-button {
   font-size: 36px;
   letter-spacing: -0.01em;
   text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec2 > h1 {
+    font-size: 26px;
+  }
 }
 
 .hiring-options {
@@ -3557,6 +3607,13 @@ video::-webkit-media-controls-start-playback-button {
 
 .hiring-options::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-options {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 .hiring-option-card {
@@ -3770,6 +3827,14 @@ video::-webkit-media-controls-start-playback-button {
   max-width: 550px;
   text-align: center;
   letter-spacing: -0.03em;
+  padding: 0px 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec3 h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .hiring-detail-sec1 {
