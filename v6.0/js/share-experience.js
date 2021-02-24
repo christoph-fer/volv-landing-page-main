@@ -4,7 +4,7 @@ shareButton.addEventListener("click", (event) => {
     navigator
       .share({
         title: document.title,
-        text: "Work at Volv",
+        text: document.title,
         url: $(location).attr("href"),
       })
       .then(() => {
