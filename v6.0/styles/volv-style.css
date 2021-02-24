@@ -3716,8 +3716,9 @@ video::-webkit-media-controls-start-playback-button {
 .hiring-sec3 h1 {
   font-family: "Apercu Pro";
   font-weight: 300;
-  max-width: 600px;
+  max-width: 550px;
   text-align: center;
+  letter-spacing: -0.03em;
 }
 
 .csm-header-pic {
