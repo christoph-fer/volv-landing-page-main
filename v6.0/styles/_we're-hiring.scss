@@ -7,6 +7,9 @@
   animation: GradientAnimation 13s ease infinite;
   height: 80vh;
   min-height: 400px;
+  @media only screen and (max-width: 1024px){
+      height: 50vh;
+  }
   img {
     width: 100%;
     height: 100%;

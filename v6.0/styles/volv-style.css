@@ -3449,6 +3449,12 @@ video::-webkit-media-controls-start-playback-button {
   min-height: 400px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hiring-sec1 {
+    height: 50vh;
+  }
+}
+
 .hiring-sec1 img {
   width: 100%;
   height: 100%;
