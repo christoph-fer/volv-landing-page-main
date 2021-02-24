@@ -122,3 +122,33 @@
   top: -5;
 }
 
+.volv-browser-notif{
+    display: grid;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    top: 170px;
+    width: 200px;
+    left: 50%;
+    // transform: translateX(-120px);
+    // transform: translateY(-20px);
+    transform: translate(-120px, -20px);
+    //background-color: #ededed80;
+    //-webkit-backdrop-filter: blur(20px) !important;
+    //backdrop-filter: blur(20px) !important;
+    padding: 20px;
+    //border: 1.5px solid #00000010;
+    border-radius: 10px;
+    //box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+    opacity: 0;
+    p{
+      margin: 0px;
+      font-family: 'Apercu Pro';
+    }
+}
+
+.volv-browser-notif.active{
+  opacity: 0.7;
+  transform: translate(-120px, 5px);
+}

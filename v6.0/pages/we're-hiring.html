@@ -54,6 +54,7 @@
 
 <body>
   <wrapper>
+
     <div class="navbar" id="navBar">
       <div>
         <div class="page-links">
@@ -276,6 +277,9 @@
       <a class="share-button volv-primary-button-grey" type="button">
         <span>Share link 🔗</span>
       </a>
+      <div class="volv-browser-notif">
+        <p>Link copied to clipboard 📋</p>
+      </div>
     </div>
 
     
@@ -290,13 +294,22 @@
   <script>
     const shareButton = document.querySelector('.share-button');
     shareButton.addEventListener('click', event => {
-      navigator.share({
+      if (navigator.share){
+        navigator.share({
         title: 'Work at Volv Media',
         url: 'https://volvmedia.com'
       }).then(() => {
         console.log('Thanks for sharing!');
       })
       .catch(console.error);
+      } else{
+        https://volvmedia.com
+        $(".volv-browser-notif").addClass("active"),
+        setTimeout(function() { 
+            $(".volv-browser-notif").removeClass("active"); 
+        }, 2000);
+      }
+      
     });
   </script>
 

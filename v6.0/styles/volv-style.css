@@ -331,6 +331,35 @@
   top: -5;
 }
 
+.volv-browser-notif {
+  display: -ms-grid;
+  display: grid;
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  width: 200px;
+  left: 50%;
+  -webkit-transform: translate(-120px, -20px);
+          transform: translate(-120px, -20px);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+  transition: 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+  opacity: 0;
+}
+
+.volv-browser-notif p {
+  margin: 0px;
+  font-family: 'Apercu Pro';
+}
+
+.volv-browser-notif.active {
+  opacity: 0.7;
+  -webkit-transform: translate(-120px, 5px);
+          transform: translate(-120px, 5px);
+}
+
 .volv-header {
   position: fixed;
   width: 100%;
@@ -3711,6 +3740,7 @@ video::-webkit-media-controls-start-playback-button {
   display: grid;
   justify-items: center;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .hiring-sec3 h1 {
