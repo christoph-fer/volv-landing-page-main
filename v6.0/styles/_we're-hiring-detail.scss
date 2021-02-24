@@ -1,0 +1,86 @@
+.hiring-detail-sec1{
+    display: grid;
+    background: linear-gradient(-25deg, #ffffff, #e7722921);
+    background-size: 60% 1%;
+    //height: 100vh;
+    min-height: 500px;
+    .hiring-detail-container{
+        display: grid;
+        max-width: 1600px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr;
+        >div{
+            //padding: 5vw;
+            justify-content: left;
+        }
+        >.heading{
+            display: grid;
+            align-content: center;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0; /* required */
+            height: 100vh;
+            padding: 0px 5vw;
+            >h5{
+                font-family: "Apercu Pro";
+                font-size: 17px;
+                color: #E77329;
+                font-weight: 500;
+                margin: 0px 0px 20px 0px;
+            }
+            >h1{
+                font-family: "Shapiro 75 Heavy Wide";
+                margin: 0px;
+                font-size: 36px;
+            }
+            >p{
+                font-family: "Apercu Pro";
+                font-size: 24px;
+                max-width: 400px;
+                font-weight: 400;
+                letter-spacing: -0.03em;
+            }
+            >.exp{
+                font-family: "Apercu Pro";
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: 10px;
+                letter-spacing: -0.03em;
+            }
+            >.hiring-actions{
+                margin-top: 100px;
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: left;
+                column-gap: 20px;
+                position: relative;
+                >.volv-browser-notif{
+                    margin-top: -125px;
+                }
+            }
+        }
+        >.content{
+            background-color: white;
+            padding: 5px 5vw;
+            h1{
+                font-family: "Apercu Pro";
+                font-weight: 600;
+                letter-spacing: -0.03em;
+                font-size: 26px;
+                margin-top: 70px;
+            }
+            ul{
+                font-family: "Apercu Pro";
+                font-size: 20px;
+                letter-spacing: -0.03em;
+                padding-inline-start: 15px;
+                li{
+                    margin-bottom: 20px;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}

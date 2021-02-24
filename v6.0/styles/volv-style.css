@@ -356,8 +356,8 @@
 
 .volv-browser-notif.active {
   opacity: 0.7;
-  -webkit-transform: translate(-120px, 5px);
-          transform: translate(-120px, 5px);
+  -webkit-transform: translate(-120px, 0px);
+          transform: translate(-120px, 0px);
 }
 
 .volv-header {
@@ -3749,6 +3749,118 @@ video::-webkit-media-controls-start-playback-button {
   max-width: 550px;
   text-align: center;
   letter-spacing: -0.03em;
+}
+
+.hiring-detail-sec1 {
+  display: -ms-grid;
+  display: grid;
+  background: linear-gradient(-25deg, #ffffff, #e7722921);
+  background-size: 60% 1%;
+  min-height: 500px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > div {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+  height: 100vh;
+  padding: 0px 5vw;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > h5 {
+  font-family: "Apercu Pro";
+  font-size: 17px;
+  color: #E77329;
+  font-weight: 500;
+  margin: 0px 0px 20px 0px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > h1 {
+  font-family: "Shapiro 75 Heavy Wide";
+  margin: 0px;
+  font-size: 36px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > p {
+  font-family: "Apercu Pro";
+  font-size: 24px;
+  max-width: 400px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > .exp {
+  font-family: "Apercu Pro";
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: -0.03em;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > .hiring-actions {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  position: relative;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .heading > .hiring-actions > .volv-browser-notif {
+  margin-top: -125px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .content {
+  background-color: white;
+  padding: 5px 5vw;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .content h1 {
+  font-family: "Apercu Pro";
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-size: 26px;
+  margin-top: 70px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .content ul {
+  font-family: "Apercu Pro";
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+}
+
+.hiring-detail-sec1 .hiring-detail-container > .content ul li {
+  margin-bottom: 20px;
+  line-height: 1.3em;
 }
 
 .csm-header-pic {
