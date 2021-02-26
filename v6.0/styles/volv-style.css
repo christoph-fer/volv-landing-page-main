@@ -3495,7 +3495,13 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-sec1 .hiring-sec1-container > div {
-  padding: 0vw 5vw;
+  padding: 0vw 10vw;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container > div {
+    padding: 15vw 10vw 0vw 10vw;
+  }
 }
 
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text {
@@ -3506,12 +3512,14 @@ video::-webkit-media-controls-start-playback-button {
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text h2 {
   font-family: "Mullingar";
   font-weight: 500;
-  font-size: 36px;
+  font-size: 42px;
 }
 
 @media only screen and (max-width: 720px) {
   .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text h2 {
     font-size: 24px;
+    margin-top: 50px;
+    font-size: 36px;
   }
 }
 
@@ -3529,7 +3537,24 @@ video::-webkit-media-controls-start-playback-button {
 
 @media only screen and (max-width: 720px) {
   .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text p {
-    font-size: 14px;
+    font-size: 20px;
+  }
+}
+
+.hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text .who-we-are-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text .who-we-are-mobile {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text .who-we-are-desktop {
+    display: none;
   }
 }
 
@@ -3625,6 +3650,10 @@ video::-webkit-media-controls-start-playback-button {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .hiring-option-card:hover {
@@ -3893,10 +3922,13 @@ video::-webkit-media-controls-start-playback-button {
 
 @media only screen and (max-width: 640px) {
   .hiring-detail-sec1 .hiring-detail-container > .heading {
-    height: 80vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     position: unset;
     justify-items: center;
     text-align: center;
+    padding: 20vh 5vw;
   }
 }
 
@@ -3910,6 +3942,12 @@ video::-webkit-media-controls-start-playback-button {
   margin: 0px 0px 20px 0px;
 }
 
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .heading > h5 {
+    font-size: 15px;
+  }
+}
+
 .hiring-detail-sec1 .hiring-detail-container > .heading > h1 {
   -webkit-animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -3917,6 +3955,13 @@ video::-webkit-media-controls-start-playback-button {
   margin: 0px;
   font-size: 36px;
   font-weight: 500;
+  line-height: 125%;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .heading > h1 {
+    font-size: 32px;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > p {
@@ -3927,6 +3972,12 @@ video::-webkit-media-controls-start-playback-button {
   max-width: 400px;
   font-weight: 400;
   letter-spacing: -0.03em;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .heading > p {
+    font-size: 20px;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .heading > .exp {
@@ -3964,6 +4015,12 @@ video::-webkit-media-controls-start-playback-button {
   padding: 5px 5vw;
 }
 
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .content {
+    padding: 10px 10vw;
+  }
+}
+
 .hiring-detail-sec1 .hiring-detail-container > .content p {
   -webkit-animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -3971,6 +4028,13 @@ video::-webkit-media-controls-start-playback-button {
   font-size: 20px;
   letter-spacing: -0.03em;
   margin-top: 90px;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .content p {
+    font-size: 18px;
+    margin-top: 0px;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .content h1 {
@@ -3983,6 +4047,13 @@ video::-webkit-media-controls-start-playback-button {
   margin-top: 70px;
 }
 
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .content h1 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+
 .hiring-detail-sec1 .hiring-detail-container > .content ul {
   -webkit-animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -3991,6 +4062,12 @@ video::-webkit-media-controls-start-playback-button {
   letter-spacing: -0.03em;
   -webkit-padding-start: 15px;
           padding-inline-start: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+  .hiring-detail-sec1 .hiring-detail-container > .content ul {
+    font-size: 18px;
+  }
 }
 
 .hiring-detail-sec1 .hiring-detail-container > .content ul li {
@@ -4722,6 +4799,10 @@ video::-webkit-media-controls-start-playback-button {
   .volv-ad h3 {
     font-size: 11px;
   }
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {

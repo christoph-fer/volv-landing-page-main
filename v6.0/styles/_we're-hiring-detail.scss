@@ -33,10 +33,11 @@
             height: 100vh;
             padding: 0px 5vw;
             @media only screen and (max-width: 640px){
-                height: 80vh;
+                height: fit-content;
                 position: unset;
                 justify-items: center;
                 text-align: center;
+                padding: 20vh 5vw;
             }
             >h5{
                 animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -45,6 +46,9 @@
                 color: #E77329;
                 font-weight: 500;
                 margin: 0px 0px 20px 0px;
+                @media only screen and (max-width: 640px){
+                    font-size: 15px;
+                }
             }
             >h1{
                 animation: volv-window-desktop-animation 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -52,6 +56,10 @@
                 margin: 0px;
                 font-size: 36px;
                 font-weight: 500;
+                line-height: 125%;
+                @media only screen and (max-width: 640px){
+                    font-size: 32px;
+                }
             }
             >p{
                 animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -60,6 +68,9 @@
                 max-width: 400px;
                 font-weight: 400;
                 letter-spacing: -0.03em;
+                @media only screen and (max-width: 640px){
+                    font-size: 20px;
+                }
             }
             >.exp{
                 animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -85,12 +96,19 @@
         >.content{
             background-color: white;
             padding: 5px 5vw;
+            @media only screen and (max-width: 640px){
+                padding: 10px 10vw;
+            }
             p{
                 animation: volv-window-desktop-animation 1.3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
                 font-family: "Apercu Pro";
                 font-size: 20px;
                 letter-spacing: -0.03em;
                 margin-top: 90px;
+                @media only screen and (max-width: 640px){
+                    font-size: 18px;
+                    margin-top: 0px;
+                }
 
             }
             h1{
@@ -100,6 +118,10 @@
                 letter-spacing: -0.03em;
                 font-size: 26px;
                 margin-top: 70px;
+                @media only screen and (max-width: 640px){
+                    font-size: 24px;
+                    margin-top: 30px;
+                }
             }
             ul{
                 animation: volv-window-desktop-animation 1.6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
@@ -107,6 +129,9 @@
                 font-size: 20px;
                 letter-spacing: -0.03em;
                 padding-inline-start: 15px;
+                @media only screen and (max-width: 640px){
+                    font-size: 18px;
+                }
                 li{
                     margin-bottom: 20px;
                     line-height: 1.3em;
