@@ -1,6 +1,10 @@
 video::-webkit-media-controls-start-playback-button {
     display: none !important;
 }
+
+body{
+    margin: 0px;
+}
 .text-app-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
