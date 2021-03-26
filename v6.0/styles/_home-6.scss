@@ -237,6 +237,7 @@
             height: auto;
             border-radius: 15px;
             @media only screen and (max-width: 1024px){
+                display: none;
                 top: 144px;
             }
             @media only screen and (max-width: 960px){

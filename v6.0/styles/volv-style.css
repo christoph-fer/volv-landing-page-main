@@ -1570,6 +1570,7 @@ video::-webkit-media-controls-start-playback-button {
 
 @media only screen and (max-width: 1024px) {
   .h6-sec2 .phone-white > .video-container {
+    display: none;
     top: 144px;
   }
 }
