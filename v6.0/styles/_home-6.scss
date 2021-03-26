@@ -94,6 +94,68 @@
 
 }
 
+.h6-snap {
+    //background: radial-gradient(50% 50% at 50% 50%, #FFFC00 0%, rgba(255, 252, 0, 0) 80%);
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    justify-items: center;
+    @media only screen and (max-width: 640px){
+        height: 300px;
+        width: 300px;
+        margin-bottom: 70px;
+    }
+    &:hover{
+        //background: radial-gradient(50% 50% at 50% 50%, #FFFC00 0%, rgba(255, 252, 0, 0) 100%);
+    }
+    >img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    >.h6-snap-container {
+        display: grid;
+        position: relative;
+        &:hover{
+            .snap-bg{
+                filter: blur(50px);
+            }
+        }
+    }
+    p{
+        font-family: "Apercu Pro";
+        font-size: 18px;
+        letter-spacing: -0.03em;
+        font-weight: 400;
+    }
+    .snap-inc-logo{
+        width: 120px;
+        justify-self: center;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .snap-logo{
+        width: 70px;
+        margin: 20px 0px;
+        justify-self: center;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .snap-bg{
+        position: absolute;
+        z-index: -1;
+        top: 25px;
+        filter: blur(80px);
+        transition: 300ms;
+    }
+}
 .h6-sec2{
     display: grid;
     position: relative;
@@ -103,6 +165,10 @@
     text-align: center;
     align-items: center;
     font-family: Apercu Pro;
+    margin-top: 150px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     @media only screen and (max-width: 960px){
         grid-template-columns: 1fr;
         row-gap: 30px;
@@ -154,9 +220,42 @@
     .phone-white{
         animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
         height: 700px;
+        position: relative;
+        @media only screen and (max-width: 960px){
+            margin-top: 150px;
+        }
         @media only screen and (max-width: 480px){
             height: 160vw;
-            margin-top: 20px;
+            margin-top: 150px;
+        }
+        >.video-container {
+            position: absolute;
+            top: 93px;
+            left: 50px;
+            z-index: 1;
+            width: 200px;
+            height: auto;
+            border-radius: 15px;
+            @media only screen and (max-width: 1024px){
+                top: 144px;
+            }
+            @media only screen and (max-width: 960px){
+                height: 50vw;
+            }
+            >.border-fix{
+                height: 99.9%;
+                position: absolute;
+                width: 99.7%;
+                z-index: 2;
+                border-right: 1px white solid;
+                border-bottom: 1px white solid;
+                border-radius: 15px;
+            }
+            >.story-view-video{
+                height: 100%;
+                width: 100%;
+                border-radius: 15px;
+            }
         }
     }
     img{
@@ -181,29 +280,33 @@
     .million-stories-swiped{
         position: absolute;
         width: 600px;
-        top: 230px;
+        //top: 230px;
+        top: -330px;
         z-index: -1;
         @media only screen and (max-width: 1024px){
-            width: 70%;
-            top: 250px;
+            width: 60%;
+            //top: 250px;
+            top: -330px;
         }
         @media only screen and (max-width: 960px){
-            top: 440px;
+            //top: 440px;
+            top: -50px;
         }
         @media only screen and (max-width: 640px){
-            top: 420px;
+            top: -80px;
         }
         @media only screen and (max-width: 480px){
-            top: 420px;
-        }
+            width: 80%;
+            top: -100px;
+        }   
         @media only screen and (max-width: 420px){
-            top: 110vw;
+            top: -27vw;
         }
         @media only screen and (max-width: 375px){
-            top: 120vw;
+            //top: 120vw;
         }
         @media only screen and (max-width: 320px){
-            top: 140vw;
+            //top: 140vw;
         }
     }
 }
@@ -215,25 +318,34 @@
     z-index: -2;
     position: relative;
     @media only screen and (max-width: 480px){
-        margin-top: -200px;
+        margin-top: -80px;
     }
 }
 
 .h6-sec4{
     display: grid;
-    margin-top: -100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
     padding: 50px 80px 100px 80px;
     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
     background-color: white;
+    max-width: 1600px;
+    @media only screen and (max-width: 1920px){
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     @media only screen and (max-width: 1024px){
-        margin: -100px 7vw 7vw 7vw;
+        margin: -200px 7vw 7vw 7vw;
         padding: 7vw 5vw;
-        @media only screen and (max-width: 480px){
-            margin: -50px 7vw 7vw 7vw;
-        }
+
+    }
+    @media only screen and (max-width: 960px){
+        margin: 0px 7vw 7vw 7vw;
+    }
+    @media only screen and (max-width: 480px){
+        margin: -150px 7vw 7vw 7vw;
     }
     h2{
         font-family: "Shapiro 75 Heavy Wide";
@@ -286,7 +398,10 @@
     }
     img{
         justify-self: right;
-        width: 50vw;
+        width: 40vw;
+        @media only screen and (max-width: 1920px){
+            width: 50vw;
+        }
         @media only screen and (max-width: 1024px){
             width: 100%;
         }

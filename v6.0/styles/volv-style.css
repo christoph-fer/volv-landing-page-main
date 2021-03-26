@@ -1375,6 +1375,85 @@ video::-webkit-media-controls-start-playback-button {
   }
 }
 
+.h6-snap {
+  height: 400px;
+  width: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .h6-snap {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 70px;
+  }
+}
+
+.h6-snap > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.h6-snap > .h6-snap-container {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.h6-snap > .h6-snap-container:hover .snap-bg {
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.h6-snap p {
+  font-family: "Apercu Pro";
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.h6-snap .snap-inc-logo {
+  width: 120px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.h6-snap .snap-logo {
+  width: 70px;
+  margin: 20px 0px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.h6-snap .snap-logo:hover {
+  cursor: pointer;
+}
+
+.h6-snap .snap-bg {
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .h6-sec2 {
   display: -ms-grid;
   display: grid;
@@ -1390,6 +1469,10 @@ video::-webkit-media-controls-start-playback-button {
       -ms-flex-align: center;
           align-items: center;
   font-family: Apercu Pro;
+  margin-top: 150px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 960px) {
@@ -1459,13 +1542,58 @@ video::-webkit-media-controls-start-playback-button {
   -webkit-animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   height: 700px;
+  position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  .h6-sec2 .phone-white {
+    margin-top: 150px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .h6-sec2 .phone-white {
     height: 160vw;
-    margin-top: 20px;
+    margin-top: 150px;
   }
+}
+
+.h6-sec2 .phone-white > .video-container {
+  position: absolute;
+  top: 93px;
+  left: 50px;
+  z-index: 1;
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h6-sec2 .phone-white > .video-container {
+    top: 144px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .h6-sec2 .phone-white > .video-container {
+    height: 50vw;
+  }
+}
+
+.h6-sec2 .phone-white > .video-container > .border-fix {
+  height: 99.9%;
+  position: absolute;
+  width: 99.7%;
+  z-index: 2;
+  border-right: 1px white solid;
+  border-bottom: 1px white solid;
+  border-radius: 15px;
+}
+
+.h6-sec2 .phone-white > .video-container > .story-view-video {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .h6-sec2 img {
@@ -1499,50 +1627,39 @@ video::-webkit-media-controls-start-playback-button {
 .h6-sec2 .million-stories-swiped {
   position: absolute;
   width: 600px;
-  top: 230px;
+  top: -330px;
   z-index: -1;
 }
 
 @media only screen and (max-width: 1024px) {
   .h6-sec2 .million-stories-swiped {
-    width: 70%;
-    top: 250px;
+    width: 60%;
+    top: -330px;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .h6-sec2 .million-stories-swiped {
-    top: 440px;
+    top: -50px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .h6-sec2 .million-stories-swiped {
-    top: 420px;
+    top: -80px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .h6-sec2 .million-stories-swiped {
-    top: 420px;
+    width: 80%;
+    top: -100px;
   }
 }
 
 @media only screen and (max-width: 420px) {
   .h6-sec2 .million-stories-swiped {
-    top: 110vw;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .h6-sec2 .million-stories-swiped {
-    top: 120vw;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .h6-sec2 .million-stories-swiped {
-    top: 140vw;
+    top: -27vw;
   }
 }
 
@@ -1556,33 +1673,47 @@ video::-webkit-media-controls-start-playback-button {
 
 @media only screen and (max-width: 480px) {
   .h6-sec3 {
-    margin-top: -200px;
+    margin-top: -80px;
   }
 }
 
 .h6-sec4 {
   display: -ms-grid;
   display: grid;
-  margin-top: -100px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: -200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
   padding: 50px 80px 100px 80px;
   -webkit-box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04);
   background-color: white;
+  max-width: 1600px;
+}
+
+@media only screen and (max-width: 1920px) {
+  .h6-sec4 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .h6-sec4 {
-    margin: -100px 7vw 7vw 7vw;
+    margin: -200px 7vw 7vw 7vw;
     padding: 7vw 5vw;
   }
 }
 
-@media only screen and (max-width: 1024px) and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
   .h6-sec4 {
-    margin: -50px 7vw 7vw 7vw;
+    margin: 0px 7vw 7vw 7vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .h6-sec4 {
+    margin: -150px 7vw 7vw 7vw;
   }
 }
 
@@ -1670,7 +1801,13 @@ video::-webkit-media-controls-start-playback-button {
 .h6-sec4 img {
   -ms-grid-column-align: right;
       justify-self: right;
-  width: 50vw;
+  width: 40vw;
+}
+
+@media only screen and (max-width: 1920px) {
+  .h6-sec4 img {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
