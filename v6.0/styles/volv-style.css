@@ -1568,16 +1568,19 @@ video::-webkit-media-controls-start-playback-button {
   border-radius: 15px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 960px) {
   .h6-sec2 .phone-white > .video-container {
-    display: none;
-    top: 144px;
+    width: 253px;
+    left: 100px;
+    top: 23px;
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 480px) {
   .h6-sec2 .phone-white > .video-container {
-    height: 50vw;
+    width: 58vw;
+    left: 21vw;
+    top: 20px;
   }
 }
 

@@ -237,11 +237,19 @@
             height: auto;
             border-radius: 15px;
             @media only screen and (max-width: 1024px){
-                display: none;
-                top: 144px;
+                
+                //top: 144px;
             }
             @media only screen and (max-width: 960px){
-                height: 50vw;
+                //height: 50vw;
+                width: 253px;
+                left: 100px;
+                top: 23px;
+            }
+            @media only screen and (max-width: 480px) {
+                width: 58vw;
+                left: 21vw;
+                top: 20px;
             }
             >.border-fix{
                 height: 99.9%;
