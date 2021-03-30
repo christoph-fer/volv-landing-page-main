@@ -1386,7 +1386,7 @@ video::-webkit-media-controls-start-playback-button {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 30px;
   justify-items: center;
 }
 
@@ -1394,7 +1394,7 @@ video::-webkit-media-controls-start-playback-button {
   .h6-snap {
     height: 300px;
     width: 300px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1469,7 +1469,7 @@ video::-webkit-media-controls-start-playback-button {
       -ms-flex-align: center;
           align-items: center;
   font-family: Apercu Pro;
-  margin-top: 150px;
+  margin-top: 100px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
