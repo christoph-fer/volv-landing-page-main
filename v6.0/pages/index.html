@@ -1,9 +1,10 @@
 <html>
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Volv - The millenial news app</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../styles/volv-style.css" />
 
   <meta name="theme-color" content="#E2EAF6">
@@ -264,7 +265,15 @@
 
     <div class="h6-sec5">
       <h2>Our users love the app</h2>
+      <div class="go-right-button">
+        <img src="../assets/arrow.svg" />
+      </div>
+
+      <div class="go-left-button">
+        <img src="../assets/arrow.svg" />
+      </div>
       <div class="reviews-6">
+        
           <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url('../assets/top-android-apps.jpg');" class="youtube-review">
             <h3>
               <a href="https://youtu.be/R_2rnn-DRiI?t=97" target="_blank">Top Android Apps! (July 2020)
@@ -348,6 +357,23 @@
         //remove the background property so it comes transparent again (defined in your css)
         $(".volv-header").removeClass("active");
       }
+    });
+  </script>
+
+  <!-- Horizontal scroll -->
+  <script>
+    $('.go-left-button').click(function() {
+      event.preventDefault();
+      $('.reviews-6').animate({
+        scrollLeft: "-=1045px"
+      }, 600,);
+    });
+
+    $('.go-right-button').click(function() {
+      event.preventDefault();
+      $('.reviews-6').animate({
+      scrollLeft: "+=1045px"
+      }, 600,);
     });
   </script>
 

@@ -418,9 +418,19 @@
 }
 
 .h6-sec5{
+    position: relative;
     margin-top: -50px;
     //margin-bottom: 50px;
     padding: 50px 0px 100px 0px;
+    >.go-right-button{ 
+        top: 45%;
+        right: 50px;
+    }
+    
+    >.go-left-button{
+        top: 45%;
+        left: 50px;
+    }
     h2{
         font-family: "Shapiro 75 Heavy Wide";
         text-align: center;
@@ -439,28 +449,34 @@
         font-size: 24px;
         letter-spacing: -0.03em;
     }
-    div{
-        display: grid;
-        grid-template-columns: 300px auto;
-    }
-    img{
+    // div{
+    //     display: grid;
+    //     grid-template-columns: 300px auto;
+    // }
+    >img{
         justify-self: center;
         width: 40vw;
     }
     .reviews-6{
+        position: relative !important;  
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         padding: 0px 0px 50px 150px;
         column-gap: 40px;
-        overflow-x: visible;
-        overflow-y: hidden;
+        overflow-x: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+        &::-webkit-scrollbar{
+            display: none;
+        }
         @media only screen and (max-width: 768px){
             padding: 0px 0px 25px 20px;
             column-gap: 20px;
         }
+        
         div{
             width: 320px;
-            background: linear-gradient(180deg, rgba(252, 204, 177, 0.6) 0%, rgba(209, 236, 236, 0.324) 100%);
+            box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
             border-radius: 7px;
             font-family: Apercu Pro;
             padding: 20px 40px 30px 40px;
@@ -471,12 +487,13 @@
         .quote-review{
             display: grid;
             position: relative;
+            background: linear-gradient(180deg, rgba(252, 204, 177, 0.6) 0%, rgba(209, 236, 236, 0.324) 100%);
             grid-template-columns: auto;
             padding: 25px 40px 30px 40px;
             @media only screen and (max-width: 768px){
                 padding: 10px 20px 15px 20px;
             }
-            img{
+            >img{
                 position: absolute;
                 object-fit: contain;
                 height: 40px;
