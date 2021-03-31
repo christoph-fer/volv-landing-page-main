@@ -1375,6 +1375,94 @@ video::-webkit-media-controls-start-playback-button {
   }
 }
 
+.h6-cred {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px auto;
+  max-width: 1600px;
+  justify-items: center;
+}
+
+@media (max-width: 1024px) {
+  .h6-cred {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.h6-cred > h6 {
+  display: none;
+  -webkit-margin-after: 40px !important;
+          margin-block-end: 40px !important;
+}
+
+@media (max-width: 1024px) {
+  .h6-cred > h6 {
+    display: block;
+  }
+}
+
+.h6-cred h6 {
+  font-family: "Mullingar";
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+}
+
+.h6-cred .h6-featured {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px;
+  -ms-grid-rows: 30px;
+      grid-template-rows: 30px;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 1024px) {
+  .h6-cred .h6-featured {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .h6-cred .h6-featured {
+    -ms-grid-columns: 30vw 30vw 30vw;
+        grid-template-columns: 30vw 30vw 30vw;
+    -ms-grid-rows: 20px;
+        grid-template-rows: 20px;
+  }
+}
+
+.h6-cred .h6-featured img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.h6-cred .h6-featured a {
+  opacity: 0.3;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+@media (max-width: 1024px) {
+  .h6-cred .h6-featured a {
+    opacity: 1;
+  }
+}
+
+.h6-cred .h6-featured a:hover {
+  opacity: 1;
+}
+
 .h6-snap {
   height: 400px;
   width: 400px;
@@ -1395,6 +1483,13 @@ video::-webkit-media-controls-start-playback-button {
     height: 300px;
     width: 300px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .h6-snap {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
   }
 }
 
