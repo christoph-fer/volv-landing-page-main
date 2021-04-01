@@ -3706,7 +3706,7 @@ video::-webkit-media-controls-start-playback-button {
   background-size: 200% 200%;
   -webkit-animation: GradientAnimation 13s ease infinite;
   animation: GradientAnimation 13s ease infinite;
-  height: 80vh;
+  height: 70vh;
   min-height: 500px;
 }
 
@@ -3755,10 +3755,6 @@ video::-webkit-media-controls-start-playback-button {
   }
 }
 
-.hiring-sec1 .hiring-sec1-container > div {
-  padding: 0vw 10vw;
-}
-
 @media only screen and (max-width: 720px) {
   .hiring-sec1 .hiring-sec1-container > div {
     padding: 15vw 10vw 0vw 10vw;
@@ -3766,6 +3762,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .hiring-sec1 .hiring-sec1-container .hiring-sec1-heading-text {
+  padding: 0vw 10vw;
   -webkit-animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
           animation: volv-window-desktop-animation 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
@@ -3877,7 +3874,6 @@ video::-webkit-media-controls-start-playback-button {
   -ms-grid-columns: 300px 300px 300px 300px 300px 300px 1px;
       grid-template-columns: 300px 300px 300px 300px 300px 300px 1px;
   grid-gap: 75px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 5vw;
