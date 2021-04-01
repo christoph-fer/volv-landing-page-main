@@ -261,13 +261,20 @@
             width: 100%;
         }
     }
+
+    .tinder-line {
+        @media (max-width: 960px) {
+            grid-row-start: 2;
+            margin-top: -120px;
+        }
+    }
     
     // @media only screen and (max-width: 480px){
     //     grid-template-rows: auto auto 200vw;
     // }
     .million-download{
         @media only screen and (max-width: 960px){
-            grid-row: 2/3;
+            grid-row-start: 3;
         }
         @media only screen and (max-width: 480px){
             height: 130px;
@@ -361,17 +368,17 @@
         }
         @media only screen and (max-width: 960px){
             //top: 440px;
-            top: -50px;
+            top: -400px;
         }
         @media only screen and (max-width: 640px){
-            top: -80px;
+            top: -400px;
         }
         @media only screen and (max-width: 480px){
             width: 80%;
-            top: -100px;
+            top: -400px;
         }   
         @media only screen and (max-width: 420px){
-            top: -27vw;
+            top: -400px;
         }
         @media only screen and (max-width: 375px){
             //top: 120vw;
@@ -388,8 +395,11 @@
     margin-top: -120px;
     z-index: -2;
     position: relative;
+    @media (max-width: 960px) {
+        margin-top: 200px;
+    }
     @media only screen and (max-width: 480px){
-        margin-top: -80px;
+        margin-top: 20vw;
     }
 }
 
@@ -413,10 +423,10 @@
 
     }
     @media only screen and (max-width: 960px){
-        margin: 0px 7vw 7vw 7vw;
+        margin: -250px 7vw 7vw 7vw;
     }
     @media only screen and (max-width: 480px){
-        margin: -150px 7vw 7vw 7vw;
+        margin: -250px 7vw 7vw 7vw;
     }
     h2{
         font-family: "Shapiro 75 Heavy Wide";
