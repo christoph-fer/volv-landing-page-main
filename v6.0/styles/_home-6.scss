@@ -321,16 +321,16 @@
                 top: 20px;
             }
             >.border-fix{
-                height: 99.9vw;
+                height: 99.9%;
                 position: absolute;
-                width: 99.7vw;
+                width: 99.7%;
                 z-index: 2;
                 border-right: 1px white solid;
                 border-bottom: 1px white solid;
                 border-radius: 15px;
             }
             >.story-view-video{
-                height: 100%;
+                height: auto;
                 width: 100%;
                 border-radius: 15px;
             }
