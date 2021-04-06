@@ -1950,9 +1950,21 @@ video::-webkit-media-controls-start-playback-button {
   right: 50px;
 }
 
+@media (max-width: 480px) {
+  .h6-sec5 > .go-right-button {
+    display: none;
+  }
+}
+
 .h6-sec5 > .go-left-button {
   top: 45%;
   left: 50px;
+}
+
+@media (max-width: 480px) {
+  .h6-sec5 > .go-left-button {
+    display: none;
+  }
 }
 
 .h6-sec5 h2 {

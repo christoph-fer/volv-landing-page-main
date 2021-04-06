@@ -497,11 +497,17 @@
     >.go-right-button{ 
         top: 45%;
         right: 50px;
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
     
     >.go-left-button{
         top: 45%;
         left: 50px;
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
     h2{
         font-family: "Shapiro 75 Heavy Wide";
