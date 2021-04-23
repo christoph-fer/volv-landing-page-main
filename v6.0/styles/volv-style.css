@@ -2081,8 +2081,9 @@ video::-webkit-media-controls-start-playback-button {
 
 .h6-sec5 .reviews-6 .quote-review p {
   z-index: 1;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -0.03em;
 }
 
 .h6-sec5 .reviews-6 .quote-review h3 {
@@ -2090,6 +2091,7 @@ video::-webkit-media-controls-start-playback-button {
       align-self: flex-end;
   -webkit-margin-after: 5px;
           margin-block-end: 5px;
+  font-weight: 300;
 }
 
 .h6-sec5 .reviews-6 .quote-review span {
@@ -2098,7 +2100,7 @@ video::-webkit-media-controls-start-playback-button {
 
 @media only screen and (max-width: 768px) {
   .h6-sec5 .reviews-6 .quote-review p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .h6-sec5 .reviews-6 .quote-review h3 {
     font-size: 16px;

@@ -588,19 +588,21 @@
             }
             p{
                 z-index: 1;
-                font-weight: 300;
-                font-size: 18px;
+                font-weight: 400;
+                font-size: 22px;
+                letter-spacing: -0.03em;
             }
             h3{
                 align-self: flex-end;
                 margin-block-end: 5px;
+                font-weight: 300;
             }
             span{
                 font-size: 12px;
             }
             @media only screen and (max-width: 768px){
                 p{
-                    font-size: 14px;
+                    font-size: 18px;
                 }
                 h3{
                     font-size: 16px;
