@@ -378,7 +378,7 @@
       grid-template-columns: auto 4fr 20px;
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
+  height: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -445,6 +445,10 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.navbar > div .page-links {
+  margin-top: 65px;
 }
 
 .navbar > div .page-links a {
@@ -5105,6 +5109,19 @@ html {
 
 .volv-logo {
   height: 25px;
+}
+
+.coming-soon-parent {
+  pointer-events: none;
+}
+
+.coming-soon {
+  height: 25px;
+  bottom: 20;
+  left: 30;
+  margin-left: -35px;
+  margin-top: -30px;
+  margin-bottom: 5px;
 }
 
 .download {

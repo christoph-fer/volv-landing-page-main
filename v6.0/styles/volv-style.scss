@@ -42,6 +42,24 @@ html {
   height: 25px;
 }
 
+.coming-soon-parent {
+  //position: relative;
+  pointer-events: none;
+  //display:flex;
+}
+
+.coming-soon {
+  //position: absolute;
+  height: 25px;
+  bottom: 20;
+  left: 30;
+  margin-left: -35px;
+  margin-top: -30px;
+  margin-bottom: 5px;
+  //object-fit: contain;
+  //width: 100%;
+}
+
 .download {
   text-align: right;
   align-self: center;
