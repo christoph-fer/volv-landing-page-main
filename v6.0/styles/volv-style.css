@@ -416,6 +416,12 @@
   opacity: 1;
 }
 
+@media only screen and (max-width: 1240px) {
+  .navbar {
+    margin-left: -90px;
+  }
+}
+
 .navbar > div {
   max-width: 1600px;
   margin-left: auto;
@@ -538,7 +544,7 @@
   height: 15px;
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1024px) {
   .navbar {
     height: 0px;
     background: #fff;

@@ -48,6 +48,9 @@
   align-items: flex-end;
   //box-shadow: 0px 100px 200px rgba(0, 0, 0, 0.2);
   opacity: 1;
+  @media only screen and (max-width: 1240px) {
+    margin-left: -90px;
+  }
 
   >div {
     max-width: 1600px;
@@ -254,7 +257,7 @@
   // }
 }
 
-@media only screen and (max-width: 1240px){
+@media only screen and (max-width: 1024px){
   .navbar{
     height: 0px;
     background: #fff;
