@@ -48,8 +48,12 @@
   align-items: flex-end;
   //box-shadow: 0px 100px 200px rgba(0, 0, 0, 0.2);
   opacity: 1;
+  
   @media only screen and (max-width: 1240px) {
     margin-left: -90px;
+  }
+  @media only screen and (max-width: 1024px) {
+    margin-left: unset;
   }
 
   >div {
@@ -76,6 +80,9 @@
 
     .page-links {
       margin-top: 65px;
+      @media screen and (max-width: 1024px) {
+        margin-top: 35px;
+      }
       a {
         padding: 10px;
       }
